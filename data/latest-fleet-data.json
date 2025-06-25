@@ -7017,12 +7017,122 @@
       "total_time": "0.58416666666667",
       "captured_at": "2025-06-25T11:57:08.087Z",
       "id": 1750852628087.2385
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-25 07:49:41",
+      "end": "2025-06-25 09:07:34",
+      "total_time": "1.2980555555556",
+      "captured_at": "2025-06-25T12:07:17.495Z",
+      "id": 1750853237495.1145
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-25 08:48:19",
+      "end": "2025-06-25 08:57:49",
+      "total_time": "0.15833333333333",
+      "captured_at": "2025-06-25T12:07:18.129Z",
+      "id": 1750853238129.9832
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-25 08:57:49",
+      "end": "2025-06-25 09:07:34",
+      "total_time": "0.1625",
+      "captured_at": "2025-06-25T12:07:18.130Z",
+      "id": 1750853238130.6843
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-25 08:45:27",
+      "end": "2025-06-25 09:07:34",
+      "total_time": "0.36861111111111",
+      "captured_at": "2025-06-25T12:07:18.346Z",
+      "id": 1750853238346.0215
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-25 08:49:31",
+      "end": "2025-06-25 09:07:34",
+      "total_time": "0.30083333333333",
+      "captured_at": "2025-06-25T12:07:19.589Z",
+      "id": 1750853239589.2024
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-25 08:43:27",
+      "end": "2025-06-25 09:07:34",
+      "total_time": "0.40194444444444",
+      "captured_at": "2025-06-25T12:07:22.918Z",
+      "id": 1750853242918.4844
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-25 08:54:36",
+      "end": "2025-06-25 09:07:45",
+      "total_time": "0.21916666666667",
+      "captured_at": "2025-06-25T12:07:38.692Z",
+      "id": 1750853258692.1433
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-25 08:51:44",
+      "end": "2025-06-25 08:54:36",
+      "total_time": "0.047777777777778",
+      "captured_at": "2025-06-25T12:07:38.694Z",
+      "id": 1750853258694.686
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-25 00:00",
+      "end": "2025-06-25 09:08:04",
+      "total_time": "9.1344444444444",
+      "captured_at": "2025-06-25T12:07:39.336Z",
+      "id": 1750853259336.0493
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-25 08:39:58",
+      "end": "2025-06-25 09:07:44",
+      "total_time": "0.46277777777778",
+      "captured_at": "2025-06-25T12:07:39.793Z",
+      "id": 1750853259793.1602
     }
   ],
   "metadata": {
-    "totalCaptured": 638,
-    "duplicateCount": 2046,
-    "lastUpdate": "2025-06-25T12:06:40.408Z",
+    "totalCaptured": 648,
+    "duplicateCount": 2155,
+    "lastUpdate": "2025-06-25T12:07:40.572Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

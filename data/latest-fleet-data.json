@@ -109,6 +109,54 @@
       "source": "intelligent_capture_v3"
     },
     {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-06-26 00:00:00",
+      "end": "2025-06-26 00:46:30",
+      "total_time": "0.775",
+      "captured_at": "2025-06-26T14:27:08.128Z",
+      "id": "1750948028128s1bls5eou",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-26 00:46:30",
+      "end": "2025-06-26 01:14:58",
+      "total_time": "0.47444444444444",
+      "captured_at": "2025-06-26T14:27:08.129Z",
+      "id": "1750948028129r6nj11bco",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 01:14:58",
+      "end": "2025-06-26 01:19:52",
+      "total_time": "0.081666666666667",
+      "captured_at": "2025-06-26T14:27:08.129Z",
+      "id": "1750948028129flal56xvc",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-26 01:19:52",
+      "end": "2025-06-26 01:45:39",
+      "total_time": "0.42972222222222",
+      "captured_at": "2025-06-26T14:27:08.129Z",
+      "id": "1750948028129h2up45jd6",
+      "source": "intelligent_capture_v3"
+    },
+    {
       "vacancy_code": "530",
       "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
       "status": "maintenance",
@@ -130,6 +178,18 @@
       "total_time": "0.14222222222222",
       "captured_at": "2025-06-26T14:27:02.313Z",
       "id": "1750948022313x8ez7kz7s",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-26 06:30:34",
+      "end": "2025-06-26 06:31:06",
+      "total_time": "0.0088888888888889",
+      "captured_at": "2025-06-26T14:27:08.128Z",
+      "id": "17509480281288nhjevuu3",
       "source": "intelligent_capture_v3"
     },
     {
@@ -181,6 +241,30 @@
       "source": "intelligent_capture_v3"
     },
     {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-26 07:07:00",
+      "end": "2025-06-26 07:08:06",
+      "total_time": "0.018333333333333",
+      "captured_at": "2025-06-26T14:27:08.128Z",
+      "id": "1750948028128dqxiidx26",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-26 07:08:06",
+      "end": "2025-06-26 07:14:44",
+      "total_time": "0.11055555555556",
+      "captured_at": "2025-06-26T14:27:08.129Z",
+      "id": "1750948028129gd76y4zfj",
+      "source": "intelligent_capture_v3"
+    },
+    {
       "vacancy_code": "530",
       "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
       "status": "not_appropriated",
@@ -190,6 +274,30 @@
       "total_time": "0.0175",
       "captured_at": "2025-06-26T14:26:52.144Z",
       "id": "1750948012144yz5j4fr4k",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 07:14:44",
+      "end": "2025-06-26 07:18:44",
+      "total_time": "0.066666666666667",
+      "captured_at": "2025-06-26T14:27:08.129Z",
+      "id": "1750948028129oi0y794ed",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-26 07:22:02",
+      "end": "2025-06-26 07:31:16",
+      "total_time": "0.15388888888889",
+      "captured_at": "2025-06-26T14:27:08.129Z",
+      "id": "1750948028129g7i769nlb",
       "source": "intelligent_capture_v3"
     },
     {
@@ -298,6 +406,18 @@
       "total_time": "0.1",
       "captured_at": "2025-06-26T14:26:51.076Z",
       "id": "1750948011076g89o2j7zo",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-26 07:31:46",
+      "end": "2025-06-26 07:32:18",
+      "total_time": "0.0088888888888889",
+      "captured_at": "2025-06-26T14:27:08.129Z",
+      "id": "17509480281297ors5u9j7",
       "source": "intelligent_capture_v3"
     },
     {
@@ -481,6 +601,18 @@
       "source": "intelligent_capture_v3"
     },
     {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-06-26 09:30:40",
+      "end": "2025-06-26 10:24:24",
+      "total_time": "0.89555555555556",
+      "captured_at": "2025-06-26T14:27:08.129Z",
+      "id": "17509480281298xcqup3fc",
+      "source": "intelligent_capture_v3"
+    },
+    {
       "vacancy_code": "536",
       "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
       "status": "stopped",
@@ -494,17 +626,17 @@
     }
   ],
   "metadata": {
-    "totalCaptured": 41,
+    "totalCaptured": 52,
     "duplicateCount": 0,
-    "realChangesDetected": 11,
-    "noiseFiltered": 5,
-    "recordsAfterCleaning": 41,
-    "lastUpdate": "2025-06-26T14:27:04.210Z",
+    "realChangesDetected": 10,
+    "noiseFiltered": 0,
+    "recordsAfterCleaning": 52,
+    "lastUpdate": "2025-06-26T14:27:10.132Z",
     "source": "intelligent_capture_v3",
     "backgroundMode": false,
     "version": "3.1",
     "fidelityMode": "high",
-    "equipmentStatesCount": 9,
+    "equipmentStatesCount": 10,
     "dataIntegrity": {
       "score": "100.0",
       "checks": {

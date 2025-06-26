@@ -1415,15 +1415,27 @@
       "captured_at": "2025-06-26T14:27:12.912Z",
       "id": "1750948032912sllvsydfg",
       "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "out_of_plant",
+      "status_title": "Fora da Planta",
+      "start": "2025-06-26 11:38:36",
+      "end": "2025-06-26 11:42:57",
+      "total_time": "0.0725",
+      "captured_at": "2025-06-26T14:48:28.761Z",
+      "id": "1750949308761hjgcfoa58",
+      "source": "intelligent_capture_v3"
     }
   ],
   "metadata": {
-    "totalCaptured": 118,
-    "duplicateCount": 113,
-    "realChangesDetected": 3,
-    "noiseFiltered": 5,
-    "recordsAfterCleaning": 118,
-    "lastUpdate": "2025-06-26T14:38:29.407Z",
+    "totalCaptured": 119,
+    "duplicateCount": 224,
+    "realChangesDetected": 112,
+    "noiseFiltered": 34,
+    "recordsAfterCleaning": 119,
+    "lastUpdate": "2025-06-26T14:48:32.245Z",
     "source": "intelligent_capture_v3",
     "backgroundMode": true,
     "version": "3.1",

@@ -14453,12 +14453,210 @@
       "total_time": "0.21472222222222",
       "captured_at": "2025-06-26T18:11:30.538Z",
       "id": 1750961490538.2283
+    },
+    {
+      "vacancy_code": "533",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 12",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-26 15:05:01",
+      "end": "2025-06-26 15:11:53",
+      "total_time": "0.11444444444444",
+      "captured_at": "2025-06-26T18:11:33.945Z",
+      "id": 1750961493945.8074
+    },
+    {
+      "vacancy_code": "533",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 12",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 14:42:53",
+      "end": "2025-06-26 15:05:01",
+      "total_time": "0.36888888888889",
+      "captured_at": "2025-06-26T18:11:33.947Z",
+      "id": 1750961493947.0735
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-26 14:49:20",
+      "end": "2025-06-26 15:12:00",
+      "total_time": "0.37777777777778",
+      "captured_at": "2025-06-26T18:11:35.856Z",
+      "id": 1750961495856.0764
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-06-26 14:40:00",
+      "end": "2025-06-26 15:10:30",
+      "total_time": "0.50833333333333",
+      "captured_at": "2025-06-26T18:11:35.907Z",
+      "id": 1750961495907.3079
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-26 15:10:30",
+      "end": "2025-06-26 15:11:54",
+      "total_time": "0.023333333333333",
+      "captured_at": "2025-06-26T18:11:35.909Z",
+      "id": 1750961495909.692
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-26 14:38:36",
+      "end": "2025-06-26 15:12:05",
+      "total_time": "0.55805555555556",
+      "captured_at": "2025-06-26T18:11:40.569Z",
+      "id": 1750961500569.1973
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-26 14:35:31",
+      "end": "2025-06-26 15:11:50",
+      "total_time": "0.60527777777778",
+      "captured_at": "2025-06-26T18:11:41.876Z",
+      "id": 1750961501876.9453
+    },
+    {
+      "vacancy_code": "317",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 04",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 13:40:36",
+      "end": "2025-06-26 15:12:05",
+      "total_time": "1.5247222222222",
+      "captured_at": "2025-06-26T18:11:47.825Z",
+      "id": 1750961507825.425
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-26 13:52:24",
+      "end": "2025-06-26 15:11:56",
+      "total_time": "1.3255555555556",
+      "captured_at": "2025-06-26T18:11:48.106Z",
+      "id": 1750961508106.8477
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 14:55:41",
+      "end": "2025-06-26 15:12:11",
+      "total_time": "0.275",
+      "captured_at": "2025-06-26T18:11:48.166Z",
+      "id": 1750961508166.5044
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "out_of_plant",
+      "status_title": "Fora da Planta",
+      "start": "2025-06-26 14:57:02",
+      "end": "2025-06-26 15:04:36",
+      "total_time": "0.12611111111111",
+      "captured_at": "2025-06-26T18:11:52.026Z",
+      "id": 1750961512026.299
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 14:54:12",
+      "end": "2025-06-26 14:57:02",
+      "total_time": "0.047222222222222",
+      "captured_at": "2025-06-26T18:11:52.028Z",
+      "id": 1750961512028.369
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 15:04:36",
+      "end": "2025-06-26 15:12:03",
+      "total_time": "0.12416666666667",
+      "captured_at": "2025-06-26T18:11:52.028Z",
+      "id": 1750961512028.4429
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-26 14:14:35",
+      "end": "2025-06-26 15:12:18",
+      "total_time": "0.96194444444444",
+      "captured_at": "2025-06-26T18:11:58.621Z",
+      "id": 1750961518621.729
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-26 15:02:08",
+      "end": "2025-06-26 15:12:17",
+      "total_time": "0.16916666666667",
+      "captured_at": "2025-06-26T18:12:01.267Z",
+      "id": 1750961521267.8816
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 14:51:37",
+      "end": "2025-06-26 15:02:08",
+      "total_time": "0.17527777777778",
+      "captured_at": "2025-06-26T18:12:01.267Z",
+      "id": 1750961521267.0518
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-26 14:17:15",
+      "end": "2025-06-26 15:12:28",
+      "total_time": "0.92027777777778",
+      "captured_at": "2025-06-26T18:12:04.638Z",
+      "id": 1750961524638.3694
+    },
+    {
+      "vacancy_code": "372",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 10",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-26 14:40:08",
+      "end": "2025-06-26 15:12:21",
+      "total_time": "0.53694444444444",
+      "captured_at": "2025-06-26T18:12:07.560Z",
+      "id": 1750961527560.171
     }
   ],
   "metadata": {
-    "totalCaptured": 1314,
-    "duplicateCount": 10042,
-    "lastUpdate": "2025-06-26T18:11:32.573Z",
+    "totalCaptured": 1332,
+    "duplicateCount": 10376,
+    "lastUpdate": "2025-06-26T18:12:32.479Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

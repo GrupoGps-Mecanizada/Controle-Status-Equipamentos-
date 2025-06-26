@@ -1395,6 +1395,18 @@
     {
       "vacancy_code": "573",
       "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "out_of_plant",
+      "status_title": "Fora da Planta",
+      "start": "2025-06-26 11:13:47",
+      "end": "2025-06-26 11:18:27",
+      "total_time": "0.077777777777778",
+      "captured_at": "2025-06-26T14:37:54.489Z",
+      "id": "1750948674489n7h7ma59d",
+      "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
       "status": "no_data",
       "status_title": "Sem dados de bordo",
       "start": "2025-06-26 11:15:06",
@@ -1406,12 +1418,12 @@
     }
   ],
   "metadata": {
-    "totalCaptured": 117,
-    "duplicateCount": 5,
-    "realChangesDetected": 5,
-    "noiseFiltered": 14,
-    "recordsAfterCleaning": 117,
-    "lastUpdate": "2025-06-26T14:37:29.416Z",
+    "totalCaptured": 118,
+    "duplicateCount": 105,
+    "realChangesDetected": 80,
+    "noiseFiltered": 20,
+    "recordsAfterCleaning": 118,
+    "lastUpdate": "2025-06-26T14:37:56.493Z",
     "source": "intelligent_capture_v3",
     "backgroundMode": true,
     "version": "3.1",

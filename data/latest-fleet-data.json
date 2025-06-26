@@ -1475,15 +1475,27 @@
       "captured_at": "2025-06-26T15:21:06.687Z",
       "id": "1750951266687wyuiskv73",
       "source": "intelligent_capture_v3"
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "out_of_plant",
+      "status_title": "Fora da Planta",
+      "start": "2025-06-26 12:37:30",
+      "end": "2025-06-26 12:43:40",
+      "total_time": "0.10277777777778",
+      "captured_at": "2025-06-26T15:54:12.803Z",
+      "id": "1750953252803yvgqhxq1u",
+      "source": "intelligent_capture_v3"
     }
   ],
   "metadata": {
-    "totalCaptured": 123,
-    "duplicateCount": 878,
-    "realChangesDetected": 70,
-    "noiseFiltered": 35,
-    "recordsAfterCleaning": 123,
-    "lastUpdate": "2025-06-26T15:53:59.530Z",
+    "totalCaptured": 124,
+    "duplicateCount": 922,
+    "realChangesDetected": 45,
+    "noiseFiltered": 13,
+    "recordsAfterCleaning": 124,
+    "lastUpdate": "2025-06-26T15:54:15.247Z",
     "source": "intelligent_capture_v3",
     "backgroundMode": true,
     "version": "3.1",

@@ -1,1 +1,0 @@
-# Dados da Frota GaussFleet

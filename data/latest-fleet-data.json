@@ -14673,12 +14673,78 @@
       "total_time": "0.30888888888889",
       "captured_at": "2025-06-27T15:43:56.915Z",
       "id": 1751039036915.8943
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-27 12:36:14",
+      "end": "2025-06-27 12:44:16",
+      "total_time": "0.13388888888889",
+      "captured_at": "2025-06-27T15:43:57.772Z",
+      "id": 1751039037772.3162
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 12:28:44",
+      "end": "2025-06-27 12:36:14",
+      "total_time": "0.125",
+      "captured_at": "2025-06-27T15:43:57.779Z",
+      "id": 1751039037779.8647
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 11:18:58",
+      "end": "2025-06-27 12:44:16",
+      "total_time": "1.4216666666667",
+      "captured_at": "2025-06-27T15:43:58.181Z",
+      "id": 1751039038181.5215
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 12:26:56",
+      "end": "2025-06-27 12:41:07",
+      "total_time": "0.23638888888889",
+      "captured_at": "2025-06-27T15:43:58.850Z",
+      "id": 1751039038850.785
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 12:41:07",
+      "end": "2025-06-27 12:44:16",
+      "total_time": "0.0525",
+      "captured_at": "2025-06-27T15:43:58.853Z",
+      "id": 1751039038853.885
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 11:44:51",
+      "end": "2025-06-27 12:44:16",
+      "total_time": "0.99027777777778",
+      "captured_at": "2025-06-27T15:43:59.449Z",
+      "id": 1751039039449.0642
     }
   ],
   "metadata": {
-    "totalCaptured": 1334,
-    "duplicateCount": 9203,
-    "lastUpdate": "2025-06-27T15:43:56.917Z",
+    "totalCaptured": 1340,
+    "duplicateCount": 9272,
+    "lastUpdate": "2025-06-27T15:43:59.451Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

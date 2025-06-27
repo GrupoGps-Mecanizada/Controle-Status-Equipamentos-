@@ -15234,12 +15234,56 @@
       "total_time": "0.045",
       "captured_at": "2025-06-27T15:55:56.303Z",
       "id": 1751039756303.392
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-27 12:36:14",
+      "end": "2025-06-27 12:45:52",
+      "total_time": "0.16055555555556",
+      "captured_at": "2025-06-27T15:55:57.061Z",
+      "id": 1751039757061.8455
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 12:45:52",
+      "end": "2025-06-27 12:55:53",
+      "total_time": "0.16694444444444",
+      "captured_at": "2025-06-27T15:55:57.062Z",
+      "id": 1751039757062.091
+    },
+    {
+      "vacancy_code": "590",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - SERVITEC - 02 - SPOT ",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-27 00:00",
+      "end": "2025-06-27 12:56:27",
+      "total_time": "12.940833333333",
+      "captured_at": "2025-06-27T15:55:57.164Z",
+      "id": 1751039757164.2488
+    },
+    {
+      "vacancy_code": "529",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 06",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 11:43:09",
+      "end": "2025-06-27 12:56:12",
+      "total_time": "1.2175",
+      "captured_at": "2025-06-27T15:56:02.898Z",
+      "id": 1751039762898.8691
     }
   ],
   "metadata": {
-    "totalCaptured": 1385,
-    "duplicateCount": 9823,
-    "lastUpdate": "2025-06-27T15:55:56.304Z",
+    "totalCaptured": 1389,
+    "duplicateCount": 9860,
+    "lastUpdate": "2025-06-27T15:56:02.899Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

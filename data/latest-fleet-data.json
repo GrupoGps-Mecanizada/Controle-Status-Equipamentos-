@@ -14970,12 +14970,67 @@
       "total_time": "0.73972222222222",
       "captured_at": "2025-06-27T15:44:49.681Z",
       "id": 1751039089682.8142
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 11:11:39",
+      "end": "2025-06-27 12:32:21",
+      "total_time": "1.345",
+      "captured_at": "2025-06-27T15:44:53.875Z",
+      "id": 1751039093875.2322
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-27 12:38:29",
+      "end": "2025-06-27 12:45:05",
+      "total_time": "0.11",
+      "captured_at": "2025-06-27T15:44:53.877Z",
+      "id": 1751039093877.5144
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 12:32:21",
+      "end": "2025-06-27 12:38:29",
+      "total_time": "0.10222222222222",
+      "captured_at": "2025-06-27T15:44:53.878Z",
+      "id": 1751039093878.1917
+    },
+    {
+      "vacancy_code": "312",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 03",
+      "status": "out_of_plant",
+      "status_title": "Fora da Planta",
+      "start": "2025-06-27 12:18:39",
+      "end": "2025-06-27 12:43:02",
+      "total_time": "0.40638888888889",
+      "captured_at": "2025-06-27T15:44:54.021Z",
+      "id": 1751039094021.1794
+    },
+    {
+      "vacancy_code": "312",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 03",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 12:43:02",
+      "end": "2025-06-27 12:45:01",
+      "total_time": "0.033055555555556",
+      "captured_at": "2025-06-27T15:44:54.032Z",
+      "id": 1751039094032.5515
     }
   ],
   "metadata": {
-    "totalCaptured": 1361,
-    "duplicateCount": 9542,
-    "lastUpdate": "2025-06-27T15:44:49.685Z",
+    "totalCaptured": 1364,
+    "duplicateCount": 9549,
+    "lastUpdate": "2025-06-27T15:44:53.878Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

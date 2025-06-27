@@ -15388,12 +15388,45 @@
       "total_time": "0.76416666666667",
       "captured_at": "2025-06-27T15:56:29.216Z",
       "id": 1751039789216.1797
+    },
+    {
+      "vacancy_code": "809",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - SERVITEC - 01 - SPOT",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 12:36:19",
+      "end": "2025-06-27 12:49:29",
+      "total_time": "0.21944444444444",
+      "captured_at": "2025-06-27T15:56:32.052Z",
+      "id": 1751039792052.279
+    },
+    {
+      "vacancy_code": "809",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - SERVITEC - 01 - SPOT",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 12:54:03",
+      "end": "2025-06-27 12:56:43",
+      "total_time": "0.044444444444444",
+      "captured_at": "2025-06-27T15:56:32.053Z",
+      "id": 1751039792053.7458
+    },
+    {
+      "vacancy_code": "809",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - SERVITEC - 01 - SPOT",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 12:49:29",
+      "end": "2025-06-27 12:54:03",
+      "total_time": "0.076111111111111",
+      "captured_at": "2025-06-27T15:56:32.056Z",
+      "id": 1751039792056.3965
     }
   ],
   "metadata": {
-    "totalCaptured": 1398,
-    "duplicateCount": 10023,
-    "lastUpdate": "2025-06-27T15:56:29.089Z",
+    "totalCaptured": 1402,
+    "duplicateCount": 10052,
+    "lastUpdate": "2025-06-27T15:56:32.056Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

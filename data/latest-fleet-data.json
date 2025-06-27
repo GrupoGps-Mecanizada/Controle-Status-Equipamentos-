@@ -4300,12 +4300,133 @@
       "total_time": "0.31305555555556",
       "captured_at": "2025-06-27T11:09:55.732Z",
       "id": 1751022595732.2896
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 08:14:02",
+      "end": "2025-06-27 08:20:27",
+      "total_time": "0.10694444444444",
+      "captured_at": "2025-06-27T11:20:14.520Z",
+      "id": 1751023214520.865
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 07:56:41",
+      "end": "2025-06-27 08:14:02",
+      "total_time": "0.28916666666667",
+      "captured_at": "2025-06-27T11:20:14.520Z",
+      "id": 1751023214520.2886
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 08:11:29",
+      "end": "2025-06-27 08:20:27",
+      "total_time": "0.14944444444444",
+      "captured_at": "2025-06-27T11:20:14.603Z",
+      "id": 1751023214603.8857
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 07:56:09",
+      "end": "2025-06-27 08:11:29",
+      "total_time": "0.25555555555556",
+      "captured_at": "2025-06-27T11:20:14.603Z",
+      "id": 1751023214603.6265
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 08:03:16",
+      "end": "2025-06-27 08:20:27",
+      "total_time": "0.28638888888889",
+      "captured_at": "2025-06-27T11:20:15.367Z",
+      "id": 1751023215367.9434
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-27 08:00:16",
+      "end": "2025-06-27 08:20:27",
+      "total_time": "0.33638888888889",
+      "captured_at": "2025-06-27T11:20:15.485Z",
+      "id": 1751023215485.4688
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 08:02:50",
+      "end": "2025-06-27 08:13:50",
+      "total_time": "0.18333333333333",
+      "captured_at": "2025-06-27T11:20:18.303Z",
+      "id": 1751023218303.7356
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 08:17:50",
+      "end": "2025-06-27 08:20:27",
+      "total_time": "0.043611111111111",
+      "captured_at": "2025-06-27T11:20:18.304Z",
+      "id": 1751023218304.4639
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 08:13:50",
+      "end": "2025-06-27 08:17:50",
+      "total_time": "0.066666666666667",
+      "captured_at": "2025-06-27T11:20:18.304Z",
+      "id": 1751023218305.3003
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-27 08:18:06",
+      "end": "2025-06-27 08:20:45",
+      "total_time": "0.044166666666667",
+      "captured_at": "2025-06-27T11:20:19.818Z",
+      "id": 1751023219818.5464
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-27 07:41:02",
+      "end": "2025-06-27 08:18:06",
+      "total_time": "0.61777777777778",
+      "captured_at": "2025-06-27T11:20:19.819Z",
+      "id": 1751023219819.06
     }
   ],
   "metadata": {
-    "totalCaptured": 391,
-    "duplicateCount": 642,
-    "lastUpdate": "2025-06-27T11:19:19.536Z",
+    "totalCaptured": 400,
+    "duplicateCount": 682,
+    "lastUpdate": "2025-06-27T11:20:19.502Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

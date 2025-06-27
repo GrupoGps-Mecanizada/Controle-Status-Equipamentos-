@@ -12825,12 +12825,23 @@
       "total_time": "0.12972222222222",
       "captured_at": "2025-06-27T14:56:52.858Z",
       "id": 1751036212858.0176
+    },
+    {
+      "vacancy_code": "590",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - SERVITEC - 02 - SPOT ",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-27 00:00",
+      "end": "2025-06-27 11:57:24",
+      "total_time": "11.956666666667",
+      "captured_at": "2025-06-27T14:56:56.255Z",
+      "id": 1751036216255.0972
     }
   ],
   "metadata": {
-    "totalCaptured": 1166,
+    "totalCaptured": 1167,
     "duplicateCount": 7240,
-    "lastUpdate": "2025-06-27T14:56:52.859Z",
+    "lastUpdate": "2025-06-27T14:56:56.256Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

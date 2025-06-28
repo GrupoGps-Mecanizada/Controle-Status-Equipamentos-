@@ -15135,12 +15135,67 @@
       "total_time": "20.711388888889",
       "captured_at": "2025-06-28T23:42:36.214Z",
       "id": 1751154156214.0735
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-28 20:30:09",
+      "end": "2025-06-28 20:30:39",
+      "total_time": "0.0083333333333333",
+      "captured_at": "2025-06-28T23:42:39.273Z",
+      "id": 1751154159273.9138
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-28 20:30:39",
+      "end": "2025-06-28 20:30:49",
+      "total_time": "0.0027777777777778",
+      "captured_at": "2025-06-28T23:42:39.274Z",
+      "id": 1751154159274.5393
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-28 20:30:49",
+      "end": "2025-06-28 20:35:13",
+      "total_time": "0.073333333333333",
+      "captured_at": "2025-06-28T23:42:39.274Z",
+      "id": 1751154159274.4429
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-28 20:19:24",
+      "end": "2025-06-28 20:30:09",
+      "total_time": "0.17916666666667",
+      "captured_at": "2025-06-28T23:42:39.295Z",
+      "id": 1751154159295.7573
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-28 20:35:13",
+      "end": "2025-06-28 20:42:29",
+      "total_time": "0.12111111111111",
+      "captured_at": "2025-06-28T23:42:39.297Z",
+      "id": 1751154159297.1284
     }
   ],
   "metadata": {
-    "totalCaptured": 1376,
-    "duplicateCount": 8966,
-    "lastUpdate": "2025-06-28T23:42:36.215Z",
+    "totalCaptured": 1381,
+    "duplicateCount": 8991,
+    "lastUpdate": "2025-06-28T23:42:39.300Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

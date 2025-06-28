@@ -11032,12 +11032,45 @@
       "total_time": "18.491944444444",
       "captured_at": "2025-06-28T21:29:26.467Z",
       "id": 1751146166467.9302
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-28 00:00",
+      "end": "2025-06-28 18:39:33",
+      "total_time": "18.659166666667",
+      "captured_at": "2025-06-28T21:39:27.824Z",
+      "id": 1751146767824.5637
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-28 00:00",
+      "end": "2025-06-28 18:39:33",
+      "total_time": "18.659166666667",
+      "captured_at": "2025-06-28T21:39:27.835Z",
+      "id": 1751146767835.0286
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-28 00:00",
+      "end": "2025-06-28 18:39:33",
+      "total_time": "18.659166666667",
+      "captured_at": "2025-06-28T21:39:27.897Z",
+      "id": 1751146767897.8823
     }
   ],
   "metadata": {
-    "totalCaptured": 1003,
+    "totalCaptured": 1004,
     "duplicateCount": 5708,
-    "lastUpdate": "2025-06-28T21:29:26.467Z",
+    "lastUpdate": "2025-06-28T21:39:27.825Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

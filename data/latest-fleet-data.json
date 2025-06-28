@@ -10273,12 +10273,34 @@
       "total_time": "18.284722222222",
       "captured_at": "2025-06-28T21:17:01.095Z",
       "id": 1751145421095.8264
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-28 00:00",
+      "end": "2025-06-28 18:17:07",
+      "total_time": "18.285277777778",
+      "captured_at": "2025-06-28T21:17:01.662Z",
+      "id": 1751145421662.8057
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-28 00:00",
+      "end": "2025-06-28 18:17:08",
+      "total_time": "18.285555555556",
+      "captured_at": "2025-06-28T21:17:02.131Z",
+      "id": 1751145422131.641
     }
   ],
   "metadata": {
-    "totalCaptured": 932,
+    "totalCaptured": 936,
     "duplicateCount": 5196,
-    "lastUpdate": "2025-06-28T21:17:00.912Z",
+    "lastUpdate": "2025-06-28T21:17:02.132Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

@@ -12836,12 +12836,34 @@
       "total_time": "0.065833333333333",
       "captured_at": "2025-06-28T15:26:02.919Z",
       "id": 1751124362919.3804
+    },
+    {
+      "vacancy_code": "636",
+      "vacancy_name": "CAMINHÃO BROOK - SERVITEC - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-27 00:00",
+      "end": "2025-06-27 23:59",
+      "total_time": "23.983333333333",
+      "captured_at": "2025-06-28T15:27:09.182Z",
+      "id": 1751124429182.7986
+    },
+    {
+      "vacancy_code": "645",
+      "vacancy_name": "TROCA 01 - ALTA PRESSÃO / AUTO VÁCUO - GPS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-27 00:00",
+      "end": "2025-06-27 23:59",
+      "total_time": "23.983333333333",
+      "captured_at": "2025-06-28T15:27:45.978Z",
+      "id": 1751124465978.918
     }
   ],
   "metadata": {
-    "totalCaptured": 1167,
+    "totalCaptured": 1169,
     "duplicateCount": 0,
-    "lastUpdate": "2025-06-28T15:26:02.920Z",
+    "lastUpdate": "2025-06-28T15:27:45.979Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

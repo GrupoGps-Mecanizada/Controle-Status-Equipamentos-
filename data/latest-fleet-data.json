@@ -17269,12 +17269,23 @@
       "total_time": "22.035277777778",
       "captured_at": "2025-06-29T01:02:01.895Z",
       "id": 1751158921895.4468
+    },
+    {
+      "vacancy_code": "312",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-28 00:00",
+      "end": "2025-06-28 22:02:09",
+      "total_time": "22.035833333333",
+      "captured_at": "2025-06-29T01:02:05.662Z",
+      "id": 1751158925663.2769
     }
   ],
   "metadata": {
-    "totalCaptured": 1570,
+    "totalCaptured": 1571,
     "duplicateCount": 11142,
-    "lastUpdate": "2025-06-29T01:02:01.896Z",
+    "lastUpdate": "2025-06-29T01:02:05.663Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

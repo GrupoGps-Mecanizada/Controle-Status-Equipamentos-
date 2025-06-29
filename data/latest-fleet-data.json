@@ -2188,12 +2188,23 @@
       "total_time": "12.703333333333",
       "captured_at": "2025-06-29T15:42:06.493Z",
       "id": 1751211726493.392
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-29 00:00",
+      "end": "2025-06-29 12:42:14",
+      "total_time": "12.703888888889",
+      "captured_at": "2025-06-29T15:42:07.773Z",
+      "id": 1751211727774.4434
     }
   ],
   "metadata": {
-    "totalCaptured": 199,
+    "totalCaptured": 200,
     "duplicateCount": 214,
-    "lastUpdate": "2025-06-29T15:42:06.494Z",
+    "lastUpdate": "2025-06-29T15:42:07.774Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

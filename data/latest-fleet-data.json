@@ -9932,12 +9932,56 @@
       "total_time": "17.214444444444",
       "captured_at": "2025-06-29T20:12:46.254Z",
       "id": 1751227966254.725
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "out_of_plant",
+      "status_title": "Fora da Planta",
+      "start": "2025-06-29 16:59:07",
+      "end": "2025-06-29 17:03:08",
+      "total_time": "0.066944444444444",
+      "captured_at": "2025-06-29T20:12:50.006Z",
+      "id": 1751227970006.489
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-29 17:10:02",
+      "end": "2025-06-29 17:12:21",
+      "total_time": "0.038611111111111",
+      "captured_at": "2025-06-29T20:12:50.007Z",
+      "id": 1751227970007.1511
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-29 16:52:44",
+      "end": "2025-06-29 16:59:07",
+      "total_time": "0.10638888888889",
+      "captured_at": "2025-06-29T20:12:50.012Z",
+      "id": 1751227970012.0461
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-29 17:03:08",
+      "end": "2025-06-29 17:10:02",
+      "total_time": "0.115",
+      "captured_at": "2025-06-29T20:12:50.012Z",
+      "id": 1751227970012.9602
     }
   ],
   "metadata": {
-    "totalCaptured": 903,
-    "duplicateCount": 3368,
-    "lastUpdate": "2025-06-29T20:12:46.254Z",
+    "totalCaptured": 907,
+    "duplicateCount": 3430,
+    "lastUpdate": "2025-06-29T20:12:50.013Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

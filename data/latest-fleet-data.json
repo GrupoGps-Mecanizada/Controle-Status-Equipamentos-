@@ -25838,12 +25838,34 @@
       "total_time": "2.7558333333333",
       "captured_at": "2025-06-29T05:45:16.222Z",
       "id": 1751175916222.9404
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-29 02:12:29",
+      "end": "2025-06-29 02:45:03",
+      "total_time": "0.54277777777778",
+      "captured_at": "2025-06-29T05:45:17.515Z",
+      "id": 1751175917515.1582
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-29 00:00",
+      "end": "2025-06-29 02:45:04",
+      "total_time": "2.7511111111111",
+      "captured_at": "2025-06-29T05:45:17.621Z",
+      "id": 1751175917621.5762
     }
   ],
   "metadata": {
-    "totalCaptured": 2349,
-    "duplicateCount": 15121,
-    "lastUpdate": "2025-06-29T05:45:16.223Z",
+    "totalCaptured": 2350,
+    "duplicateCount": 15131,
+    "lastUpdate": "2025-06-29T05:45:17.520Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

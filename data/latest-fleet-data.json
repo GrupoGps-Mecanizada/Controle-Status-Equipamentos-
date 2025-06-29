@@ -28929,12 +28929,67 @@
       "total_time": "4.4519444444444",
       "captured_at": "2025-06-29T07:27:03.560Z",
       "id": 1751182023560.4922
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-29 00:00",
+      "end": "2025-06-29 04:37:11",
+      "total_time": "4.6197222222222",
+      "captured_at": "2025-06-29T07:37:05.742Z",
+      "id": 1751182625742.8083
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-29 00:00",
+      "end": "2025-06-29 04:37:11",
+      "total_time": "4.6197222222222",
+      "captured_at": "2025-06-29T07:37:05.795Z",
+      "id": 1751182625795.6458
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-29 00:00",
+      "end": "2025-06-29 04:37:11",
+      "total_time": "4.6197222222222",
+      "captured_at": "2025-06-29T07:37:07.278Z",
+      "id": 1751182627278.9355
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-29 00:00",
+      "end": "2025-06-29 04:37:13",
+      "total_time": "4.6202777777778",
+      "captured_at": "2025-06-29T07:37:07.293Z",
+      "id": 1751182627293.6328
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-29 00:00",
+      "end": "2025-06-29 04:37:13",
+      "total_time": "4.6202777777778",
+      "captured_at": "2025-06-29T07:37:07.323Z",
+      "id": 1751182627323.0874
     }
   ],
   "metadata": {
-    "totalCaptured": 2630,
+    "totalCaptured": 2631,
     "duplicateCount": 15411,
-    "lastUpdate": "2025-06-29T07:27:03.561Z",
+    "lastUpdate": "2025-06-29T07:37:05.743Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

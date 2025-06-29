@@ -14145,12 +14145,34 @@
       "total_time": "1.1752777777778",
       "captured_at": "2025-06-29T22:34:46.125Z",
       "id": 1751236486125.6995
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-29 19:16:11",
+      "end": "2025-06-29 19:23:11",
+      "total_time": "0.11666666666667",
+      "captured_at": "2025-06-29T22:34:50.530Z",
+      "id": 1751236490530.6753
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-29 19:23:11",
+      "end": "2025-06-29 19:33:52",
+      "total_time": "0.17805555555556",
+      "captured_at": "2025-06-29T22:34:50.532Z",
+      "id": 1751236490532.0679
     }
   ],
   "metadata": {
-    "totalCaptured": 1286,
-    "duplicateCount": 5933,
-    "lastUpdate": "2025-06-29T22:34:46.138Z",
+    "totalCaptured": 1288,
+    "duplicateCount": 5971,
+    "lastUpdate": "2025-06-29T22:34:50.533Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

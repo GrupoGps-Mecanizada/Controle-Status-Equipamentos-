@@ -35496,12 +35496,34 @@
       "total_time": "0.065555555555556",
       "captured_at": "2025-06-29T11:16:45.425Z",
       "id": 1751195805425.353
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-29 00:00:04",
+      "end": "2025-06-29 08:12:04",
+      "total_time": "8.2",
+      "captured_at": "2025-06-29T11:16:48.503Z",
+      "id": 1751195808503.8572
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-29 08:12:04",
+      "end": "2025-06-29 08:16:32",
+      "total_time": "0.074444444444444",
+      "captured_at": "2025-06-29T11:16:48.506Z",
+      "id": 1751195808506.0037
     }
   ],
   "metadata": {
-    "totalCaptured": 3227,
-    "duplicateCount": 16534,
-    "lastUpdate": "2025-06-29T11:16:45.426Z",
+    "totalCaptured": 3229,
+    "duplicateCount": 16535,
+    "lastUpdate": "2025-06-29T11:16:48.507Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

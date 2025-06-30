@@ -36508,12 +36508,67 @@
       "total_time": "0.099166666666667",
       "captured_at": "2025-06-30T11:19:47.014Z",
       "id": 1751282387014.6833
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-30 07:27:07",
+      "end": "2025-06-30 08:05:55",
+      "total_time": "0.64666666666667",
+      "captured_at": "2025-06-30T11:19:51.530Z",
+      "id": 1751282391530.016
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-30 08:17:37",
+      "end": "2025-06-30 08:19:32",
+      "total_time": "0.031944444444444",
+      "captured_at": "2025-06-30T11:19:51.532Z",
+      "id": 1751282391532.8394
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-30 08:06:36",
+      "end": "2025-06-30 08:16:36",
+      "total_time": "0.16666666666667",
+      "captured_at": "2025-06-30T11:19:51.544Z",
+      "id": 1751282391544.9766
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:05:55",
+      "end": "2025-06-30 08:06:36",
+      "total_time": "0.011388888888889",
+      "captured_at": "2025-06-30T11:19:51.550Z",
+      "id": 1751282391550.386
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:16:36",
+      "end": "2025-06-30 08:17:37",
+      "total_time": "0.016944444444444",
+      "captured_at": "2025-06-30T11:19:51.551Z",
+      "id": 1751282391551.421
     }
   ],
   "metadata": {
-    "totalCaptured": 3319,
-    "duplicateCount": 13821,
-    "lastUpdate": "2025-06-30T11:19:47.014Z",
+    "totalCaptured": 3324,
+    "duplicateCount": 13836,
+    "lastUpdate": "2025-06-30T11:19:51.552Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

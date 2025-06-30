@@ -26333,12 +26333,67 @@
       "total_time": "3.0697222222222",
       "captured_at": "2025-06-30T06:04:04.861Z",
       "id": 1751263444861.1714
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-30 00:00:47",
+      "end": "2025-06-30 02:59:47",
+      "total_time": "2.9833333333333",
+      "captured_at": "2025-06-30T06:04:05.235Z",
+      "id": 1751263445235.5283
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-30 02:59:47",
+      "end": "2025-06-30 03:04:00",
+      "total_time": "0.070277777777778",
+      "captured_at": "2025-06-30T06:04:05.279Z",
+      "id": 1751263445279.9578
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-30 00:00",
+      "end": "2025-06-30 03:04:12",
+      "total_time": "3.07",
+      "captured_at": "2025-06-30T06:04:05.687Z",
+      "id": 1751263445687.6238
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-30 00:00:04",
+      "end": "2025-06-30 03:01:04",
+      "total_time": "3.0166666666667",
+      "captured_at": "2025-06-30T06:04:05.940Z",
+      "id": 1751263445940.1208
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 03:01:04",
+      "end": "2025-06-30 03:03:59",
+      "total_time": "0.048611111111111",
+      "captured_at": "2025-06-30T06:04:05.998Z",
+      "id": 1751263445998.4817
     }
   ],
   "metadata": {
-    "totalCaptured": 2394,
-    "duplicateCount": 12092,
-    "lastUpdate": "2025-06-30T06:04:04.862Z",
+    "totalCaptured": 2399,
+    "duplicateCount": 12094,
+    "lastUpdate": "2025-06-30T06:04:06.006Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

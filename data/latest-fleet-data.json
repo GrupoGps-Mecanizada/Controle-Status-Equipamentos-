@@ -36365,12 +36365,89 @@
       "total_time": "0.61388888888889",
       "captured_at": "2025-06-30T11:19:31.422Z",
       "id": 1751282371422.3638
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-30 08:08:58",
+      "end": "2025-06-30 08:10:58",
+      "total_time": "0.033333333333333",
+      "captured_at": "2025-06-30T11:19:41.052Z",
+      "id": 1751282381052.2756
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-30 08:11:28",
+      "end": "2025-06-30 08:11:58",
+      "total_time": "0.0083333333333333",
+      "captured_at": "2025-06-30T11:19:41.055Z",
+      "id": 1751282381055.792
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-06-30 08:12:17",
+      "end": "2025-06-30 08:13:03",
+      "total_time": "0.012777777777778",
+      "captured_at": "2025-06-30T11:19:41.057Z",
+      "id": 1751282381057.3145
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:00:58",
+      "end": "2025-06-30 08:08:58",
+      "total_time": "0.13333333333333",
+      "captured_at": "2025-06-30T11:19:41.064Z",
+      "id": 1751282381064.9792
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:10:58",
+      "end": "2025-06-30 08:11:28",
+      "total_time": "0.0083333333333333",
+      "captured_at": "2025-06-30T11:19:41.066Z",
+      "id": 1751282381066.2087
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:11:58",
+      "end": "2025-06-30 08:12:17",
+      "total_time": "0.0052777777777778",
+      "captured_at": "2025-06-30T11:19:41.068Z",
+      "id": 1751282381068.9224
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:13:03",
+      "end": "2025-06-30 08:19:39",
+      "total_time": "0.11",
+      "captured_at": "2025-06-30T11:19:41.070Z",
+      "id": 1751282381070.7266
     }
   ],
   "metadata": {
-    "totalCaptured": 3305,
-    "duplicateCount": 13797,
-    "lastUpdate": "2025-06-30T11:19:31.307Z",
+    "totalCaptured": 3313,
+    "duplicateCount": 13807,
+    "lastUpdate": "2025-06-30T11:19:41.071Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

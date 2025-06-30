@@ -26234,12 +26234,23 @@
       "total_time": "2.8925",
       "captured_at": "2025-06-30T05:53:27.256Z",
       "id": 1751262807256.0266
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 02:30:02",
+      "end": "2025-06-30 02:52:39",
+      "total_time": "0.37694444444444",
+      "captured_at": "2025-06-30T05:53:50.538Z",
+      "id": 1751262830538.6704
     }
   ],
   "metadata": {
-    "totalCaptured": 2385,
-    "duplicateCount": 12083,
-    "lastUpdate": "2025-06-30T05:53:27.256Z",
+    "totalCaptured": 2386,
+    "duplicateCount": 12092,
+    "lastUpdate": "2025-06-30T05:53:50.538Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

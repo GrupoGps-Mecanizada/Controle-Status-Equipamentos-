@@ -28962,12 +28962,34 @@
       "total_time": "0.046111111111111",
       "captured_at": "2025-06-30T07:39:48.776Z",
       "id": 1751269188776.486
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-30 03:01:26",
+      "end": "2025-06-30 04:39:50",
+      "total_time": "1.64",
+      "captured_at": "2025-06-30T07:39:53.568Z",
+      "id": 1751269193568.277
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-30 00:00",
+      "end": "2025-06-30 04:39:54",
+      "total_time": "4.665",
+      "captured_at": "2025-06-30T07:39:53.587Z",
+      "id": 1751269193587.686
     }
   ],
   "metadata": {
-    "totalCaptured": 2633,
-    "duplicateCount": 12457,
-    "lastUpdate": "2025-06-30T07:39:48.777Z",
+    "totalCaptured": 2634,
+    "duplicateCount": 12462,
+    "lastUpdate": "2025-06-30T07:39:53.570Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

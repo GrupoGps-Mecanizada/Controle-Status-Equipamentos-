@@ -37069,12 +37069,78 @@
       "total_time": "0.054722222222222",
       "captured_at": "2025-06-30T11:34:50.257Z",
       "id": 1751283290257.9275
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-30 08:12:51",
+      "end": "2025-06-30 08:17:33",
+      "total_time": "0.078333333333333",
+      "captured_at": "2025-06-30T11:35:01.537Z",
+      "id": 1751283301537.2761
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-30 08:18:33",
+      "end": "2025-06-30 08:24:39",
+      "total_time": "0.10166666666667",
+      "captured_at": "2025-06-30T11:35:01.540Z",
+      "id": 1751283301540.7334
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-30 08:25:39",
+      "end": "2025-06-30 08:31:50",
+      "total_time": "0.10305555555556",
+      "captured_at": "2025-06-30T11:35:01.544Z",
+      "id": 1751283301544.3462
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:17:33",
+      "end": "2025-06-30 08:18:33",
+      "total_time": "0.016666666666667",
+      "captured_at": "2025-06-30T11:35:01.550Z",
+      "id": 1751283301550.0786
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:24:39",
+      "end": "2025-06-30 08:25:39",
+      "total_time": "0.016666666666667",
+      "captured_at": "2025-06-30T11:35:01.552Z",
+      "id": 1751283301552.4949
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 08:31:50",
+      "end": "2025-06-30 08:34:32",
+      "total_time": "0.045",
+      "captured_at": "2025-06-30T11:35:01.553Z",
+      "id": 1751283301553.6538
     }
   ],
   "metadata": {
-    "totalCaptured": 3370,
-    "duplicateCount": 14035,
-    "lastUpdate": "2025-06-30T11:34:50.258Z",
+    "totalCaptured": 3376,
+    "duplicateCount": 14041,
+    "lastUpdate": "2025-06-30T11:35:01.554Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

@@ -3695,12 +3695,78 @@
       "total_time": "1.035",
       "captured_at": "2025-06-30T12:12:36.209Z",
       "id": 1751285556209.868
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "out_of_plant",
+      "status_title": "Fora da Planta",
+      "start": "2025-06-30 08:40:39",
+      "end": "2025-06-30 09:02:35",
+      "total_time": "0.36555555555556",
+      "captured_at": "2025-06-30T12:12:57.368Z",
+      "id": 1751285577368.755
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "out_of_plant",
+      "status_title": "Fora da Planta",
+      "start": "2025-06-30 09:02:39",
+      "end": "2025-06-30 09:05:00",
+      "total_time": "0.039166666666667",
+      "captured_at": "2025-06-30T12:12:57.369Z",
+      "id": 1751285577369.1323
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 09:02:35",
+      "end": "2025-06-30 09:02:39",
+      "total_time": "0.0011111111111111",
+      "captured_at": "2025-06-30T12:12:57.370Z",
+      "id": 1751285577370.8394
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-06-30 09:05:00",
+      "end": "2025-06-30 09:11:49",
+      "total_time": "0.11361111111111",
+      "captured_at": "2025-06-30T12:12:57.370Z",
+      "id": 1751285577370.9316
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-06-30 08:22:06",
+      "end": "2025-06-30 09:00:33",
+      "total_time": "0.64083333333333",
+      "captured_at": "2025-06-30T12:12:57.494Z",
+      "id": 1751285577494.599
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-06-30 09:00:33",
+      "end": "2025-06-30 09:12:44",
+      "total_time": "0.20305555555556",
+      "captured_at": "2025-06-30T12:12:57.495Z",
+      "id": 1751285577495.1206
     }
   ],
   "metadata": {
-    "totalCaptured": 336,
-    "duplicateCount": 368,
-    "lastUpdate": "2025-06-30T12:12:36.210Z",
+    "totalCaptured": 340,
+    "duplicateCount": 395,
+    "lastUpdate": "2025-06-30T12:12:57.371Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

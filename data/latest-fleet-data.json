@@ -20327,12 +20327,23 @@
       "total_time": "23.452222222222",
       "captured_at": "2025-06-30T02:27:02.359Z",
       "id": 1751250422359.9583
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-06-29 20:09:53",
+      "end": "2025-06-29 23:26:58",
+      "total_time": "3.2847222222222",
+      "captured_at": "2025-06-30T02:27:03.992Z",
+      "id": 1751250423992.8696
     }
   ],
   "metadata": {
-    "totalCaptured": 1848,
-    "duplicateCount": 10844,
-    "lastUpdate": "2025-06-30T02:27:02.360Z",
+    "totalCaptured": 1849,
+    "duplicateCount": 10891,
+    "lastUpdate": "2025-06-30T02:27:04.002Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

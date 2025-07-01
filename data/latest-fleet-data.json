@@ -9690,12 +9690,23 @@
       "total_time": "2.1711111111111",
       "captured_at": "2025-07-01T21:50:11.048Z",
       "id": 1751406611048.955
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-01 18:04:40",
+      "end": "2025-07-01 18:50:09",
+      "total_time": "0.75805555555556",
+      "captured_at": "2025-07-01T21:50:13.136Z",
+      "id": 1751406613136.0864
     }
   ],
   "metadata": {
-    "totalCaptured": 881,
-    "duplicateCount": 1775,
-    "lastUpdate": "2025-07-01T21:50:11.050Z",
+    "totalCaptured": 882,
+    "duplicateCount": 1795,
+    "lastUpdate": "2025-07-01T21:50:13.137Z",
     "source": "tampermonkey",
     "version": "2.0"
   }

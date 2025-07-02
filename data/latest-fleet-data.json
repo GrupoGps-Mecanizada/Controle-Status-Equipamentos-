@@ -12363,12 +12363,111 @@
       "total_time": "8.615",
       "captured_at": "2025-07-02T18:37:02.312Z",
       "id": 1751481422312.3228
+    },
+    {
+      "vacancy_code": "317",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 04",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-02 15:19:52",
+      "end": "2025-07-02 15:27:22",
+      "total_time": "0.125",
+      "captured_at": "2025-07-02T18:37:07.901Z",
+      "id": 1751481427901.6716
+    },
+    {
+      "vacancy_code": "317",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 04",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-02 15:27:22",
+      "end": "2025-07-02 15:36:58",
+      "total_time": "0.16",
+      "captured_at": "2025-07-02T18:37:07.902Z",
+      "id": 1751481427902.834
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-02 15:28:32",
+      "end": "2025-07-02 15:36:59",
+      "total_time": "0.14083333333333",
+      "captured_at": "2025-07-02T18:37:08.768Z",
+      "id": 1751481428768.2585
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-02 15:17:35",
+      "end": "2025-07-02 15:28:32",
+      "total_time": "0.1825",
+      "captured_at": "2025-07-02T18:37:08.769Z",
+      "id": 1751481428769.586
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-02 15:32:06",
+      "end": "2025-07-02 15:37:03",
+      "total_time": "0.0825",
+      "captured_at": "2025-07-02T18:37:10.377Z",
+      "id": 1751481430377.972
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-02 15:13:37",
+      "end": "2025-07-02 15:32:06",
+      "total_time": "0.30805555555556",
+      "captured_at": "2025-07-02T18:37:10.378Z",
+      "id": 1751481430378.432
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-02 13:00:19",
+      "end": "2025-07-02 15:36:59",
+      "total_time": "2.6111111111111",
+      "captured_at": "2025-07-02T18:37:11.352Z",
+      "id": 1751481431352.4087
+    },
+    {
+      "vacancy_code": "372",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 10",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-02 15:11:53",
+      "end": "2025-07-02 15:37:10",
+      "total_time": "0.42138888888889",
+      "captured_at": "2025-07-02T18:37:14.126Z",
+      "id": 1751481434126.7832
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-02 13:57:14",
+      "end": "2025-07-02 15:37:09",
+      "total_time": "1.6652777777778",
+      "captured_at": "2025-07-02T18:37:14.348Z",
+      "id": 1751481434348.971
     }
   ],
   "metadata": {
-    "totalCaptured": 1124,
-    "duplicateCount": 10308,
-    "lastUpdate": "2025-07-02T18:37:05.337Z",
+    "totalCaptured": 1133,
+    "duplicateCount": 10471,
+    "lastUpdate": "2025-07-02T18:37:17.360Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -12379,11 +12478,11 @@
       "totalErrors": 1,
       "uptime": 1751444869791,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1124
+      "dailyCaptures": 1133
     },
     "dateAutomation": {
       "lastReset": "Wed Jul 02 2025",
-      "lastCheck": "2025-07-02T18:36:40.743Z",
+      "lastCheck": "2025-07-02T18:37:11.071Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

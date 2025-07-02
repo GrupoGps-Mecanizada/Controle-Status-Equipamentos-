@@ -36761,12 +36761,23 @@
       "total_time": "0.47194444444444",
       "captured_at": "2025-07-02T14:21:37.054Z",
       "id": 1751466097054.8735
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-02 09:41:14",
+      "end": "2025-07-02 11:21:34",
+      "total_time": "1.6722222222222",
+      "captured_at": "2025-07-02T14:21:40.617Z",
+      "id": 1751466100617.4966
     }
   ],
   "metadata": {
-    "totalCaptured": 3342,
-    "duplicateCount": 26191,
-    "lastUpdate": "2025-07-02T14:21:40.092Z",
+    "totalCaptured": 3343,
+    "duplicateCount": 26211,
+    "lastUpdate": "2025-07-02T14:21:43.643Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -36777,11 +36788,11 @@
       "totalErrors": 1,
       "uptime": 28941095,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 3342
+      "dailyCaptures": 3343
     },
     "dateAutomation": {
       "lastReset": "Wed Jul 02 2025",
-      "lastCheck": "2025-07-02T14:21:10.771Z",
+      "lastCheck": "2025-07-02T14:21:40.743Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

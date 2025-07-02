@@ -12924,12 +12924,45 @@
       "total_time": "5.5144444444444",
       "captured_at": "2025-07-02T01:01:17.842Z",
       "id": 1751418077842.4402
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-01 16:28:00",
+      "end": "2025-07-01 22:11:20",
+      "total_time": "5.7222222222222",
+      "captured_at": "2025-07-02T01:11:22.980Z",
+      "id": 1751418682980.9817
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-01 16:46:22",
+      "end": "2025-07-01 22:11:19",
+      "total_time": "5.4158333333333",
+      "captured_at": "2025-07-02T01:11:23.018Z",
+      "id": 1751418683018.9932
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-01 16:31:10",
+      "end": "2025-07-01 22:11:19",
+      "total_time": "5.6691666666667",
+      "captured_at": "2025-07-02T01:11:23.788Z",
+      "id": 1751418683788.8787
     }
   ],
   "metadata": {
-    "totalCaptured": 1175,
-    "duplicateCount": 10287,
-    "lastUpdate": "2025-07-02T01:01:21.017Z",
+    "totalCaptured": 1178,
+    "duplicateCount": 10378,
+    "lastUpdate": "2025-07-02T01:11:27.018Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -12938,13 +12971,13 @@
       "avgResponseTime": 383.9375,
       "totalRequests": 4,
       "totalErrors": 1,
-      "uptime": 4982418,
+      "uptime": 5282414,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1175
+      "dailyCaptures": 1178
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 01 2025",
-      "lastCheck": "2025-07-02T01:00:55.020Z",
+      "lastCheck": "2025-07-02T01:10:55.025Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

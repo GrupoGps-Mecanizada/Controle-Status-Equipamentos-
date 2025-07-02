@@ -11758,12 +11758,45 @@
       "total_time": "4.8038888888889",
       "captured_at": "2025-07-02T00:18:38.079Z",
       "id": 1751415518079.3694
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-01 16:28:00",
+      "end": "2025-07-01 21:28:41",
+      "total_time": "5.0113888888889",
+      "captured_at": "2025-07-02T00:28:44.946Z",
+      "id": 1751416124946.554
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-01 16:31:10",
+      "end": "2025-07-01 21:28:40",
+      "total_time": "4.9583333333333",
+      "captured_at": "2025-07-02T00:28:45.128Z",
+      "id": 1751416125128.111
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-01 16:46:22",
+      "end": "2025-07-01 21:28:41",
+      "total_time": "4.7052777777778",
+      "captured_at": "2025-07-02T00:28:45.324Z",
+      "id": 1751416125324.741
     }
   ],
   "metadata": {
-    "totalCaptured": 1069,
-    "duplicateCount": 6821,
-    "lastUpdate": "2025-07-02T00:18:42.021Z",
+    "totalCaptured": 1072,
+    "duplicateCount": 6912,
+    "lastUpdate": "2025-07-02T00:28:49.019Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -11772,13 +11805,13 @@
       "avgResponseTime": 383.9375,
       "totalRequests": 4,
       "totalErrors": 1,
-      "uptime": 1751411872591,
+      "uptime": 1751412172557,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1069
+      "dailyCaptures": 1072
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 01 2025",
-      "lastCheck": "2025-07-02T00:17:55.038Z",
+      "lastCheck": "2025-07-02T00:27:55.047Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

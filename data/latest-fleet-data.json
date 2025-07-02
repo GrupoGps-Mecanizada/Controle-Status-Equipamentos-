@@ -36453,12 +36453,23 @@
       "total_time": "1.5613888888889",
       "captured_at": "2025-07-02T14:15:03.293Z",
       "id": 1751465703293.874
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-02 10:53:14",
+      "end": "2025-07-02 11:15:01",
+      "total_time": "0.36305555555556",
+      "captured_at": "2025-07-02T14:15:11.439Z",
+      "id": 1751465711439.906
     }
   ],
   "metadata": {
-    "totalCaptured": 3314,
-    "duplicateCount": 25870,
-    "lastUpdate": "2025-07-02T14:15:06.357Z",
+    "totalCaptured": 3315,
+    "duplicateCount": 25888,
+    "lastUpdate": "2025-07-02T14:15:14.475Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -36467,13 +36478,13 @@
       "avgResponseTime": 470.484375,
       "totalRequests": 6,
       "totalErrors": 1,
-      "uptime": 28638837,
+      "uptime": 1751437071917,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 3314
+      "dailyCaptures": 3315
     },
     "dateAutomation": {
       "lastReset": "Wed Jul 02 2025",
-      "lastCheck": "2025-07-02T14:14:40.743Z",
+      "lastCheck": "2025-07-02T14:15:10.743Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -21999,12 +21999,122 @@
       "total_time": "0.35111111111111",
       "captured_at": "2025-07-03T17:37:20.564Z",
       "id": 1751564240564.7017
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-03 14:24:31",
+      "end": "2025-07-03 14:25:31",
+      "total_time": "0.016666666666667",
+      "captured_at": "2025-07-03T17:37:25.296Z",
+      "id": 1751564245296.827
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-07-03 14:32:45",
+      "end": "2025-07-03 14:36:15",
+      "total_time": "0.058333333333333",
+      "captured_at": "2025-07-03T17:37:25.298Z",
+      "id": 1751564245298.383
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 14:25:59",
+      "end": "2025-07-03 14:29:16",
+      "total_time": "0.054722222222222",
+      "captured_at": "2025-07-03T17:37:25.299Z",
+      "id": 1751564245299.1118
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 14:30:02",
+      "end": "2025-07-03 14:31:11",
+      "total_time": "0.019166666666667",
+      "captured_at": "2025-07-03T17:37:25.300Z",
+      "id": 1751564245300.3865
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 14:32:02",
+      "end": "2025-07-03 14:32:45",
+      "total_time": "0.011944444444444",
+      "captured_at": "2025-07-03T17:37:25.300Z",
+      "id": 1751564245300.8037
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 14:36:15",
+      "end": "2025-07-03 14:37:21",
+      "total_time": "0.018333333333333",
+      "captured_at": "2025-07-03T17:37:25.301Z",
+      "id": 1751564245301.3918
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 14:25:31",
+      "end": "2025-07-03 14:25:59",
+      "total_time": "0.0077777777777778",
+      "captured_at": "2025-07-03T17:37:25.302Z",
+      "id": 1751564245302.7896
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 14:29:16",
+      "end": "2025-07-03 14:30:02",
+      "total_time": "0.012777777777778",
+      "captured_at": "2025-07-03T17:37:25.303Z",
+      "id": 1751564245303.094
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 14:31:11",
+      "end": "2025-07-03 14:32:02",
+      "total_time": "0.014166666666667",
+      "captured_at": "2025-07-03T17:37:25.304Z",
+      "id": 1751564245304.3665
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-03 12:32:20",
+      "end": "2025-07-03 14:37:10",
+      "total_time": "2.0805555555556",
+      "captured_at": "2025-07-03T17:37:26.604Z",
+      "id": 1751564246604.523
     }
   ],
   "metadata": {
-    "totalCaptured": 2000,
-    "duplicateCount": 17491,
-    "lastUpdate": "2025-07-03T17:37:24.021Z",
+    "totalCaptured": 2010,
+    "duplicateCount": 17599,
+    "lastUpdate": "2025-07-03T17:37:30.025Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -22015,7 +22125,7 @@
       "totalErrors": 1,
       "uptime": 77999921,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 2000
+      "dailyCaptures": 2010
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",

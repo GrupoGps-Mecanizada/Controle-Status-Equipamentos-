@@ -15938,12 +15938,34 @@
       "total_time": "0.12861111111111",
       "captured_at": "2025-07-03T15:05:49.950Z",
       "id": 1751555149950.2407
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 09:43:44",
+      "end": "2025-07-03 12:05:49",
+      "total_time": "2.3680555555556",
+      "captured_at": "2025-07-03T15:05:59.390Z",
+      "id": 1751555159390.5664
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 11:49:10",
+      "end": "2025-07-03 12:05:52",
+      "total_time": "0.27833333333333",
+      "captured_at": "2025-07-03T15:06:00.519Z",
+      "id": 1751555160519.685
     }
   ],
   "metadata": {
-    "totalCaptured": 1449,
-    "duplicateCount": 9078,
-    "lastUpdate": "2025-07-03T15:05:53.028Z",
+    "totalCaptured": 1451,
+    "duplicateCount": 9105,
+    "lastUpdate": "2025-07-03T15:06:04.020Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -15954,11 +15976,11 @@
       "totalErrors": 1,
       "uptime": 73500349,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1449
+      "dailyCaptures": 1451
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",
-      "lastCheck": "2025-07-03T15:04:55.125Z",
+      "lastCheck": "2025-07-03T15:05:55.034Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

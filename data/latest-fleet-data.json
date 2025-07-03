@@ -18743,12 +18743,23 @@
       "total_time": "0.56944444444444",
       "captured_at": "2025-07-03T16:22:58.768Z",
       "id": 1751559778768.8677
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 13:07:01",
+      "end": "2025-07-03 13:23:00",
+      "total_time": "0.26638888888889",
+      "captured_at": "2025-07-03T16:23:05.011Z",
+      "id": 1751559785011.8396
     }
   ],
   "metadata": {
-    "totalCaptured": 1704,
-    "duplicateCount": 13193,
-    "lastUpdate": "2025-07-03T16:23:02.032Z",
+    "totalCaptured": 1705,
+    "duplicateCount": 13229,
+    "lastUpdate": "2025-07-03T16:23:09.022Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -18759,7 +18770,7 @@
       "totalErrors": 1,
       "uptime": 1751483934894,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1704
+      "dailyCaptures": 1705
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",

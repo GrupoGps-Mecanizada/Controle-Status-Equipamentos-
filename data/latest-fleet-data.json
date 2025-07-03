@@ -21207,12 +21207,122 @@
       "total_time": "3.9988888888889",
       "captured_at": "2025-07-03T06:59:55.585Z",
       "id": 1751525995585.8838
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 02:32:17",
+      "end": "2025-07-03 03:59:56",
+      "total_time": "1.4608333333333",
+      "captured_at": "2025-07-03T07:00:00.624Z",
+      "id": 1751526000624.5647
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "no_data",
+      "status_title": "Sem dados de bordo",
+      "start": "2025-07-03 03:54:19",
+      "end": "2025-07-03 03:59:55",
+      "total_time": "0.093333333333333",
+      "captured_at": "2025-07-03T07:00:00.970Z",
+      "id": 1751526000970.8694
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 03:31:19",
+      "end": "2025-07-03 03:54:19",
+      "total_time": "0.38333333333333",
+      "captured_at": "2025-07-03T07:00:00.971Z",
+      "id": 1751526000971.7969
+    },
+    {
+      "vacancy_code": "529",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 04:00:02",
+      "total_time": "4.0005555555556",
+      "captured_at": "2025-07-03T07:00:01.576Z",
+      "id": 1751526001576.224
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 04:00:03",
+      "total_time": "4.0008333333333",
+      "captured_at": "2025-07-03T07:00:02.240Z",
+      "id": 1751526002240.0652
+    },
+    {
+      "vacancy_code": "317",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 04:00:04",
+      "total_time": "4.0011111111111",
+      "captured_at": "2025-07-03T07:00:02.966Z",
+      "id": 1751526002966.2397
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 04:00:04",
+      "total_time": "4.0011111111111",
+      "captured_at": "2025-07-03T07:00:03.623Z",
+      "id": 1751526003623.473
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-03 00:00:37",
+      "end": "2025-07-03 03:55:37",
+      "total_time": "3.9166666666667",
+      "captured_at": "2025-07-03T07:00:03.675Z",
+      "id": 1751526003675.856
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 03:55:37",
+      "end": "2025-07-03 03:59:57",
+      "total_time": "0.072222222222222",
+      "captured_at": "2025-07-03T07:00:03.676Z",
+      "id": 1751526003676.1504
+    },
+    {
+      "vacancy_code": "372",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 10",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 04:00:05",
+      "total_time": "4.0013888888889",
+      "captured_at": "2025-07-03T07:00:04.331Z",
+      "id": 1751526004331.8867
     }
   ],
   "metadata": {
-    "totalCaptured": 1928,
-    "duplicateCount": 12500,
-    "lastUpdate": "2025-07-03T06:59:59.026Z",
+    "totalCaptured": 1938,
+    "duplicateCount": 12519,
+    "lastUpdate": "2025-07-03T07:00:08.031Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -21223,7 +21333,7 @@
       "totalErrors": 1,
       "uptime": 1751467096861,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1928
+      "dailyCaptures": 1940
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",

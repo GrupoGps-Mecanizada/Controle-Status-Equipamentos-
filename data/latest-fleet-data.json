@@ -19150,12 +19150,23 @@
       "total_time": "1.0202777777778",
       "captured_at": "2025-07-03T16:33:40.722Z",
       "id": 1751560420722.0288
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "no_data",
+      "status_title": "Sem dados de bordo",
+      "start": "2025-07-03 07:29:11",
+      "end": "2025-07-03 13:43:43",
+      "total_time": "6.2422222222222",
+      "captured_at": "2025-07-03T16:43:42.647Z",
+      "id": 1751561022647.4304
     }
   ],
   "metadata": {
-    "totalCaptured": 1741,
-    "duplicateCount": 13879,
-    "lastUpdate": "2025-07-03T16:33:44.027Z",
+    "totalCaptured": 1742,
+    "duplicateCount": 13880,
+    "lastUpdate": "2025-07-03T16:43:46.029Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -19164,13 +19175,13 @@
       "avgResponseTime": 600.7421875,
       "totalRequests": 7,
       "totalErrors": 1,
-      "uptime": 1751484234901,
+      "uptime": 1751484534965,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1741
+      "dailyCaptures": 1742
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",
-      "lastCheck": "2025-07-03T16:32:55.097Z",
+      "lastCheck": "2025-07-03T16:42:55.112Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

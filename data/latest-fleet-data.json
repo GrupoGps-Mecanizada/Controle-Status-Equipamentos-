@@ -3530,12 +3530,45 @@
       "total_time": "0.090277777777778",
       "captured_at": "2025-07-03T10:17:15.833Z",
       "id": 1751537835833.7725
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 07:27:18",
+      "total_time": "7.455",
+      "captured_at": "2025-07-03T10:27:17.318Z",
+      "id": 1751538437318.2756
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 07:27:18",
+      "total_time": "7.455",
+      "captured_at": "2025-07-03T10:27:17.365Z",
+      "id": 1751538437366.5925
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 07:27:19",
+      "total_time": "7.4552777777778",
+      "captured_at": "2025-07-03T10:27:17.845Z",
+      "id": 1751538437845.006
     }
   ],
   "metadata": {
-    "totalCaptured": 321,
+    "totalCaptured": 324,
     "duplicateCount": 569,
-    "lastUpdate": "2025-07-03T10:17:19.013Z",
+    "lastUpdate": "2025-07-03T10:27:21.009Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -3544,13 +3577,13 @@
       "avgResponseTime": 600.7421875,
       "totalRequests": 7,
       "totalErrors": 1,
-      "uptime": 64838409,
+      "uptime": 65138402,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 321
+      "dailyCaptures": 324
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",
-      "lastCheck": "2025-07-03T10:16:55.058Z",
+      "lastCheck": "2025-07-03T10:26:55.108Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

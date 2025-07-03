@@ -18094,12 +18094,78 @@
       "total_time": "0.35805555555556",
       "captured_at": "2025-07-03T16:11:39.497Z",
       "id": 1751559099497.5664
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 11:49:10",
+      "end": "2025-07-03 12:59:40",
+      "total_time": "1.175",
+      "captured_at": "2025-07-03T16:11:44.311Z",
+      "id": 1751559104311.9343
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 13:01:40",
+      "end": "2025-07-03 13:11:40",
+      "total_time": "0.16666666666667",
+      "captured_at": "2025-07-03T16:11:44.316Z",
+      "id": 1751559104316.5474
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 12:59:40",
+      "end": "2025-07-03 13:01:40",
+      "total_time": "0.033333333333333",
+      "captured_at": "2025-07-03T16:11:44.317Z",
+      "id": 1751559104317.4885
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 12:45:26",
+      "end": "2025-07-03 13:11:41",
+      "total_time": "0.4375",
+      "captured_at": "2025-07-03T16:11:45.474Z",
+      "id": 1751559105474.4824
+    },
+    {
+      "vacancy_code": "529",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 06",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 11:15:48",
+      "end": "2025-07-03 13:11:41",
+      "total_time": "1.9313888888889",
+      "captured_at": "2025-07-03T16:11:45.535Z",
+      "id": 1751559105535.6138
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 09:52:59",
+      "end": "2025-07-03 13:11:41",
+      "total_time": "3.3116666666667",
+      "captured_at": "2025-07-03T16:11:45.920Z",
+      "id": 1751559105920.6287
     }
   ],
   "metadata": {
-    "totalCaptured": 1645,
-    "duplicateCount": 12307,
-    "lastUpdate": "2025-07-03T16:11:43.034Z",
+    "totalCaptured": 1651,
+    "duplicateCount": 12385,
+    "lastUpdate": "2025-07-03T16:11:49.023Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -18110,7 +18176,7 @@
       "totalErrors": 1,
       "uptime": 1751483634865,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1645
+      "dailyCaptures": 1651
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",

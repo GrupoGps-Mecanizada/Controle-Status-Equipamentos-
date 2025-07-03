@@ -7039,12 +7039,78 @@
       "total_time": "0.99027777777778",
       "captured_at": "2025-07-03T11:31:29.038Z",
       "id": 1751542289038.935
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 08:15:56",
+      "end": "2025-07-03 08:31:30",
+      "total_time": "0.25944444444444",
+      "captured_at": "2025-07-03T11:31:34.757Z",
+      "id": 1751542294757.2722
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-03 08:12:16",
+      "end": "2025-07-03 08:19:46",
+      "total_time": "0.125",
+      "captured_at": "2025-07-03T11:31:36.090Z",
+      "id": 1751542296090.006
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 08:19:46",
+      "end": "2025-07-03 08:31:30",
+      "total_time": "0.19555555555556",
+      "captured_at": "2025-07-03T11:31:36.091Z",
+      "id": 1751542296091.894
+    },
+    {
+      "vacancy_code": "529",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 06",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-03 08:17:36",
+      "end": "2025-07-03 08:24:27",
+      "total_time": "0.11416666666667",
+      "captured_at": "2025-07-03T11:31:36.354Z",
+      "id": 1751542296354.648
+    },
+    {
+      "vacancy_code": "529",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 06",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 08:15:10",
+      "end": "2025-07-03 08:17:36",
+      "total_time": "0.040555555555556",
+      "captured_at": "2025-07-03T11:31:36.356Z",
+      "id": 1751542296356.344
+    },
+    {
+      "vacancy_code": "529",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 06",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 08:24:27",
+      "end": "2025-07-03 08:31:26",
+      "total_time": "0.11638888888889",
+      "captured_at": "2025-07-03T11:31:36.356Z",
+      "id": 1751542296356.6433
     }
   ],
   "metadata": {
-    "totalCaptured": 640,
-    "duplicateCount": 1634,
-    "lastUpdate": "2025-07-03T11:31:33.012Z",
+    "totalCaptured": 646,
+    "duplicateCount": 1660,
+    "lastUpdate": "2025-07-03T11:31:40.011Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -7055,7 +7121,7 @@
       "totalErrors": 1,
       "uptime": 1751475196813,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 640
+      "dailyCaptures": 646
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",

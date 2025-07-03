@@ -11615,12 +11615,100 @@
       "total_time": "14.812222222222",
       "captured_at": "2025-07-03T01:42:46.238Z",
       "id": 1751506966238.6572
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 16:28:21",
+      "end": "2025-07-02 22:52:49",
+      "total_time": "6.4077777777778",
+      "captured_at": "2025-07-03T01:52:48.439Z",
+      "id": 1751507568439.629
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 16:32:38",
+      "end": "2025-07-02 22:52:49",
+      "total_time": "6.3363888888889",
+      "captured_at": "2025-07-03T01:52:51.966Z",
+      "id": 1751507571966.9165
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 16:27:52",
+      "end": "2025-07-02 22:52:49",
+      "total_time": "6.4158333333333",
+      "captured_at": "2025-07-03T01:52:53.131Z",
+      "id": 1751507573131.6943
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 22:03:39",
+      "end": "2025-07-02 22:52:50",
+      "total_time": "0.81972222222222",
+      "captured_at": "2025-07-03T01:52:54.172Z",
+      "id": 1751507574172.7131
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 16:28:26",
+      "end": "2025-07-02 22:52:53",
+      "total_time": "6.4075",
+      "captured_at": "2025-07-03T01:52:55.754Z",
+      "id": 1751507575754.0127
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-02 22:08:48",
+      "end": "2025-07-02 22:52:49",
+      "total_time": "0.73361111111111",
+      "captured_at": "2025-07-03T01:52:58.181Z",
+      "id": 1751507578181.8015
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 14:06:08",
+      "end": "2025-07-02 22:52:49",
+      "total_time": "8.7780555555556",
+      "captured_at": "2025-07-03T01:52:58.368Z",
+      "id": 1751507578368.8767
+    },
+    {
+      "vacancy_code": "529",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 16:28:11",
+      "end": "2025-07-02 22:52:59",
+      "total_time": "6.4133333333333",
+      "captured_at": "2025-07-03T01:53:00.995Z",
+      "id": 1751507580995.2969
     }
   ],
   "metadata": {
-    "totalCaptured": 1056,
-    "duplicateCount": 5790,
-    "lastUpdate": "2025-07-03T01:42:50.016Z",
+    "totalCaptured": 1064,
+    "duplicateCount": 6028,
+    "lastUpdate": "2025-07-03T01:53:04.029Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -11629,13 +11717,13 @@
       "avgResponseTime": 470.484375,
       "totalRequests": 6,
       "totalErrors": 1,
-      "uptime": 1751457496897,
+      "uptime": 1751457796871,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1056
+      "dailyCaptures": 1066
     },
     "dateAutomation": {
       "lastReset": "Wed Jul 02 2025",
-      "lastCheck": "2025-07-03T01:41:55.099Z",
+      "lastCheck": "2025-07-03T01:52:55.022Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

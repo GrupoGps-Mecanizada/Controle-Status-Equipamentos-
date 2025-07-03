@@ -24034,12 +24034,78 @@
       "total_time": "5.5594444444444",
       "captured_at": "2025-07-03T08:33:33.409Z",
       "id": 1751531613410.3965
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-03 00:00:40",
+      "end": "2025-07-03 05:29:40",
+      "total_time": "5.4833333333333",
+      "captured_at": "2025-07-03T08:33:37.266Z",
+      "id": 1751531617266.0383
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 05:29:40",
+      "end": "2025-07-03 05:33:25",
+      "total_time": "0.0625",
+      "captured_at": "2025-07-03T08:33:37.267Z",
+      "id": 1751531617267.6125
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-03 04:46:27",
+      "end": "2025-07-03 05:33:25",
+      "total_time": "0.78277777777778",
+      "captured_at": "2025-07-03T08:33:37.694Z",
+      "id": 1751531617694.9854
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 05:33:39",
+      "total_time": "5.5608333333333",
+      "captured_at": "2025-07-03T08:33:37.871Z",
+      "id": 1751531617871.1296
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-03 04:48:46",
+      "end": "2025-07-03 05:33:33",
+      "total_time": "0.74638888888889",
+      "captured_at": "2025-07-03T08:33:40.827Z",
+      "id": 1751531620827.4668
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-03 00:00",
+      "end": "2025-07-03 05:33:42",
+      "total_time": "5.5616666666667",
+      "captured_at": "2025-07-03T08:33:41.238Z",
+      "id": 1751531621239.8445
     }
   ],
   "metadata": {
-    "totalCaptured": 2185,
-    "duplicateCount": 13132,
-    "lastUpdate": "2025-07-03T08:33:37.023Z",
+    "totalCaptured": 2191,
+    "duplicateCount": 13182,
+    "lastUpdate": "2025-07-03T08:33:45.020Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -24050,7 +24116,7 @@
       "totalErrors": 1,
       "uptime": 1751469796902,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 2185
+      "dailyCaptures": 2191
     },
     "dateAutomation": {
       "lastReset": "Thu Jul 03 2025",

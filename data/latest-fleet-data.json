@@ -9591,12 +9591,45 @@
       "total_time": "0.072222222222222",
       "captured_at": "2025-07-03T00:38:39.862Z",
       "id": 1751503119862.9475
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 16:28:21",
+      "end": "2025-07-02 21:48:42",
+      "total_time": "5.3391666666667",
+      "captured_at": "2025-07-03T00:48:44.068Z",
+      "id": 1751503724068.7156
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 16:32:38",
+      "end": "2025-07-02 21:48:42",
+      "total_time": "5.2677777777778",
+      "captured_at": "2025-07-03T00:48:46.298Z",
+      "id": 1751503726298.19
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-02 16:27:52",
+      "end": "2025-07-02 21:48:42",
+      "total_time": "5.3472222222222",
+      "captured_at": "2025-07-03T00:48:46.326Z",
+      "id": 1751503726326.5776
     }
   ],
   "metadata": {
-    "totalCaptured": 872,
-    "duplicateCount": 817,
-    "lastUpdate": "2025-07-03T00:38:43.037Z",
+    "totalCaptured": 875,
+    "duplicateCount": 872,
+    "lastUpdate": "2025-07-03T00:48:50.020Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -9605,13 +9638,13 @@
       "avgResponseTime": 470.484375,
       "totalRequests": 6,
       "totalErrors": 1,
-      "uptime": 47438284,
+      "uptime": 47738268,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 872
+      "dailyCaptures": 875
     },
     "dateAutomation": {
       "lastReset": "Wed Jul 02 2025",
-      "lastCheck": "2025-07-03T00:37:55.115Z",
+      "lastCheck": "2025-07-03T00:47:55.074Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

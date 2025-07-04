@@ -27361,22 +27361,22 @@
   "metadata": {
     "totalCaptured": 2487,
     "duplicateCount": 13684,
-    "lastUpdate": "2025-07-04T19:48:40.562Z",
+    "lastUpdate": "2025-07-04T19:49:40.880Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003663003663003663,
-      "avgResponseTime": 544.7125921300435,
-      "totalRequests": 278,
+      "errorRate": 0.0035971223021582736,
+      "avgResponseTime": 670.3562960650218,
+      "totalRequests": 279,
       "totalErrors": 1,
-      "uptime": 116879347,
+      "uptime": 1751541664785,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 2487
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T19:48:34.118Z",
+      "lastCheck": "2025-07-04T19:49:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

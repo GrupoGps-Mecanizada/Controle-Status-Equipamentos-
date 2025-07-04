@@ -26096,22 +26096,22 @@
   "metadata": {
     "totalCaptured": 2372,
     "duplicateCount": 12224,
-    "lastUpdate": "2025-07-04T19:23:40.922Z",
+    "lastUpdate": "2025-07-04T19:24:41.116Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.004032258064516129,
-      "avgResponseTime": 745.1712820303086,
-      "totalRequests": 253,
+      "errorRate": 0.003952569169960474,
+      "avgResponseTime": 892.0856410151544,
+      "totalRequests": 254,
       "totalErrors": 1,
-      "uptime": 1751540764784,
+      "uptime": 116279347,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 2372
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T19:23:34.118Z",
+      "lastCheck": "2025-07-04T19:24:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

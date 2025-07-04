@@ -33923,27 +33923,82 @@
       "total_time": "0.047222222222222",
       "captured_at": "2025-07-04T23:19:25.447Z",
       "id": 1751671165447.9902
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-04 16:03:42",
+      "end": "2025-07-04 20:29:29",
+      "total_time": "4.4297222222222",
+      "captured_at": "2025-07-04T23:29:41.617Z",
+      "id": 1751671781617.9407
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-04 16:31:20",
+      "end": "2025-07-04 20:29:28",
+      "total_time": "3.9688888888889",
+      "captured_at": "2025-07-04T23:29:41.678Z",
+      "id": 1751671781678.396
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-04 16:27:42",
+      "end": "2025-07-04 20:29:28",
+      "total_time": "4.0294444444444",
+      "captured_at": "2025-07-04T23:29:41.761Z",
+      "id": 1751671781761.7502
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 20:12:30",
+      "end": "2025-07-04 20:29:28",
+      "total_time": "0.28277777777778",
+      "captured_at": "2025-07-04T23:29:41.884Z",
+      "id": 1751671781884.497
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-04 16:25:57",
+      "end": "2025-07-04 20:29:29",
+      "total_time": "4.0588888888889",
+      "captured_at": "2025-07-04T23:29:41.985Z",
+      "id": 1751671781985.9854
     }
   ],
   "metadata": {
-    "totalCaptured": 3084,
-    "duplicateCount": 29642,
-    "lastUpdate": "2025-07-04T23:28:40.614Z",
+    "totalCaptured": 3089,
+    "duplicateCount": 29860,
+    "lastUpdate": "2025-07-04T23:29:42.013Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002028397565922921,
-      "avgResponseTime": 603.1258522055488,
-      "totalRequests": 498,
+      "errorRate": 0.002008032128514056,
+      "avgResponseTime": 804.0629261027743,
+      "totalRequests": 499,
       "totalErrors": 1,
-      "uptime": 123480167,
+      "uptime": 1751548263966,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 3084
+      "dailyCaptures": 3089
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T23:28:34.119Z",
+      "lastCheck": "2025-07-04T23:29:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

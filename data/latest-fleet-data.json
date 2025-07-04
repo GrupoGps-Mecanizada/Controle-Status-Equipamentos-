@@ -32201,22 +32201,22 @@
   "metadata": {
     "totalCaptured": 2927,
     "duplicateCount": 25508,
-    "lastUpdate": "2025-07-04T22:33:45.223Z",
+    "lastUpdate": "2025-07-04T22:34:40.572Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.00228310502283105,
-      "avgResponseTime": 805.4277198534766,
-      "totalRequests": 443,
+      "errorRate": 0.002257336343115124,
+      "avgResponseTime": 647.7138599267382,
+      "totalRequests": 444,
       "totalErrors": 1,
-      "uptime": 1751546463954,
+      "uptime": 121980179,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 2927
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T22:33:34.118Z",
+      "lastCheck": "2025-07-04T22:34:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

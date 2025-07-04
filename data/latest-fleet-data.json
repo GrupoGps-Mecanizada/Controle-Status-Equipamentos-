@@ -19942,27 +19942,71 @@
       "total_time": "2.8525",
       "captured_at": "2025-07-04T17:02:40.479Z",
       "id": 1751648560479.3728
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 13:50:49",
+      "end": "2025-07-04 14:02:38",
+      "total_time": "0.19694444444444",
+      "captured_at": "2025-07-04T17:02:44.041Z",
+      "id": 1751648564041.774
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-04 13:40:19",
+      "end": "2025-07-04 13:50:49",
+      "total_time": "0.175",
+      "captured_at": "2025-07-04T17:02:44.041Z",
+      "id": 1751648564041.9282
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 09:22:45",
+      "end": "2025-07-04 14:02:43",
+      "total_time": "4.6661111111111",
+      "captured_at": "2025-07-04T17:02:44.420Z",
+      "id": 1751648564420.5571
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 12:57:22",
+      "end": "2025-07-04 14:02:38",
+      "total_time": "1.0877777777778",
+      "captured_at": "2025-07-04T17:02:45.390Z",
+      "id": 1751648565390.1643
     }
   ],
   "metadata": {
-    "totalCaptured": 1813,
-    "duplicateCount": 4463,
-    "lastUpdate": "2025-07-04T17:02:41.110Z",
+    "totalCaptured": 1817,
+    "duplicateCount": 4516,
+    "lastUpdate": "2025-07-04T17:03:40.560Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0.009259259259259259,
-      "avgResponseTime": 712.663945988834,
-      "totalRequests": 112,
+      "avgResponseTime": 600.831972994417,
+      "totalRequests": 113,
       "totalErrors": 1,
       "uptime": 1751536564667,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1813
+      "dailyCaptures": 1817
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T17:02:34.118Z",
+      "lastCheck": "2025-07-04T17:03:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

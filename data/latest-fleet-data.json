@@ -28681,22 +28681,22 @@
   "metadata": {
     "totalCaptured": 2607,
     "duplicateCount": 16765,
-    "lastUpdate": "2025-07-04T20:28:40.942Z",
+    "lastUpdate": "2025-07-04T20:29:40.896Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003194888178913738,
-      "avgResponseTime": 859.213261754833,
-      "totalRequests": 318,
+      "errorRate": 0.0031446540880503146,
+      "avgResponseTime": 838.6066308774165,
+      "totalRequests": 319,
       "totalErrors": 1,
-      "uptime": 118080116,
+      "uptime": 1751542864020,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 2607
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T20:28:34.119Z",
+      "lastCheck": "2025-07-04T20:29:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

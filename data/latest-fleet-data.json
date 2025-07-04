@@ -30991,22 +30991,22 @@
   "metadata": {
     "totalCaptured": 2817,
     "duplicateCount": 22277,
-    "lastUpdate": "2025-07-04T21:43:40.880Z",
+    "lastUpdate": "2025-07-04T21:44:40.568Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002577319587628866,
-      "avgResponseTime": 697.1342194818428,
-      "totalRequests": 393,
+      "errorRate": 0.002544529262086514,
+      "avgResponseTime": 590.5671097409214,
+      "totalRequests": 394,
       "totalErrors": 1,
-      "uptime": 1751544963999,
+      "uptime": 120480134,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 2817
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T21:43:34.118Z",
+      "lastCheck": "2025-07-04T21:44:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -19188,22 +19188,22 @@
   "metadata": {
     "totalCaptured": 1744,
     "duplicateCount": 3533,
-    "lastUpdate": "2025-07-04T16:43:40.557Z",
+    "lastUpdate": "2025-07-04T16:44:40.929Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.011363636363636364,
-      "avgResponseTime": 954.914593814639,
-      "totalRequests": 93,
+      "errorRate": 0.010752688172043012,
+      "avgResponseTime": 900.4572969073195,
+      "totalRequests": 94,
       "totalErrors": 1,
-      "uptime": 1751535964671,
+      "uptime": 111479459,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 1744
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T16:43:34.118Z",
+      "lastCheck": "2025-07-04T16:44:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

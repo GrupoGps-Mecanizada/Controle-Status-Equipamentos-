@@ -29616,22 +29616,22 @@
   "metadata": {
     "totalCaptured": 2692,
     "duplicateCount": 19105,
-    "lastUpdate": "2025-07-04T21:03:40.955Z",
+    "lastUpdate": "2025-07-04T21:04:40.899Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0028735632183908046,
-      "avgResponseTime": 847.3150815627657,
-      "totalRequests": 353,
+      "errorRate": 0.0028328611898017,
+      "avgResponseTime": 832.1575407813829,
+      "totalRequests": 354,
       "totalErrors": 1,
-      "uptime": 1751543764007,
+      "uptime": 119280126,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 2692
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T21:03:34.123Z",
+      "lastCheck": "2025-07-04T21:04:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

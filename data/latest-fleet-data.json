@@ -24193,22 +24193,22 @@
   "metadata": {
     "totalCaptured": 2199,
     "duplicateCount": 9578,
-    "lastUpdate": "2025-07-04T18:43:40.894Z",
+    "lastUpdate": "2025-07-04T18:44:40.885Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.004807692307692308,
-      "avgResponseTime": 813.381542194358,
-      "totalRequests": 213,
+      "errorRate": 0.004694835680751174,
+      "avgResponseTime": 811.690771097179,
+      "totalRequests": 214,
       "totalErrors": 1,
-      "uptime": 1751539564805,
+      "uptime": 115079327,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 2199
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T18:43:34.118Z",
+      "lastCheck": "2025-07-04T18:44:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

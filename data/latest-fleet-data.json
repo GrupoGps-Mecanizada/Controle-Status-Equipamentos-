@@ -18429,22 +18429,22 @@
   "metadata": {
     "totalCaptured": 1675,
     "duplicateCount": 2590,
-    "lastUpdate": "2025-07-04T16:28:40.903Z",
+    "lastUpdate": "2025-07-04T16:29:40.579Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0136986301369863,
-      "avgResponseTime": 675.4101180917754,
-      "totalRequests": 78,
+      "errorRate": 0.01282051282051282,
+      "avgResponseTime": 589.7050590458878,
+      "totalRequests": 79,
       "totalErrors": 1,
-      "uptime": 110879452,
+      "uptime": 1751535664680,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 1675
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T16:28:34.118Z",
+      "lastCheck": "2025-07-04T16:29:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

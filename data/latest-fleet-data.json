@@ -20442,22 +20442,22 @@
   "metadata": {
     "totalCaptured": 1858,
     "duplicateCount": 5025,
-    "lastUpdate": "2025-07-04T17:18:40.925Z",
+    "lastUpdate": "2025-07-04T17:19:40.897Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.008130081300813009,
-      "avgResponseTime": 795.0464121085508,
-      "totalRequests": 128,
+      "errorRate": 0.0078125,
+      "avgResponseTime": 808.5232060542754,
+      "totalRequests": 129,
       "totalErrors": 1,
-      "uptime": 112379475,
+      "uptime": 1751537164661,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 1858
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T17:18:34.119Z",
+      "lastCheck": "2025-07-04T17:19:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

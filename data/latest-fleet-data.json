@@ -31288,22 +31288,22 @@
   "metadata": {
     "totalCaptured": 2844,
     "duplicateCount": 23083,
-    "lastUpdate": "2025-07-04T21:53:40.378Z",
+    "lastUpdate": "2025-07-04T21:54:40.909Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002512562814070352,
-      "avgResponseTime": 558.0929045112127,
-      "totalRequests": 403,
+      "errorRate": 0.0024813895781637717,
+      "avgResponseTime": 689.0464522556064,
+      "totalRequests": 404,
       "totalErrors": 1,
-      "uptime": 1751545263999,
+      "uptime": 120780133,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 2844
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T21:53:34.119Z",
+      "lastCheck": "2025-07-04T21:54:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

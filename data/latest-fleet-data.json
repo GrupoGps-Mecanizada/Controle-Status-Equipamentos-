@@ -21306,27 +21306,115 @@
       "total_time": "5.195",
       "captured_at": "2025-07-04T17:34:27.478Z",
       "id": 1751650467478.9373
+    },
+    {
+      "vacancy_code": "527",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 05",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 12:48:46",
+      "end": "2025-07-04 14:44:31",
+      "total_time": "1.9291666666667",
+      "captured_at": "2025-07-04T17:44:35.069Z",
+      "id": 1751651075069.0735
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-07-04 13:56:54",
+      "end": "2025-07-04 14:43:24",
+      "total_time": "0.775",
+      "captured_at": "2025-07-04T17:44:36.871Z",
+      "id": 1751651076871.5742
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 14:43:24",
+      "end": "2025-07-04 14:44:30",
+      "total_time": "0.018333333333333",
+      "captured_at": "2025-07-04T17:44:36.873Z",
+      "id": 1751651076873.1028
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 14:30:36",
+      "end": "2025-07-04 14:44:30",
+      "total_time": "0.23166666666667",
+      "captured_at": "2025-07-04T17:44:37.187Z",
+      "id": 1751651077187.2322
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 14:31:52",
+      "end": "2025-07-04 14:33:14",
+      "total_time": "0.022777777777778",
+      "captured_at": "2025-07-04T17:44:39.800Z",
+      "id": 1751651079800.6248
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-04 14:33:23",
+      "end": "2025-07-04 14:37:12",
+      "total_time": "0.063611111111111",
+      "captured_at": "2025-07-04T17:44:39.801Z",
+      "id": 1751651079801.7793
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-04 14:33:14",
+      "end": "2025-07-04 14:33:23",
+      "total_time": "0.0025",
+      "captured_at": "2025-07-04T17:44:39.802Z",
+      "id": 1751651079802.7405
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-04 14:37:12",
+      "end": "2025-07-04 14:44:30",
+      "total_time": "0.12166666666667",
+      "captured_at": "2025-07-04T17:44:39.802Z",
+      "id": 1751651079802.2512
     }
   ],
   "metadata": {
-    "totalCaptured": 1937,
-    "duplicateCount": 6080,
-    "lastUpdate": "2025-07-04T17:43:40.908Z",
+    "totalCaptured": 1945,
+    "duplicateCount": 6197,
+    "lastUpdate": "2025-07-04T17:44:40.921Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.006756756756756757,
-      "avgResponseTime": 754.4722450091365,
-      "totalRequests": 153,
+      "errorRate": 0.006535947712418301,
+      "avgResponseTime": 789.7361225045682,
+      "totalRequests": 154,
       "totalErrors": 1,
-      "uptime": 1751537764663,
+      "uptime": 113279467,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1937
+      "dailyCaptures": 1945
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T17:43:34.118Z",
+      "lastCheck": "2025-07-04T17:44:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -33301,22 +33301,22 @@
   "metadata": {
     "totalCaptured": 3027,
     "duplicateCount": 27972,
-    "lastUpdate": "2025-07-04T23:03:40.602Z",
+    "lastUpdate": "2025-07-04T23:04:40.754Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002136752136752137,
-      "avgResponseTime": 768.2731369486337,
-      "totalRequests": 473,
+      "errorRate": 0.0021141649048625794,
+      "avgResponseTime": 715.6365684743168,
+      "totalRequests": 474,
       "totalErrors": 1,
-      "uptime": 1751547363973,
+      "uptime": 122880161,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 3027
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T23:03:34.119Z",
+      "lastCheck": "2025-07-04T23:04:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

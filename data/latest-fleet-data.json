@@ -33928,22 +33928,22 @@
   "metadata": {
     "totalCaptured": 3084,
     "duplicateCount": 29642,
-    "lastUpdate": "2025-07-04T23:23:40.579Z",
+    "lastUpdate": "2025-07-04T23:24:45.649Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0020491803278688526,
-      "avgResponseTime": 578.0272705775614,
-      "totalRequests": 493,
+      "errorRate": 0.002028397565922921,
+      "avgResponseTime": 1474.0136352887807,
+      "totalRequests": 494,
       "totalErrors": 1,
-      "uptime": 1751547963967,
+      "uptime": 123480167,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 3084
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T23:23:34.119Z",
+      "lastCheck": "2025-07-04T23:24:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

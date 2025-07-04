@@ -17582,22 +17582,22 @@
   "metadata": {
     "totalCaptured": 1598,
     "duplicateCount": 1692,
-    "lastUpdate": "2025-07-04T16:03:40.557Z",
+    "lastUpdate": "2025-07-04T16:04:40.571Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.020833333333333332,
-      "avgResponseTime": 564.6224482320345,
-      "totalRequests": 53,
+      "errorRate": 0.018867924528301886,
+      "avgResponseTime": 532.8112241160172,
+      "totalRequests": 54,
       "totalErrors": 1,
-      "uptime": 1751534764683,
+      "uptime": 110279447,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 1598
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T16:03:34.119Z",
+      "lastCheck": "2025-07-04T16:04:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

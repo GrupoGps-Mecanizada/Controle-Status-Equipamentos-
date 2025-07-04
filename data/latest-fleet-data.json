@@ -17208,22 +17208,22 @@
   "metadata": {
     "totalCaptured": 1564,
     "duplicateCount": 1261,
-    "lastUpdate": "2025-07-04T15:53:40.573Z",
+    "lastUpdate": "2025-07-04T15:54:41.148Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.02631578947368421,
-      "avgResponseTime": 621.3869896033101,
-      "totalRequests": 43,
+      "errorRate": 0.023255813953488372,
+      "avgResponseTime": 850.6934948016551,
+      "totalRequests": 44,
       "totalErrors": 1,
-      "uptime": 1751534464684,
+      "uptime": 109979447,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 1564
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-04T15:53:34.119Z",
+      "lastCheck": "2025-07-04T15:54:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

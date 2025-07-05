@@ -12473,27 +12473,60 @@
       "total_time": "18.624166666667",
       "captured_at": "2025-07-05T21:37:24.870Z",
       "id": 1751751444870.9536
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 18:12:06",
+      "end": "2025-07-05 18:37:12",
+      "total_time": "0.41833333333333",
+      "captured_at": "2025-07-05T21:37:27.183Z",
+      "id": 1751751447183.3982
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-05 18:10:17",
+      "end": "2025-07-05 18:37:30",
+      "total_time": "0.45361111111111",
+      "captured_at": "2025-07-05T21:37:43.965Z",
+      "id": 1751751463965.1802
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 00:00",
+      "end": "2025-07-05 18:37:47",
+      "total_time": "18.629722222222",
+      "captured_at": "2025-07-05T21:37:44.561Z",
+      "id": 1751751464561.8345
     }
   ],
   "metadata": {
-    "totalCaptured": 1134,
-    "duplicateCount": 7731,
-    "lastUpdate": "2025-07-05T21:37:26.533Z",
+    "totalCaptured": 1137,
+    "duplicateCount": 7824,
+    "lastUpdate": "2025-07-05T21:38:27.408Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0.002788622420524261,
-      "avgResponseTime": 501.7628113871834,
-      "totalRequests": 1795,
+      "avgResponseTime": 786.8814056935917,
+      "totalRequests": 1796,
       "totalErrors": 5,
       "uptime": 1751587865145,
       "lastErrorTime": 1751684615203,
-      "dailyCaptures": 1134
+      "dailyCaptures": 1137
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T21:37:13.181Z",
+      "lastCheck": "2025-07-05T21:38:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

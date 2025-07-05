@@ -13919,22 +13919,22 @@
   "metadata": {
     "totalCaptured": 1265,
     "duplicateCount": 9248,
-    "lastUpdate": "2025-07-05T22:35:26.884Z",
+    "lastUpdate": "2025-07-05T22:36:26.846Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0027056277056277055,
-      "avgResponseTime": 725.2592933124798,
-      "totalRequests": 1853,
+      "errorRate": 0.002698327037236913,
+      "avgResponseTime": 611.6296466562399,
+      "totalRequests": 1854,
       "totalErrors": 5,
-      "uptime": 165308042,
+      "uptime": 1751589665150,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1265
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T22:35:13.181Z",
+      "lastCheck": "2025-07-05T22:36:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

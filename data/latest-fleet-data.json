@@ -12511,22 +12511,22 @@
   "metadata": {
     "totalCaptured": 1137,
     "duplicateCount": 7824,
-    "lastUpdate": "2025-07-05T21:40:27.129Z",
+    "lastUpdate": "2025-07-05T21:41:26.835Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002788622420524261,
-      "avgResponseTime": 798.9703514233979,
-      "totalRequests": 1798,
+      "errorRate": 0.0027808676307007787,
+      "avgResponseTime": 649.485175711699,
+      "totalRequests": 1799,
       "totalErrors": 5,
-      "uptime": 1751587865145,
+      "uptime": 163808045,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1137
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T21:40:13.180Z",
+      "lastCheck": "2025-07-05T21:41:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

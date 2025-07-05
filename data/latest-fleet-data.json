@@ -11730,22 +11730,22 @@
   "metadata": {
     "totalCaptured": 1066,
     "duplicateCount": 5259,
-    "lastUpdate": "2025-07-05T02:48:40.881Z",
+    "lastUpdate": "2025-07-05T02:49:40.962Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.001443001443001443,
-      "avgResponseTime": 795.318007365746,
-      "totalRequests": 698,
+      "errorRate": 0.0014326647564469914,
+      "avgResponseTime": 842.6590036828729,
+      "totalRequests": 699,
       "totalErrors": 1,
-      "uptime": 129480002,
+      "uptime": 1751554264131,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 1066
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T02:48:34.118Z",
+      "lastCheck": "2025-07-05T02:49:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

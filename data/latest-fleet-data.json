@@ -8606,22 +8606,22 @@
   "metadata": {
     "totalCaptured": 782,
     "duplicateCount": 4506,
-    "lastUpdate": "2025-07-05T19:25:27.405Z",
+    "lastUpdate": "2025-07-05T19:26:27.125Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0030156815440289505,
-      "avgResponseTime": 897.9141543256824,
-      "totalRequests": 1663,
+      "errorRate": 0.003006614552014432,
+      "avgResponseTime": 843.9570771628412,
+      "totalRequests": 1664,
       "totalErrors": 5,
-      "uptime": 159607922,
+      "uptime": 1751583965270,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 782
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T19:25:13.180Z",
+      "lastCheck": "2025-07-05T19:26:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

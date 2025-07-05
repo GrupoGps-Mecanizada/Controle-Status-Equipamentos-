@@ -3876,22 +3876,22 @@
   "metadata": {
     "totalCaptured": 352,
     "duplicateCount": 1129,
-    "lastUpdate": "2025-07-05T16:35:27.142Z",
+    "lastUpdate": "2025-07-05T16:36:26.976Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003360215053763441,
-      "avgResponseTime": 793.9731177748629,
-      "totalRequests": 1493,
+      "errorRate": 0.003348961821835231,
+      "avgResponseTime": 720.4865588874314,
+      "totalRequests": 1494,
       "totalErrors": 5,
-      "uptime": 154507927,
+      "uptime": 1751578865261,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 352
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T16:35:13.181Z",
+      "lastCheck": "2025-07-05T16:36:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -8034,22 +8034,22 @@
   "metadata": {
     "totalCaptured": 730,
     "duplicateCount": 4040,
-    "lastUpdate": "2025-07-05T19:00:27.149Z",
+    "lastUpdate": "2025-07-05T19:01:27.144Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003061849357011635,
-      "avgResponseTime": 671.1586174120838,
-      "totalRequests": 1638,
+      "errorRate": 0.0030525030525030525,
+      "avgResponseTime": 741.579308706042,
+      "totalRequests": 1639,
       "totalErrors": 5,
-      "uptime": 1751583065268,
+      "uptime": 159007921,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 730
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T19:00:13.180Z",
+      "lastCheck": "2025-07-05T19:01:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

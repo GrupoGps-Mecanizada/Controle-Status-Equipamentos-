@@ -10124,22 +10124,22 @@
   "metadata": {
     "totalCaptured": 920,
     "duplicateCount": 5710,
-    "lastUpdate": "2025-07-05T20:15:27.396Z",
+    "lastUpdate": "2025-07-05T20:16:26.816Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002927400468384075,
-      "avgResponseTime": 801.7600535658121,
-      "totalRequests": 1713,
+      "errorRate": 0.002918855808523059,
+      "avgResponseTime": 642.880026782906,
+      "totalRequests": 1714,
       "totalErrors": 5,
-      "uptime": 161108056,
+      "uptime": 1751585465133,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 920
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T20:15:13.181Z",
+      "lastCheck": "2025-07-05T20:16:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

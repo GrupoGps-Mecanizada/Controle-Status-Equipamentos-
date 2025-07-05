@@ -14810,22 +14810,22 @@
   "metadata": {
     "totalCaptured": 1346,
     "duplicateCount": 10144,
-    "lastUpdate": "2025-07-05T23:10:27.483Z",
+    "lastUpdate": "2025-07-05T23:11:26.823Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0026553372278279343,
-      "avgResponseTime": 1384.5010501058207,
-      "totalRequests": 1888,
+      "errorRate": 0.0026483050847457626,
+      "avgResponseTime": 935.7505250529103,
+      "totalRequests": 1889,
       "totalErrors": 5,
-      "uptime": 1751590565149,
+      "uptime": 166508040,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1346
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T23:10:13.181Z",
+      "lastCheck": "2025-07-05T23:11:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

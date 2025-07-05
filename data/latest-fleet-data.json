@@ -3084,22 +3084,22 @@
   "metadata": {
     "totalCaptured": 280,
     "duplicateCount": 559,
-    "lastUpdate": "2025-07-05T16:05:27.134Z",
+    "lastUpdate": "2025-07-05T16:06:26.979Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003429355281207133,
-      "avgResponseTime": 824.5481185047644,
-      "totalRequests": 1463,
+      "errorRate": 0.003417634996582365,
+      "avgResponseTime": 736.2740592523821,
+      "totalRequests": 1464,
       "totalErrors": 5,
-      "uptime": 153607925,
+      "uptime": 1751577965264,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 280
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T16:05:13.181Z",
+      "lastCheck": "2025-07-05T16:06:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

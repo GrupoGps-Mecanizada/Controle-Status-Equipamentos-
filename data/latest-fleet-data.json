@@ -7440,22 +7440,22 @@
   "metadata": {
     "totalCaptured": 676,
     "duplicateCount": 3586,
-    "lastUpdate": "2025-07-05T18:45:27.163Z",
+    "lastUpdate": "2025-07-05T18:46:27.181Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0030902348578491965,
-      "avgResponseTime": 722.575359162327,
-      "totalRequests": 1623,
+      "errorRate": 0.0030807147258163892,
+      "avgResponseTime": 785.7876795811635,
+      "totalRequests": 1624,
       "totalErrors": 5,
-      "uptime": 158407920,
+      "uptime": 1751582765269,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 676
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T18:45:13.181Z",
+      "lastCheck": "2025-07-05T18:46:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

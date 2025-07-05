@@ -14216,22 +14216,22 @@
   "metadata": {
     "totalCaptured": 1292,
     "duplicateCount": 9543,
-    "lastUpdate": "2025-07-05T22:50:26.870Z",
+    "lastUpdate": "2025-07-05T22:51:27.226Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0026838432635534087,
-      "avgResponseTime": 700.115761086832,
-      "totalRequests": 1868,
+      "errorRate": 0.0026766595289079227,
+      "avgResponseTime": 789.557880543416,
+      "totalRequests": 1869,
       "totalErrors": 5,
-      "uptime": 1751589965150,
+      "uptime": 165908040,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1292
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T22:50:13.181Z",
+      "lastCheck": "2025-07-05T22:51:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

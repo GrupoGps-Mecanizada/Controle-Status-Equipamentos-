@@ -8881,22 +8881,22 @@
   "metadata": {
     "totalCaptured": 807,
     "duplicateCount": 4741,
-    "lastUpdate": "2025-07-05T19:30:27.412Z",
+    "lastUpdate": "2025-07-05T19:31:27.382Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003006614552014432,
-      "avgResponseTime": 1017.6848173226776,
-      "totalRequests": 1668,
+      "errorRate": 0.002997601918465228,
+      "avgResponseTime": 1032.8424086613388,
+      "totalRequests": 1669,
       "totalErrors": 5,
-      "uptime": 1751583965270,
+      "uptime": 159907920,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 807
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T19:30:13.180Z",
+      "lastCheck": "2025-07-05T19:31:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

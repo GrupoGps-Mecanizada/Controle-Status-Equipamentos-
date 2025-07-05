@@ -2809,22 +2809,22 @@
   "metadata": {
     "totalCaptured": 255,
     "duplicateCount": 370,
-    "lastUpdate": "2025-07-05T15:50:27.130Z",
+    "lastUpdate": "2025-07-05T15:51:26.962Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003465003465003465,
-      "avgResponseTime": 659.7471641183549,
-      "totalRequests": 1448,
+      "errorRate": 0.003453038674033149,
+      "avgResponseTime": 646.3735820591775,
+      "totalRequests": 1449,
       "totalErrors": 5,
-      "uptime": 1751577365269,
+      "uptime": 153307923,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 255
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T15:50:13.181Z",
+      "lastCheck": "2025-07-05T15:51:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

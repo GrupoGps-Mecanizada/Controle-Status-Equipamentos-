@@ -7088,22 +7088,22 @@
   "metadata": {
     "totalCaptured": 644,
     "duplicateCount": 3367,
-    "lastUpdate": "2025-07-05T18:30:27.389Z",
+    "lastUpdate": "2025-07-05T18:31:27.223Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0031191515907673115,
-      "avgResponseTime": 878.3690311299881,
-      "totalRequests": 1608,
+      "errorRate": 0.003109452736318408,
+      "avgResponseTime": 884.6845155649941,
+      "totalRequests": 1609,
       "totalErrors": 5,
-      "uptime": 1751582165266,
+      "uptime": 158107924,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 644
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T18:30:13.181Z",
+      "lastCheck": "2025-07-05T18:31:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

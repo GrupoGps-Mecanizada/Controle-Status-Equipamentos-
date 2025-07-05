@@ -8331,22 +8331,22 @@
   "metadata": {
     "totalCaptured": 757,
     "duplicateCount": 4272,
-    "lastUpdate": "2025-07-05T19:15:27.146Z",
+    "lastUpdate": "2025-07-05T19:16:26.820Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003033980582524272,
-      "avgResponseTime": 799.0940294988225,
-      "totalRequests": 1653,
+      "errorRate": 0.0030248033877797943,
+      "avgResponseTime": 644.0470147494112,
+      "totalRequests": 1654,
       "totalErrors": 5,
-      "uptime": 159307922,
+      "uptime": 1751583665267,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 757
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T19:15:13.180Z",
+      "lastCheck": "2025-07-05T19:16:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

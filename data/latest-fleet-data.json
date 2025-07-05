@@ -9882,22 +9882,22 @@
   "metadata": {
     "totalCaptured": 898,
     "duplicateCount": 0,
-    "lastUpdate": "2025-07-05T01:43:40.558Z",
+    "lastUpdate": "2025-07-05T01:44:40.746Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0015923566878980893,
-      "avgResponseTime": 492.40885119056134,
-      "totalRequests": 633,
+      "errorRate": 0.001579778830963665,
+      "avgResponseTime": 585.2044255952807,
+      "totalRequests": 634,
       "totalErrors": 1,
-      "uptime": 1751552164187,
+      "uptime": 127679937,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 898
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T01:43:34.122Z",
+      "lastCheck": "2025-07-05T01:44:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

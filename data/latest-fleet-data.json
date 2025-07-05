@@ -13600,22 +13600,22 @@
   "metadata": {
     "totalCaptured": 1236,
     "duplicateCount": 8959,
-    "lastUpdate": "2025-07-05T22:20:26.893Z",
+    "lastUpdate": "2025-07-05T22:21:26.819Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002727768685215494,
-      "avgResponseTime": 572.5232633386559,
-      "totalRequests": 1838,
+      "errorRate": 0.002720348204570185,
+      "avgResponseTime": 528.2616316693279,
+      "totalRequests": 1839,
       "totalErrors": 5,
-      "uptime": 1751589065145,
+      "uptime": 165008044,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1236
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T22:20:13.181Z",
+      "lastCheck": "2025-07-05T22:21:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

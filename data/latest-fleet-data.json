@@ -3348,22 +3348,22 @@
   "metadata": {
     "totalCaptured": 304,
     "duplicateCount": 749,
-    "lastUpdate": "2025-07-05T16:10:26.818Z",
+    "lastUpdate": "2025-07-05T16:11:26.956Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003417634996582365,
-      "avgResponseTime": 528.2046287032739,
-      "totalRequests": 1468,
+      "errorRate": 0.0034059945504087193,
+      "avgResponseTime": 578.102314351637,
+      "totalRequests": 1469,
       "totalErrors": 5,
-      "uptime": 1751577965264,
+      "uptime": 153907926,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 304
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T16:10:13.180Z",
+      "lastCheck": "2025-07-05T16:11:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

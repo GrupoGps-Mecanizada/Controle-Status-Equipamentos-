@@ -10476,22 +10476,22 @@
   "metadata": {
     "totalCaptured": 952,
     "duplicateCount": 1745,
-    "lastUpdate": "2025-07-05T02:03:47.066Z",
+    "lastUpdate": "2025-07-05T02:04:41.125Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0015432098765432098,
-      "avgResponseTime": 3826.3023113335144,
-      "totalRequests": 653,
+      "errorRate": 0.0015313935681470138,
+      "avgResponseTime": 2443.6511556667574,
+      "totalRequests": 654,
       "totalErrors": 1,
-      "uptime": 1751552764205,
+      "uptime": 128279928,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 952
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T02:03:34.118Z",
+      "lastCheck": "2025-07-05T02:04:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

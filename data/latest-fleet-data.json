@@ -14700,22 +14700,22 @@
   "metadata": {
     "totalCaptured": 1336,
     "duplicateCount": 6322,
-    "lastUpdate": "2025-07-05T14:49:02.019Z",
+    "lastUpdate": "2025-07-05T14:50:01.014Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0035335689045936395,
-      "avgResponseTime": 957.8174309854593,
-      "totalRequests": 1420,
+      "errorRate": 0.0035211267605633804,
+      "avgResponseTime": 888.9087154927297,
+      "totalRequests": 1421,
       "totalErrors": 5,
-      "uptime": 151129745,
+      "uptime": 1751575865268,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1336
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T14:48:55.007Z",
+      "lastCheck": "2025-07-05T14:49:55.009Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

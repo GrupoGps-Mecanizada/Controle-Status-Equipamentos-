@@ -14370,22 +14370,22 @@
   "metadata": {
     "totalCaptured": 1306,
     "duplicateCount": 6139,
-    "lastUpdate": "2025-07-05T14:43:47.014Z",
+    "lastUpdate": "2025-07-05T14:45:01.023Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0035460992907801418,
-      "avgResponseTime": 533.1577915346959,
-      "totalRequests": 1415,
+      "errorRate": 0.0035335689045936395,
+      "avgResponseTime": 511.07889576734794,
+      "totalRequests": 1416,
       "totalErrors": 5,
-      "uptime": 1751575565270,
+      "uptime": 151129745,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1306
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T14:43:41.352Z",
+      "lastCheck": "2025-07-05T14:44:55.011Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

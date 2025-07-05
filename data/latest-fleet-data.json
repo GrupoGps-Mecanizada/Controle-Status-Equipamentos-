@@ -13314,22 +13314,22 @@
   "metadata": {
     "totalCaptured": 1210,
     "duplicateCount": 8673,
-    "lastUpdate": "2025-07-05T22:10:27.138Z",
+    "lastUpdate": "2025-07-05T22:11:26.822Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0027427317608337905,
-      "avgResponseTime": 673.8216587835647,
-      "totalRequests": 1828,
+      "errorRate": 0.002735229759299781,
+      "avgResponseTime": 579.9108293917823,
+      "totalRequests": 1829,
       "totalErrors": 5,
-      "uptime": 1751588765144,
+      "uptime": 164708046,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1210
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T22:10:13.180Z",
+      "lastCheck": "2025-07-05T22:11:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -12049,22 +12049,22 @@
   "metadata": {
     "totalCaptured": 1095,
     "duplicateCount": 6139,
-    "lastUpdate": "2025-07-05T08:53:41.181Z",
+    "lastUpdate": "2025-07-05T08:54:40.923Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.004721435316336166,
-      "avgResponseTime": 879.8693375578218,
-      "totalRequests": 1064,
+      "errorRate": 0.004699248120300752,
+      "avgResponseTime": 868.9346687789109,
+      "totalRequests": 1065,
       "totalErrors": 5,
-      "uptime": 1751565064172,
+      "uptime": 140579960,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1095
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T08:53:34.118Z",
+      "lastCheck": "2025-07-05T08:54:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

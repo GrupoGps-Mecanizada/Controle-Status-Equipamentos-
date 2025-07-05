@@ -5625,22 +5625,22 @@
   "metadata": {
     "totalCaptured": 511,
     "duplicateCount": 2306,
-    "lastUpdate": "2025-07-05T17:40:27.815Z",
+    "lastUpdate": "2025-07-05T17:41:27.148Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003219575016097875,
-      "avgResponseTime": 1036.0467416598021,
-      "totalRequests": 1558,
+      "errorRate": 0.003209242618741977,
+      "avgResponseTime": 926.5233708299011,
+      "totalRequests": 1559,
       "totalErrors": 5,
-      "uptime": 1751580665265,
+      "uptime": 156607924,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 511
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T17:40:13.181Z",
+      "lastCheck": "2025-07-05T17:41:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

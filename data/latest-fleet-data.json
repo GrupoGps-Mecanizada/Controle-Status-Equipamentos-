@@ -10179,22 +10179,22 @@
   "metadata": {
     "totalCaptured": 925,
     "duplicateCount": 872,
-    "lastUpdate": "2025-07-05T01:53:40.858Z",
+    "lastUpdate": "2025-07-05T01:54:40.803Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.001567398119122257,
-      "avgResponseTime": 715.5668055187408,
-      "totalRequests": 643,
+      "errorRate": 0.0015552099533437014,
+      "avgResponseTime": 717.7834027593703,
+      "totalRequests": 644,
       "totalErrors": 1,
-      "uptime": 1751552464196,
+      "uptime": 127979928,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 925
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T01:53:34.118Z",
+      "lastCheck": "2025-07-05T01:54:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

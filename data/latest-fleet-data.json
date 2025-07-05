@@ -6170,27 +6170,82 @@
       "total_time": "0.59333333333333",
       "captured_at": "2025-07-05T17:53:14.781Z",
       "id": 1751737994781.0747
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 06:21:51",
+      "end": "2025-07-05 14:45:25",
+      "total_time": "8.3927777777778",
+      "captured_at": "2025-07-05T17:53:30.317Z",
+      "id": 1751738010317.6035
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-05 14:45:41",
+      "end": "2025-07-05 14:49:11",
+      "total_time": "0.058333333333333",
+      "captured_at": "2025-07-05T17:53:30.318Z",
+      "id": 1751738010318.4485
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-05 14:45:25",
+      "end": "2025-07-05 14:45:41",
+      "total_time": "0.0044444444444444",
+      "captured_at": "2025-07-05T17:53:30.318Z",
+      "id": 1751738010318.881
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-05 14:49:11",
+      "end": "2025-07-05 14:53:18",
+      "total_time": "0.068611111111111",
+      "captured_at": "2025-07-05T17:53:30.319Z",
+      "id": 1751738010319.1736
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 00:00",
+      "end": "2025-07-05 14:53:33",
+      "total_time": "14.8925",
+      "captured_at": "2025-07-05T17:53:30.894Z",
+      "id": 1751738010894.6936
     }
   ],
   "metadata": {
-    "totalCaptured": 561,
-    "duplicateCount": 2686,
-    "lastUpdate": "2025-07-05T17:53:27.397Z",
+    "totalCaptured": 566,
+    "duplicateCount": 2720,
+    "lastUpdate": "2025-07-05T17:54:27.152Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0.0031887755102040817,
-      "avgResponseTime": 901.1517391042065,
-      "totalRequests": 1571,
+      "avgResponseTime": 861.0758695521033,
+      "totalRequests": 1572,
       "totalErrors": 5,
       "uptime": 156907922,
       "lastErrorTime": 1751684615203,
-      "dailyCaptures": 561
+      "dailyCaptures": 566
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T17:53:13.181Z",
+      "lastCheck": "2025-07-05T17:54:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

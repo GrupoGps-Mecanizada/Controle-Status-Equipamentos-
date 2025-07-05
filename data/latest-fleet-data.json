@@ -12247,22 +12247,22 @@
   "metadata": {
     "totalCaptured": 1113,
     "duplicateCount": 7543,
-    "lastUpdate": "2025-07-05T21:30:27.147Z",
+    "lastUpdate": "2025-07-05T21:31:27.144Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0028042624789680315,
-      "avgResponseTime": 772.6398575594725,
-      "totalRequests": 1788,
+      "errorRate": 0.002796420581655481,
+      "avgResponseTime": 789.8199287797363,
+      "totalRequests": 1789,
       "totalErrors": 5,
-      "uptime": 1751587565145,
+      "uptime": 163508045,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1113
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T21:30:13.183Z",
+      "lastCheck": "2025-07-05T21:31:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

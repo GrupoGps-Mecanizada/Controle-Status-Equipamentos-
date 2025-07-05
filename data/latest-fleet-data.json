@@ -6230,22 +6230,22 @@
   "metadata": {
     "totalCaptured": 566,
     "duplicateCount": 2720,
-    "lastUpdate": "2025-07-05T18:00:26.836Z",
+    "lastUpdate": "2025-07-05T18:01:26.823Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003178639542275906,
-      "avgResponseTime": 602.6261854617517,
-      "totalRequests": 1578,
+      "errorRate": 0.0031685678073510772,
+      "avgResponseTime": 547.3130927308758,
+      "totalRequests": 1579,
       "totalErrors": 5,
-      "uptime": 1751581265267,
+      "uptime": 157207924,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 566
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T18:00:13.181Z",
+      "lastCheck": "2025-07-05T18:01:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -36062,22 +36062,22 @@
   "metadata": {
     "totalCaptured": 3278,
     "duplicateCount": 35551,
-    "lastUpdate": "2025-07-05T00:43:41.202Z",
+    "lastUpdate": "2025-07-05T00:44:40.906Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0017605633802816902,
-      "avgResponseTime": 920.8436037089273,
-      "totalRequests": 573,
+      "errorRate": 0.0017452006980802793,
+      "avgResponseTime": 864.9218018544636,
+      "totalRequests": 574,
       "totalErrors": 1,
-      "uptime": 1751550363965,
+      "uptime": 125880168,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 3278
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T00:43:34.119Z",
+      "lastCheck": "2025-07-05T00:44:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

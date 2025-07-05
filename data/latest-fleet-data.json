@@ -11274,27 +11274,71 @@
       "total_time": "7.3044444444444",
       "captured_at": "2025-07-05T02:35:40.216Z",
       "id": 1751682940216.4343
+    },
+    {
+      "vacancy_code": "312",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-04 16:26:10",
+      "end": "2025-07-04 23:35:32",
+      "total_time": "7.1561111111111",
+      "captured_at": "2025-07-05T02:35:45.229Z",
+      "id": 1751682945229.6284
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-04 16:24:44",
+      "end": "2025-07-04 23:35:40",
+      "total_time": "7.1822222222222",
+      "captured_at": "2025-07-05T02:35:49.106Z",
+      "id": 1751682949106.4785
+    },
+    {
+      "vacancy_code": "824",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 02 - 16 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-04 22:25:13",
+      "end": "2025-07-04 23:35:27",
+      "total_time": "1.1705555555556",
+      "captured_at": "2025-07-05T02:36:35.841Z",
+      "id": 1751682995841.261
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-04 00:00",
+      "end": "2025-07-04 23:36:38",
+      "total_time": "23.610555555556",
+      "captured_at": "2025-07-05T02:36:38.824Z",
+      "id": 1751682998824.6265
     }
   ],
   "metadata": {
-    "totalCaptured": 1025,
-    "duplicateCount": 4048,
-    "lastUpdate": "2025-07-05T02:35:40.550Z",
+    "totalCaptured": 1029,
+    "duplicateCount": 4199,
+    "lastUpdate": "2025-07-05T02:36:40.921Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0.0014641288433382138,
-      "avgResponseTime": 644.1163401914067,
-      "totalRequests": 685,
+      "avgResponseTime": 749.5581700957034,
+      "totalRequests": 686,
       "totalErrors": 1,
       "uptime": 129179994,
       "lastErrorTime": 1751408540786,
-      "dailyCaptures": 1025
+      "dailyCaptures": 1031
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T02:35:34.118Z",
+      "lastCheck": "2025-07-05T02:36:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

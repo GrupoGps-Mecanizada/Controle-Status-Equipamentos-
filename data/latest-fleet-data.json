@@ -5922,22 +5922,22 @@
   "metadata": {
     "totalCaptured": 538,
     "duplicateCount": 2511,
-    "lastUpdate": "2025-07-05T17:50:26.878Z",
+    "lastUpdate": "2025-07-05T17:51:27.756Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003198976327575176,
-      "avgResponseTime": 557.2139128336521,
-      "totalRequests": 1568,
+      "errorRate": 0.0031887755102040817,
+      "avgResponseTime": 991.606956416826,
+      "totalRequests": 1569,
       "totalErrors": 5,
-      "uptime": 1751580965267,
+      "uptime": 156907922,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 538
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T17:50:13.181Z",
+      "lastCheck": "2025-07-05T17:51:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -10817,22 +10817,22 @@
   "metadata": {
     "totalCaptured": 983,
     "duplicateCount": 2619,
-    "lastUpdate": "2025-07-05T02:13:40.551Z",
+    "lastUpdate": "2025-07-05T02:14:40.729Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.001519756838905775,
-      "avgResponseTime": 559.1301780384116,
-      "totalRequests": 663,
+      "errorRate": 0.0015082956259426848,
+      "avgResponseTime": 607.0650890192057,
+      "totalRequests": 664,
       "totalErrors": 1,
-      "uptime": 1751553064205,
+      "uptime": 128579933,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 983
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T02:13:34.118Z",
+      "lastCheck": "2025-07-05T02:14:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

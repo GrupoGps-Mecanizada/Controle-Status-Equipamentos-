@@ -11323,22 +11323,22 @@
   "metadata": {
     "totalCaptured": 1029,
     "duplicateCount": 6737,
-    "lastUpdate": "2025-07-05T21:00:27.419Z",
+    "lastUpdate": "2025-07-05T21:01:26.822Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002852253280091272,
-      "avgResponseTime": 802.0081451813339,
-      "totalRequests": 1758,
+      "errorRate": 0.002844141069397042,
+      "avgResponseTime": 643.504072590667,
+      "totalRequests": 1759,
       "totalErrors": 5,
-      "uptime": 1751586665135,
+      "uptime": 162608055,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1029
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T21:00:13.180Z",
+      "lastCheck": "2025-07-05T21:01:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

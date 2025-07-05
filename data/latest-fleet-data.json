@@ -15096,22 +15096,22 @@
   "metadata": {
     "totalCaptured": 1372,
     "duplicateCount": 10451,
-    "lastUpdate": "2025-07-05T23:20:27.012Z",
+    "lastUpdate": "2025-07-05T23:21:26.856Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002641310089804543,
-      "avgResponseTime": 676.6401377442439,
-      "totalRequests": 1898,
+      "errorRate": 0.0026343519494204425,
+      "avgResponseTime": 590.820068872122,
+      "totalRequests": 1899,
       "totalErrors": 5,
-      "uptime": 1751590865153,
+      "uptime": 166808037,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1372
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T23:20:13.181Z",
+      "lastCheck": "2025-07-05T23:21:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

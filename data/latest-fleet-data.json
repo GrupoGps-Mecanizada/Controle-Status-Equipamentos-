@@ -15619,27 +15619,60 @@
       "total_time": "0.20444444444444",
       "captured_at": "2025-07-05T23:34:26.072Z",
       "id": 1751758466072.8118
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-05 20:29:17",
+      "end": "2025-07-05 20:34:29",
+      "total_time": "0.086666666666667",
+      "captured_at": "2025-07-05T23:34:52.617Z",
+      "id": 1751758492617.066
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-05 20:21:52",
+      "end": "2025-07-05 20:29:17",
+      "total_time": "0.12361111111111",
+      "captured_at": "2025-07-05T23:34:52.618Z",
+      "id": 1751758492618.6494
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 00:00",
+      "end": "2025-07-05 20:34:56",
+      "total_time": "20.582222222222",
+      "captured_at": "2025-07-05T23:34:53.246Z",
+      "id": 1751758493246.2388
     }
   ],
   "metadata": {
-    "totalCaptured": 1420,
-    "duplicateCount": 11011,
-    "lastUpdate": "2025-07-05T23:34:26.902Z",
+    "totalCaptured": 1423,
+    "duplicateCount": 11074,
+    "lastUpdate": "2025-07-05T23:35:27.396Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0.002620545073375262,
-      "avgResponseTime": 688.8537378013759,
-      "totalRequests": 1912,
+      "avgResponseTime": 872.426868900688,
+      "totalRequests": 1913,
       "totalErrors": 5,
       "uptime": 167108028,
       "lastErrorTime": 1751684615203,
-      "dailyCaptures": 1420
+      "dailyCaptures": 1423
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T23:34:13.224Z",
+      "lastCheck": "2025-07-05T23:35:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

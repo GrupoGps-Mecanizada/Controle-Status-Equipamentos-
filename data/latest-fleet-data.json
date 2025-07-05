@@ -3612,22 +3612,22 @@
   "metadata": {
     "totalCaptured": 328,
     "duplicateCount": 939,
-    "lastUpdate": "2025-07-05T16:25:26.827Z",
+    "lastUpdate": "2025-07-05T16:26:26.961Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0033829499323410014,
-      "avgResponseTime": 529.4726014596162,
-      "totalRequests": 1483,
+      "errorRate": 0.0033715441672285905,
+      "avgResponseTime": 581.2363007298081,
+      "totalRequests": 1484,
       "totalErrors": 5,
-      "uptime": 154207926,
+      "uptime": 1751578565264,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 328
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T16:25:13.180Z",
+      "lastCheck": "2025-07-05T16:26:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -9838,22 +9838,22 @@
   "metadata": {
     "totalCaptured": 894,
     "duplicateCount": 5460,
-    "lastUpdate": "2025-07-05T20:10:27.423Z",
+    "lastUpdate": "2025-07-05T20:11:27.137Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002935995302407516,
-      "avgResponseTime": 873.3217141059865,
-      "totalRequests": 1708,
+      "errorRate": 0.002927400468384075,
+      "avgResponseTime": 839.1608570529933,
+      "totalRequests": 1709,
       "totalErrors": 5,
-      "uptime": 1751585165133,
+      "uptime": 161108056,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 894
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T20:10:13.180Z",
+      "lastCheck": "2025-07-05T20:11:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

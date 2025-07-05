@@ -10432,22 +10432,22 @@
   "metadata": {
     "totalCaptured": 948,
     "duplicateCount": 5962,
-    "lastUpdate": "2025-07-05T20:30:26.976Z",
+    "lastUpdate": "2025-07-05T20:31:26.816Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002901915264074289,
-      "avgResponseTime": 581.8622363297598,
-      "totalRequests": 1728,
+      "errorRate": 0.0028935185185185184,
+      "avgResponseTime": 532.9311181648799,
+      "totalRequests": 1729,
       "totalErrors": 5,
-      "uptime": 1751585765136,
+      "uptime": 161708054,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 948
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T20:30:13.181Z",
+      "lastCheck": "2025-07-05T20:31:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -4470,22 +4470,22 @@
   "metadata": {
     "totalCaptured": 406,
     "duplicateCount": 1510,
-    "lastUpdate": "2025-07-05T16:55:26.823Z",
+    "lastUpdate": "2025-07-05T16:56:27.405Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0033156498673740055,
-      "avgResponseTime": 603.7540349703959,
-      "totalRequests": 1513,
+      "errorRate": 0.003304692663582287,
+      "avgResponseTime": 840.3770174851979,
+      "totalRequests": 1514,
       "totalErrors": 5,
-      "uptime": 155107927,
+      "uptime": 1751579465262,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 406
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T16:55:13.181Z",
+      "lastCheck": "2025-07-05T16:56:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

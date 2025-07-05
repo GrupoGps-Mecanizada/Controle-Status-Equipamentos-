@@ -36656,22 +36656,22 @@
   "metadata": {
     "totalCaptured": 3332,
     "duplicateCount": 37254,
-    "lastUpdate": "2025-07-05T01:03:41.093Z",
+    "lastUpdate": "2025-07-05T01:04:40.598Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0017006802721088435,
-      "avgResponseTime": 690.2754019199407,
-      "totalRequests": 593,
+      "errorRate": 0.0016863406408094434,
+      "avgResponseTime": 590.1377009599703,
+      "totalRequests": 594,
       "totalErrors": 1,
-      "uptime": 1751550963965,
+      "uptime": 126480172,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 3332
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T01:03:34.119Z",
+      "lastCheck": "2025-07-05T01:04:34.118Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

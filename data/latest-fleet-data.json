@@ -2226,22 +2226,22 @@
   "metadata": {
     "totalCaptured": 202,
     "duplicateCount": 0,
-    "lastUpdate": "2025-07-05T15:30:27.162Z",
+    "lastUpdate": "2025-07-05T15:31:27.017Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0035087719298245615,
-      "avgResponseTime": 728.3625680897869,
-      "totalRequests": 1428,
+      "errorRate": 0.0035014005602240898,
+      "avgResponseTime": 709.1812840448935,
+      "totalRequests": 1429,
       "totalErrors": 5,
-      "uptime": 1751576765268,
+      "uptime": 152707920,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 202
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T15:30:13.181Z",
+      "lastCheck": "2025-07-05T15:31:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

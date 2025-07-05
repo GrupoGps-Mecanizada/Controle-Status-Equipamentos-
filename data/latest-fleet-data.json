@@ -7347,27 +7347,115 @@
       "total_time": "15.606111111111",
       "captured_at": "2025-07-05T18:36:19.876Z",
       "id": 1751740579876.1064
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-05 15:18:23",
+      "end": "2025-07-05 15:35:55",
+      "total_time": "0.29222222222222",
+      "captured_at": "2025-07-05T18:36:28.809Z",
+      "id": 1751740588809.3308
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-07-05 14:57:30",
+      "end": "2025-07-05 15:35:02",
+      "total_time": "0.62555555555556",
+      "captured_at": "2025-07-05T18:36:38.960Z",
+      "id": 1751740598960.692
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-05 15:35:02",
+      "end": "2025-07-05 15:35:54",
+      "total_time": "0.014444444444444",
+      "captured_at": "2025-07-05T18:36:38.961Z",
+      "id": 1751740598961.3772
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-05 15:34:04",
+      "end": "2025-07-05 15:34:47",
+      "total_time": "0.011944444444444",
+      "captured_at": "2025-07-05T18:37:15.265Z",
+      "id": 1751740635265.8079
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-05 14:49:11",
+      "end": "2025-07-05 15:33:11",
+      "total_time": "0.73333333333333",
+      "captured_at": "2025-07-05T18:37:15.265Z",
+      "id": 1751740635265.0054
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-05 15:33:11",
+      "end": "2025-07-05 15:34:04",
+      "total_time": "0.014722222222222",
+      "captured_at": "2025-07-05T18:37:15.265Z",
+      "id": 1751740635265.1833
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-05 15:34:47",
+      "end": "2025-07-05 15:36:42",
+      "total_time": "0.031944444444444",
+      "captured_at": "2025-07-05T18:37:15.265Z",
+      "id": 1751740635265.8167
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 00:00",
+      "end": "2025-07-05 15:37:18",
+      "total_time": "15.621666666667",
+      "captured_at": "2025-07-05T18:37:15.846Z",
+      "id": 1751740635846.765
     }
   ],
   "metadata": {
-    "totalCaptured": 668,
-    "duplicateCount": 3483,
-    "lastUpdate": "2025-07-05T18:36:26.600Z",
+    "totalCaptured": 676,
+    "duplicateCount": 3586,
+    "lastUpdate": "2025-07-05T18:37:27.140Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0.0030998140111593306,
-      "avgResponseTime": 464.58389111140605,
-      "totalRequests": 1614,
+      "avgResponseTime": 637.291945555703,
+      "totalRequests": 1615,
       "totalErrors": 5,
       "uptime": 1751582465269,
       "lastErrorTime": 1751684615203,
-      "dailyCaptures": 668
+      "dailyCaptures": 676
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T18:36:13.181Z",
+      "lastCheck": "2025-07-05T18:37:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

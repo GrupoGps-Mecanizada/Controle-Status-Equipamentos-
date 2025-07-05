@@ -4151,22 +4151,22 @@
   "metadata": {
     "totalCaptured": 377,
     "duplicateCount": 1319,
-    "lastUpdate": "2025-07-05T16:40:27.015Z",
+    "lastUpdate": "2025-07-05T16:41:26.964Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003348961821835231,
-      "avgResponseTime": 607.2179099304644,
-      "totalRequests": 1498,
+      "errorRate": 0.0033377837116154874,
+      "avgResponseTime": 621.1089549652322,
+      "totalRequests": 1499,
       "totalErrors": 5,
-      "uptime": 1751578865261,
+      "uptime": 154807928,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 377
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T16:40:13.180Z",
+      "lastCheck": "2025-07-05T16:41:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

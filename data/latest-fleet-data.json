@@ -13039,22 +13039,22 @@
   "metadata": {
     "totalCaptured": 1185,
     "duplicateCount": 8389,
-    "lastUpdate": "2025-07-05T22:00:26.845Z",
+    "lastUpdate": "2025-07-05T22:01:26.821Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0027578599007170436,
-      "avgResponseTime": 528.3785943702235,
-      "totalRequests": 1818,
+      "errorRate": 0.0027502750275027505,
+      "avgResponseTime": 507.68929718511174,
+      "totalRequests": 1819,
       "totalErrors": 5,
-      "uptime": 1751588465145,
+      "uptime": 164408045,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1185
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T22:00:13.181Z",
+      "lastCheck": "2025-07-05T22:01:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

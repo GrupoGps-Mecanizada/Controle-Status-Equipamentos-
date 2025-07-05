@@ -5042,22 +5042,22 @@
   "metadata": {
     "totalCaptured": 458,
     "duplicateCount": 1904,
-    "lastUpdate": "2025-07-05T17:15:27.161Z",
+    "lastUpdate": "2025-07-05T17:16:26.807Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0032722513089005235,
-      "avgResponseTime": 751.8453967609739,
-      "totalRequests": 1533,
+      "errorRate": 0.0032615786040443573,
+      "avgResponseTime": 614.922698380487,
+      "totalRequests": 1534,
       "totalErrors": 5,
-      "uptime": 155707923,
+      "uptime": 1751580065266,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 458
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T17:15:13.180Z",
+      "lastCheck": "2025-07-05T17:16:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -5328,22 +5328,22 @@
   "metadata": {
     "totalCaptured": 484,
     "duplicateCount": 2104,
-    "lastUpdate": "2025-07-05T17:30:26.826Z",
+    "lastUpdate": "2025-07-05T17:31:27.164Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0032404406999351912,
-      "avgResponseTime": 601.8634596373523,
-      "totalRequests": 1548,
+      "errorRate": 0.003229974160206718,
+      "avgResponseTime": 716.9317298186761,
+      "totalRequests": 1549,
       "totalErrors": 5,
-      "uptime": 1751580365266,
+      "uptime": 156307924,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 484
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T17:30:13.180Z",
+      "lastCheck": "2025-07-05T17:31:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

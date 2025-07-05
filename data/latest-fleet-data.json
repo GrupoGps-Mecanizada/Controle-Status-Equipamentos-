@@ -7737,22 +7737,22 @@
   "metadata": {
     "totalCaptured": 703,
     "duplicateCount": 3812,
-    "lastUpdate": "2025-07-05T18:50:27.120Z",
+    "lastUpdate": "2025-07-05T18:51:26.826Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0030807147258163892,
-      "avgResponseTime": 844.4242299738228,
-      "totalRequests": 1628,
+      "errorRate": 0.003071253071253071,
+      "avgResponseTime": 670.2121149869114,
+      "totalRequests": 1629,
       "totalErrors": 5,
-      "uptime": 1751582765269,
+      "uptime": 158707921,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 703
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T18:50:13.180Z",
+      "lastCheck": "2025-07-05T18:51:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

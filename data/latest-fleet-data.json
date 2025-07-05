@@ -6802,22 +6802,22 @@
   "metadata": {
     "totalCaptured": 618,
     "duplicateCount": 3150,
-    "lastUpdate": "2025-07-05T18:20:27.231Z",
+    "lastUpdate": "2025-07-05T18:21:27.167Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.003138731952291274,
-      "avgResponseTime": 940.8878771077971,
-      "totalRequests": 1598,
+      "errorRate": 0.0031289111389236545,
+      "avgResponseTime": 888.9439385538985,
+      "totalRequests": 1599,
       "totalErrors": 5,
-      "uptime": 1751581865264,
+      "uptime": 157807926,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 618
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T18:20:13.181Z",
+      "lastCheck": "2025-07-05T18:21:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

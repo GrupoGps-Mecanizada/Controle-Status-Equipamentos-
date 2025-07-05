@@ -10729,22 +10729,22 @@
   "metadata": {
     "totalCaptured": 975,
     "duplicateCount": 6218,
-    "lastUpdate": "2025-07-05T20:40:26.971Z",
+    "lastUpdate": "2025-07-05T20:41:26.821Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0028851702250432777,
-      "avgResponseTime": 723.8416623401658,
-      "totalRequests": 1738,
+      "errorRate": 0.0028768699654775605,
+      "avgResponseTime": 604.4208311700829,
+      "totalRequests": 1739,
       "totalErrors": 5,
-      "uptime": 1751586065135,
+      "uptime": 162008054,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 975
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-05T20:40:13.180Z",
+      "lastCheck": "2025-07-05T20:41:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -36359,22 +36359,22 @@
   "metadata": {
     "totalCaptured": 3305,
     "duplicateCount": 36402,
-    "lastUpdate": "2025-07-05T00:53:40.713Z",
+    "lastUpdate": "2025-07-05T00:54:40.648Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0017301038062283738,
-      "avgResponseTime": 715.011566019247,
-      "totalRequests": 583,
+      "errorRate": 0.0017152658662092624,
+      "avgResponseTime": 609.0057830096234,
+      "totalRequests": 584,
       "totalErrors": 1,
-      "uptime": 1751550663961,
+      "uptime": 126180171,
       "lastErrorTime": 1751408540786,
       "dailyCaptures": 3305
     },
     "dateAutomation": {
       "lastReset": "Fri Jul 04 2025",
-      "lastCheck": "2025-07-05T00:53:34.118Z",
+      "lastCheck": "2025-07-05T00:54:34.119Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

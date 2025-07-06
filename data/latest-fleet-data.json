@@ -34346,22 +34346,22 @@
   "metadata": {
     "totalCaptured": 3122,
     "duplicateCount": 23720,
-    "lastUpdate": "2025-07-06T21:38:51.201Z",
+    "lastUpdate": "2025-07-06T21:39:51.191Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.008137715179968702,
-      "avgResponseTime": 805.5432525249653,
-      "totalRequests": 3199,
+      "errorRate": 0.008125,
+      "avgResponseTime": 643.7716262624826,
+      "totalRequests": 3200,
       "totalErrors": 26,
-      "uptime": 1751631013224,
+      "uptime": 206971959,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 3122
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T21:38:45.193Z",
+      "lastCheck": "2025-07-06T21:39:45.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

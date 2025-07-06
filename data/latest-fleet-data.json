@@ -32014,22 +32014,22 @@
   "metadata": {
     "totalCaptured": 2910,
     "duplicateCount": 22165,
-    "lastUpdate": "2025-07-06T20:18:51.189Z",
+    "lastUpdate": "2025-07-06T20:19:51.206Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.008346709470304976,
-      "avgResponseTime": 398.80777519778917,
-      "totalRequests": 3119,
+      "errorRate": 0.008333333333333333,
+      "avgResponseTime": 652.9038875988946,
+      "totalRequests": 3120,
       "totalErrors": 26,
-      "uptime": 1751628613258,
+      "uptime": 204571941,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 2910
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T20:18:45.168Z",
+      "lastCheck": "2025-07-06T20:19:45.196Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

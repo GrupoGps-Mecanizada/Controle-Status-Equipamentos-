@@ -24325,22 +24325,22 @@
   "metadata": {
     "totalCaptured": 2211,
     "duplicateCount": 18072,
-    "lastUpdate": "2025-07-06T16:28:51.190Z",
+    "lastUpdate": "2025-07-06T16:29:51.184Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0076256499133448875,
-      "avgResponseTime": 637.4073628218454,
-      "totalRequests": 2889,
+      "errorRate": 0.007612456747404845,
+      "avgResponseTime": 730.7036814109226,
+      "totalRequests": 2890,
       "totalErrors": 22,
-      "uptime": 1751621713268,
+      "uptime": 197671915,
       "lastErrorTime": 1751816803177,
       "dailyCaptures": 2211
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T16:28:45.194Z",
+      "lastCheck": "2025-07-06T16:29:45.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

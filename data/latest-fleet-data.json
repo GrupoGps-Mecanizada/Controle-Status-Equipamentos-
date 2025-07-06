@@ -20519,22 +20519,22 @@
   "metadata": {
     "totalCaptured": 1865,
     "duplicateCount": 16759,
-    "lastUpdate": "2025-07-06T02:45:26.967Z",
+    "lastUpdate": "2025-07-06T02:46:26.834Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0023832221163012394,
-      "avgResponseTime": 579.4899141163556,
-      "totalRequests": 2103,
+      "errorRate": 0.0023775558725630053,
+      "avgResponseTime": 532.2449570581778,
+      "totalRequests": 2104,
       "totalErrors": 5,
-      "uptime": 172808004,
+      "uptime": 1751597165185,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1865
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-06T02:45:13.180Z",
+      "lastCheck": "2025-07-06T02:46:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

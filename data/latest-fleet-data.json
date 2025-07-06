@@ -29297,22 +29297,22 @@
   "metadata": {
     "totalCaptured": 2663,
     "duplicateCount": 20514,
-    "lastUpdate": "2025-07-06T18:58:51.187Z",
+    "lastUpdate": "2025-07-06T18:59:51.184Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0085667215815486,
-      "avgResponseTime": 603.5840091244447,
-      "totalRequests": 3039,
+      "errorRate": 0.008552631578947369,
+      "avgResponseTime": 574.7920045622224,
+      "totalRequests": 3040,
       "totalErrors": 26,
-      "uptime": 1751626213272,
+      "uptime": 202171899,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 2663
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T18:58:45.169Z",
+      "lastCheck": "2025-07-06T18:59:45.169Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

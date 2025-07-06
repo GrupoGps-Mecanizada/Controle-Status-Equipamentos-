@@ -26833,22 +26833,22 @@
   "metadata": {
     "totalCaptured": 2439,
     "duplicateCount": 19301,
-    "lastUpdate": "2025-07-06T17:48:51.182Z",
+    "lastUpdate": "2025-07-06T17:49:51.184Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007419898819561552,
-      "avgResponseTime": 604.0586922582553,
-      "totalRequests": 2969,
+      "errorRate": 0.007407407407407408,
+      "avgResponseTime": 713.5293461291276,
+      "totalRequests": 2970,
       "totalErrors": 22,
-      "uptime": 1751624113247,
+      "uptime": 200071923,
       "lastErrorTime": 1751816803177,
       "dailyCaptures": 2439
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T17:48:45.171Z",
+      "lastCheck": "2025-07-06T17:49:45.169Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

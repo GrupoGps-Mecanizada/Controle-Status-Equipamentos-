@@ -21102,22 +21102,22 @@
   "metadata": {
     "totalCaptured": 1918,
     "duplicateCount": 17483,
-    "lastUpdate": "2025-07-06T08:10:27.182Z",
+    "lastUpdate": "2025-07-06T08:11:26.857Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0020627062706270625,
-      "avgResponseTime": 723.0911545388911,
-      "totalRequests": 2429,
+      "errorRate": 0.0020584602717167557,
+      "avgResponseTime": 617.0455772694456,
+      "totalRequests": 2430,
       "totalErrors": 5,
-      "uptime": 1751606765167,
+      "uptime": 182708025,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1918
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T08:10:13.180Z",
+      "lastCheck": "2025-07-06T08:11:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

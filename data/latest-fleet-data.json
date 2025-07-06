@@ -25557,22 +25557,22 @@
   "metadata": {
     "totalCaptured": 2323,
     "duplicateCount": 18680,
-    "lastUpdate": "2025-07-06T17:03:51.182Z",
+    "lastUpdate": "2025-07-06T17:04:54.190Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007534246575342466,
-      "avgResponseTime": 605.044824362366,
-      "totalRequests": 2924,
+      "errorRate": 0.007521367521367521,
+      "avgResponseTime": 1942.022412181183,
+      "totalRequests": 2925,
       "totalErrors": 22,
-      "uptime": 198571907,
+      "uptime": 1751622913275,
       "lastErrorTime": 1751816803177,
       "dailyCaptures": 2323
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T17:03:45.186Z",
+      "lastCheck": "2025-07-06T17:04:45.179Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

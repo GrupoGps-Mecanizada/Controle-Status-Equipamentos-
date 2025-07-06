@@ -29660,22 +29660,22 @@
   "metadata": {
     "totalCaptured": 2696,
     "duplicateCount": 20707,
-    "lastUpdate": "2025-07-06T19:08:51.185Z",
+    "lastUpdate": "2025-07-06T19:09:51.191Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.008538587848932676,
-      "avgResponseTime": 683.7027187589106,
-      "totalRequests": 3049,
+      "errorRate": 0.008524590163934427,
+      "avgResponseTime": 590.3513593794553,
+      "totalRequests": 3050,
       "totalErrors": 26,
-      "uptime": 1751626513273,
+      "uptime": 202471907,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 2696
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T19:08:45.171Z",
+      "lastCheck": "2025-07-06T19:09:45.176Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

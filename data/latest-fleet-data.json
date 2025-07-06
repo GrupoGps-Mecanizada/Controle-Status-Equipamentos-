@@ -20244,22 +20244,22 @@
   "metadata": {
     "totalCaptured": 1840,
     "duplicateCount": 16399,
-    "lastUpdate": "2025-07-06T02:30:27.396Z",
+    "lastUpdate": "2025-07-06T02:31:27.178Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002400384061449832,
-      "avgResponseTime": 775.5057647402502,
-      "totalRequests": 2088,
+      "errorRate": 0.0023946360153256703,
+      "avgResponseTime": 806.7528823701251,
+      "totalRequests": 2089,
       "totalErrors": 5,
-      "uptime": 1751596565187,
+      "uptime": 172508003,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1840
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-06T02:30:13.180Z",
+      "lastCheck": "2025-07-06T02:31:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

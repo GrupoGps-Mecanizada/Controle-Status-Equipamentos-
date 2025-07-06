@@ -17340,22 +17340,22 @@
   "metadata": {
     "totalCaptured": 1576,
     "duplicateCount": 13003,
-    "lastUpdate": "2025-07-06T00:40:26.972Z",
+    "lastUpdate": "2025-07-06T00:41:27.146Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.002534211860111505,
-      "avgResponseTime": 642.2215374394098,
-      "totalRequests": 1978,
+      "errorRate": 0.0025278058645096056,
+      "avgResponseTime": 724.6107687197049,
+      "totalRequests": 1979,
       "totalErrors": 5,
-      "uptime": 1751593265165,
+      "uptime": 169208023,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1576
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-06T00:40:13.180Z",
+      "lastCheck": "2025-07-06T00:41:13.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

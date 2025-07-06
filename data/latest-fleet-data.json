@@ -17335,27 +17335,60 @@
       "total_time": "21.641388888889",
       "captured_at": "2025-07-06T00:38:26.251Z",
       "id": 1751762306251.3735
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 00:00",
+      "end": "2025-07-05 21:48:30",
+      "total_time": "21.808333333333",
+      "captured_at": "2025-07-06T00:48:27.012Z",
+      "id": 1751762907012.8958
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 00:00",
+      "end": "2025-07-05 21:48:30",
+      "total_time": "21.808333333333",
+      "captured_at": "2025-07-06T00:48:27.025Z",
+      "id": 1751762907025.952
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-05 00:00",
+      "end": "2025-07-05 21:48:30",
+      "total_time": "21.808333333333",
+      "captured_at": "2025-07-06T00:48:27.060Z",
+      "id": 1751762907060.2002
     }
   ],
   "metadata": {
-    "totalCaptured": 1576,
+    "totalCaptured": 1579,
     "duplicateCount": 13003,
-    "lastUpdate": "2025-07-06T00:47:27.160Z",
+    "lastUpdate": "2025-07-06T00:48:27.197Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0.0025214321734745334,
-      "avgResponseTime": 710.8845432612454,
-      "totalRequests": 1985,
+      "avgResponseTime": 785.4422716306227,
+      "totalRequests": 1986,
       "totalErrors": 5,
       "uptime": 1751593565166,
       "lastErrorTime": 1751684615203,
-      "dailyCaptures": 1576
+      "dailyCaptures": 1582
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-06T00:47:13.180Z",
+      "lastCheck": "2025-07-06T00:48:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

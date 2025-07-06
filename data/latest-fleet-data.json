@@ -26481,22 +26481,22 @@
   "metadata": {
     "totalCaptured": 2407,
     "duplicateCount": 19144,
-    "lastUpdate": "2025-07-06T17:38:51.182Z",
+    "lastUpdate": "2025-07-06T17:39:51.182Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007445008460236886,
-      "avgResponseTime": 626.1008724534199,
-      "totalRequests": 2959,
+      "errorRate": 0.007432432432432433,
+      "avgResponseTime": 562.05043622671,
+      "totalRequests": 2960,
       "totalErrors": 22,
-      "uptime": 1751623813247,
+      "uptime": 199771924,
       "lastErrorTime": 1751816803177,
       "dailyCaptures": 2407
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T17:38:45.169Z",
+      "lastCheck": "2025-07-06T17:39:45.169Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

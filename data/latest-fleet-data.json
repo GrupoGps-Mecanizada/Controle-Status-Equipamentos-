@@ -28230,22 +28230,22 @@
   "metadata": {
     "totalCaptured": 2566,
     "duplicateCount": 19969,
-    "lastUpdate": "2025-07-06T18:28:51.192Z",
+    "lastUpdate": "2025-07-06T18:29:51.194Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007321131447587354,
-      "avgResponseTime": 759.5139471892662,
-      "totalRequests": 3009,
+      "errorRate": 0.008637873754152824,
+      "avgResponseTime": 623.2569735946331,
+      "totalRequests": 3010,
       "totalErrors": 26,
-      "uptime": 1751625313267,
+      "uptime": 201271904,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 2566
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T18:28:45.184Z",
+      "lastCheck": "2025-07-06T18:29:45.169Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

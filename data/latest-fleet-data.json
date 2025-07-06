@@ -36007,22 +36007,22 @@
   "metadata": {
     "totalCaptured": 3273,
     "duplicateCount": 24918,
-    "lastUpdate": "2025-07-06T22:28:51.203Z",
+    "lastUpdate": "2025-07-06T22:29:51.192Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.008012326656394453,
-      "avgResponseTime": 715.3558226227149,
-      "totalRequests": 3249,
+      "errorRate": 0.008,
+      "avgResponseTime": 600.6779113113574,
+      "totalRequests": 3250,
       "totalErrors": 26,
-      "uptime": 1751632513248,
+      "uptime": 208471934,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 3273
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T22:28:45.196Z",
+      "lastCheck": "2025-07-06T22:29:45.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

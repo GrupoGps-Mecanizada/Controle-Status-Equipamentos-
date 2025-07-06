@@ -30045,22 +30045,22 @@
   "metadata": {
     "totalCaptured": 2731,
     "duplicateCount": 20904,
-    "lastUpdate": "2025-07-06T19:18:52.186Z",
+    "lastUpdate": "2025-07-06T19:19:51.195Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.00851063829787234,
-      "avgResponseTime": 877.117873748788,
-      "totalRequests": 3059,
+      "errorRate": 0.00849673202614379,
+      "avgResponseTime": 681.058936874394,
+      "totalRequests": 3060,
       "totalErrors": 26,
-      "uptime": 1751626813266,
+      "uptime": 202771905,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 2731
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T19:18:45.171Z",
+      "lastCheck": "2025-07-06T19:19:45.169Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

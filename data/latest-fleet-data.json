@@ -24633,22 +24633,22 @@
   "metadata": {
     "totalCaptured": 2239,
     "duplicateCount": 18223,
-    "lastUpdate": "2025-07-06T16:38:51.184Z",
+    "lastUpdate": "2025-07-06T16:39:51.189Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0075993091537132984,
-      "avgResponseTime": 666.0189525027557,
-      "totalRequests": 2899,
+      "errorRate": 0.007586206896551724,
+      "avgResponseTime": 576.0094762513779,
+      "totalRequests": 2900,
       "totalErrors": 22,
-      "uptime": 1751622013262,
+      "uptime": 197971925,
       "lastErrorTime": 1751816803177,
       "dailyCaptures": 2239
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T16:38:45.190Z",
+      "lastCheck": "2025-07-06T16:39:45.184Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

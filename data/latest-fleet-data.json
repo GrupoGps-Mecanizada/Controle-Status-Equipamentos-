@@ -16504,22 +16504,22 @@
   "metadata": {
     "totalCaptured": 1500,
     "duplicateCount": 12026,
-    "lastUpdate": "2025-07-06T00:10:26.970Z",
+    "lastUpdate": "2025-07-06T00:11:27.173Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.0025733401955738548,
-      "avgResponseTime": 614.2760828890147,
-      "totalRequests": 1948,
+      "errorRate": 0.002566735112936345,
+      "avgResponseTime": 720.1380414445073,
+      "totalRequests": 1949,
       "totalErrors": 5,
-      "uptime": 1751592365158,
+      "uptime": 168308034,
       "lastErrorTime": 1751684615203,
       "dailyCaptures": 1500
     },
     "dateAutomation": {
       "lastReset": "Sat Jul 05 2025",
-      "lastCheck": "2025-07-06T00:10:13.180Z",
+      "lastCheck": "2025-07-06T00:11:13.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -36304,22 +36304,22 @@
   "metadata": {
     "totalCaptured": 3300,
     "duplicateCount": 25169,
-    "lastUpdate": "2025-07-06T22:38:52.203Z",
+    "lastUpdate": "2025-07-06T22:39:51.203Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007987711213517665,
-      "avgResponseTime": 891.97202717053,
-      "totalRequests": 3259,
+      "errorRate": 0.007975460122699387,
+      "avgResponseTime": 690.986013585265,
+      "totalRequests": 3260,
       "totalErrors": 26,
-      "uptime": 1751632813249,
+      "uptime": 208771930,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 3300
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T22:38:45.187Z",
+      "lastCheck": "2025-07-06T22:39:45.176Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

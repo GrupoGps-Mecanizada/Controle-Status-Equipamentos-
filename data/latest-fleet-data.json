@@ -33004,22 +33004,22 @@
   "metadata": {
     "totalCaptured": 3000,
     "duplicateCount": 22818,
-    "lastUpdate": "2025-07-06T20:58:51.191Z",
+    "lastUpdate": "2025-07-06T20:59:51.197Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.008240887480190175,
-      "avgResponseTime": 623.0166554723126,
-      "totalRequests": 3159,
+      "errorRate": 0.008227848101265823,
+      "avgResponseTime": 728.0083277361563,
+      "totalRequests": 3160,
       "totalErrors": 26,
-      "uptime": 1751629813215,
+      "uptime": 205771955,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 3000
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-06T20:58:45.169Z",
+      "lastCheck": "2025-07-06T20:59:45.169Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

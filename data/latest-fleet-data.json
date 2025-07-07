@@ -10658,12 +10658,56 @@
       "total_time": "0.088611111111111",
       "captured_at": "2025-07-07T17:25:56.737Z",
       "id": 1751909156737.0579
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 07:00:00",
+      "end": "2025-07-07 14:25:58",
+      "total_time": "7.4327777777778",
+      "captured_at": "2025-07-07T17:26:00.778Z",
+      "id": 1751909160778.598
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-07 13:10:55",
+      "end": "2025-07-07 14:25:55",
+      "total_time": "1.25",
+      "captured_at": "2025-07-07T17:26:00.957Z",
+      "id": 1751909160957.3796
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-07 14:07:02",
+      "end": "2025-07-07 14:21:02",
+      "total_time": "0.23333333333333",
+      "captured_at": "2025-07-07T17:26:01.879Z",
+      "id": 1751909161879.22
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-07 14:21:02",
+      "end": "2025-07-07 14:25:55",
+      "total_time": "0.081388888888889",
+      "captured_at": "2025-07-07T17:26:01.880Z",
+      "id": 1751909161880.961
     }
   ],
   "metadata": {
-    "totalCaptured": 969,
-    "duplicateCount": 6867,
-    "lastUpdate": "2025-07-07T17:26:00.108Z",
+    "totalCaptured": 973,
+    "duplicateCount": 6940,
+    "lastUpdate": "2025-07-07T17:26:05.107Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -10674,7 +10718,7 @@
       "totalErrors": 27,
       "uptime": 1751653879496,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 969
+      "dailyCaptures": 973
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",

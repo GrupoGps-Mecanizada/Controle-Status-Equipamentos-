@@ -18512,12 +18512,45 @@
       "total_time": "0.54083333333333",
       "captured_at": "2025-07-07T20:16:53.870Z",
       "id": 1751919413870.8694
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 16:33:44",
+      "end": "2025-07-07 17:16:53",
+      "total_time": "0.71916666666667",
+      "captured_at": "2025-07-07T20:16:57.722Z",
+      "id": 1751919417722.136
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-07 16:25:25",
+      "end": "2025-07-07 17:12:25",
+      "total_time": "0.78333333333333",
+      "captured_at": "2025-07-07T20:17:00.305Z",
+      "id": 1751919420305.0376
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-07 17:12:25",
+      "end": "2025-07-07 17:16:57",
+      "total_time": "0.075555555555556",
+      "captured_at": "2025-07-07T20:17:00.309Z",
+      "id": 1751919420309.522
     }
   ],
   "metadata": {
-    "totalCaptured": 1683,
-    "duplicateCount": 16897,
-    "lastUpdate": "2025-07-07T20:16:57.116Z",
+    "totalCaptured": 1686,
+    "duplicateCount": 16960,
+    "lastUpdate": "2025-07-07T20:17:04.119Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -18528,7 +18561,7 @@
       "totalErrors": 27,
       "uptime": 1751658979311,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 1684
+      "dailyCaptures": 1686
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",

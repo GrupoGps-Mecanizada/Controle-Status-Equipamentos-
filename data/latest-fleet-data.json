@@ -49510,12 +49510,45 @@
       "total_time": "0.41138888888889",
       "captured_at": "2025-07-07T13:18:45.488Z",
       "id": 1751894325488.4226
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-07-07 09:44:19",
+      "end": "2025-07-07 10:22:19",
+      "total_time": "0.63333333333333",
+      "captured_at": "2025-07-07T13:28:54.741Z",
+      "id": 1751894934741.2861
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-07 10:22:19",
+      "end": "2025-07-07 10:28:51",
+      "total_time": "0.10888888888889",
+      "captured_at": "2025-07-07T13:28:54.743Z",
+      "id": 1751894934743.7173
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 00:00",
+      "end": "2025-07-07 10:28:59",
+      "total_time": "10.483055555556",
+      "captured_at": "2025-07-07T13:28:55.279Z",
+      "id": 1751894935279.8015
     }
   ],
   "metadata": {
-    "totalCaptured": 4501,
-    "duplicateCount": 33395,
-    "lastUpdate": "2025-07-07T13:18:49.133Z",
+    "totalCaptured": 4504,
+    "duplicateCount": 33408,
+    "lastUpdate": "2025-07-07T13:28:59.143Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -49524,13 +49557,13 @@
       "avgResponseTime": 945.821341397769,
       "totalRequests": 3667,
       "totalErrors": 27,
-      "uptime": 247948743,
+      "uptime": 248248744,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 4501
+      "dailyCaptures": 4504
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",
-      "lastCheck": "2025-07-07T13:18:38.104Z",
+      "lastCheck": "2025-07-07T13:28:38.106Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

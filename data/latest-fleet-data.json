@@ -39582,22 +39582,22 @@
   "metadata": {
     "totalCaptured": 3598,
     "duplicateCount": 27821,
-    "lastUpdate": "2025-07-07T00:28:51.196Z",
+    "lastUpdate": "2025-07-07T00:29:51.194Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007726597325408618,
-      "avgResponseTime": 728.8542913891496,
-      "totalRequests": 3369,
+      "errorRate": 0.00771513353115727,
+      "avgResponseTime": 768.9271456945748,
+      "totalRequests": 3370,
       "totalErrors": 26,
-      "uptime": 1751636113287,
+      "uptime": 212071893,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 3598
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-07T00:28:45.194Z",
+      "lastCheck": "2025-07-07T00:29:45.178Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

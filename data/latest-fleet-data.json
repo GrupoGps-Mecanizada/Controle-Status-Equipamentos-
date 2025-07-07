@@ -22923,12 +22923,45 @@
       "total_time": "0.40694444444444",
       "captured_at": "2025-07-07T22:38:24.504Z",
       "id": 1751927904504.7285
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 16:33:44",
+      "end": "2025-07-07 19:38:24",
+      "total_time": "3.0777777777778",
+      "captured_at": "2025-07-07T22:38:32.658Z",
+      "id": 1751927912658.864
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-07 16:25:25",
+      "end": "2025-07-07 19:33:25",
+      "total_time": "3.1333333333333",
+      "captured_at": "2025-07-07T22:38:36.470Z",
+      "id": 1751927916470.586
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "main_switch_off",
+      "status_title": "Chave Geral Desligada",
+      "start": "2025-07-07 19:33:25",
+      "end": "2025-07-07 19:38:32",
+      "total_time": "0.085277777777778",
+      "captured_at": "2025-07-07T22:38:36.472Z",
+      "id": 1751927916472.0034
     }
   ],
   "metadata": {
-    "totalCaptured": 2084,
-    "duplicateCount": 27418,
-    "lastUpdate": "2025-07-07T22:38:27.620Z",
+    "totalCaptured": 2087,
+    "duplicateCount": 27481,
+    "lastUpdate": "2025-07-07T22:38:40.123Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -22937,13 +22970,13 @@
       "avgResponseTime": 945.821341397769,
       "totalRequests": 3667,
       "totalErrors": 27,
-      "uptime": 1751663179327,
+      "uptime": 264738777,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 2084
+      "dailyCaptures": 2087
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",
-      "lastCheck": "2025-07-07T22:37:38.104Z",
+      "lastCheck": "2025-07-07T22:38:38.104Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

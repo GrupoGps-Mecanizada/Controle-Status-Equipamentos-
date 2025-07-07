@@ -44554,14 +44554,14 @@
   "metadata": {
     "totalCaptured": 4050,
     "duplicateCount": 32234,
-    "lastUpdate": "2025-07-07T03:00:51.223Z",
+    "lastUpdate": "2025-07-07T03:01:51.199Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0.007386363636363636,
-      "avgResponseTime": 709.7699277686991,
-      "totalRequests": 3521,
+      "avgResponseTime": 667.8849638843495,
+      "totalRequests": 3522,
       "totalErrors": 26,
       "uptime": 216571877,
       "lastErrorTime": 1751826377692,
@@ -44569,10 +44569,10 @@
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-07T03:00:45.181Z",
+      "lastCheck": "2025-07-07T03:01:45.173Z",
       "consecutiveFailures": 0,
-      "isRunning": false,
-      "status": "waiting"
+      "isRunning": true,
+      "status": "running"
     },
     "compression": true
   }

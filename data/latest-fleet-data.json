@@ -8370,12 +8370,78 @@
       "total_time": "2.2722222222222",
       "captured_at": "2025-07-07T16:31:11.355Z",
       "id": 1751905871355.5505
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-07 13:15:15",
+      "end": "2025-07-07 13:28:16",
+      "total_time": "0.21694444444444",
+      "captured_at": "2025-07-07T16:31:16.520Z",
+      "id": 1751905876520.0623
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-07 13:28:16",
+      "end": "2025-07-07 13:31:15",
+      "total_time": "0.049722222222222",
+      "captured_at": "2025-07-07T16:31:16.521Z",
+      "id": 1751905876521.5974
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-07 13:17:44",
+      "end": "2025-07-07 13:31:14",
+      "total_time": "0.225",
+      "captured_at": "2025-07-07T16:31:16.699Z",
+      "id": 1751905876700.8271
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-07 12:20:06",
+      "end": "2025-07-07 13:21:36",
+      "total_time": "1.025",
+      "captured_at": "2025-07-07T16:31:16.936Z",
+      "id": 1751905876936.636
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-07 13:21:36",
+      "end": "2025-07-07 13:31:15",
+      "total_time": "0.16083333333333",
+      "captured_at": "2025-07-07T16:31:16.936Z",
+      "id": 1751905876936.8086
+    },
+    {
+      "vacancy_code": "533",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 12",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-07 12:31:54",
+      "end": "2025-07-07 13:31:16",
+      "total_time": "0.98944444444444",
+      "captured_at": "2025-07-07T16:31:17.144Z",
+      "id": 1751905877144.6262
     }
   ],
   "metadata": {
-    "totalCaptured": 761,
-    "duplicateCount": 4174,
-    "lastUpdate": "2025-07-07T16:31:15.107Z",
+    "totalCaptured": 767,
+    "duplicateCount": 4228,
+    "lastUpdate": "2025-07-07T16:31:21.106Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -8386,7 +8452,7 @@
       "totalErrors": 27,
       "uptime": 253638615,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 761
+      "dailyCaptures": 767
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",

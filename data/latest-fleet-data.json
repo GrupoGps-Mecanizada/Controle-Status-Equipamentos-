@@ -20316,12 +20316,56 @@
       "total_time": "0.057222222222222",
       "captured_at": "2025-07-07T21:11:54.748Z",
       "id": 1751922714748.033
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 16:30:00",
+      "end": "2025-07-07 18:21:56",
+      "total_time": "1.8655555555556",
+      "captured_at": "2025-07-07T21:22:05.255Z",
+      "id": 1751923325255.7942
+    },
+    {
+      "vacancy_code": "536",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 16:30:09",
+      "end": "2025-07-07 18:21:56",
+      "total_time": "1.8630555555556",
+      "captured_at": "2025-07-07T21:22:05.988Z",
+      "id": 1751923325988.3206
+    },
+    {
+      "vacancy_code": "526",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 16:35:00",
+      "end": "2025-07-07 18:21:56",
+      "total_time": "1.7822222222222",
+      "captured_at": "2025-07-07T21:22:06.076Z",
+      "id": 1751923326076.8425
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 00:00",
+      "end": "2025-07-07 18:22:06",
+      "total_time": "18.368333333333",
+      "captured_at": "2025-07-07T21:22:06.704Z",
+      "id": 1751923326704.1357
     }
   ],
   "metadata": {
-    "totalCaptured": 1847,
-    "duplicateCount": 20901,
-    "lastUpdate": "2025-07-07T21:11:58.117Z",
+    "totalCaptured": 1851,
+    "duplicateCount": 21038,
+    "lastUpdate": "2025-07-07T21:22:10.116Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -20330,13 +20374,13 @@
       "avgResponseTime": 945.821341397769,
       "totalRequests": 3667,
       "totalErrors": 27,
-      "uptime": 262038778,
+      "uptime": 262338776,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 1847
+      "dailyCaptures": 1851
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",
-      "lastCheck": "2025-07-07T21:11:38.102Z",
+      "lastCheck": "2025-07-07T21:21:38.107Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

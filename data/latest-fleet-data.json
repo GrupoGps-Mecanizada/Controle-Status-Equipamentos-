@@ -43256,22 +43256,22 @@
   "metadata": {
     "totalCaptured": 3932,
     "duplicateCount": 31012,
-    "lastUpdate": "2025-07-07T02:18:52.209Z",
+    "lastUpdate": "2025-07-07T02:19:51.208Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007482014388489209,
-      "avgResponseTime": 756.979156565174,
-      "totalRequests": 3479,
+      "errorRate": 0.007471264367816092,
+      "avgResponseTime": 781.489578282587,
+      "totalRequests": 3480,
       "totalErrors": 26,
-      "uptime": 1751639413332,
+      "uptime": 215371855,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 3932
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-07T02:18:45.211Z",
+      "lastCheck": "2025-07-07T02:19:45.183Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

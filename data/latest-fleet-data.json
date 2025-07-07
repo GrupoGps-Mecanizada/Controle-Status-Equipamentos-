@@ -41276,22 +41276,22 @@
   "metadata": {
     "totalCaptured": 3752,
     "duplicateCount": 29229,
-    "lastUpdate": "2025-07-07T01:18:51.196Z",
+    "lastUpdate": "2025-07-07T01:19:51.205Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007613469985358712,
-      "avgResponseTime": 684.3805550003655,
-      "totalRequests": 3419,
+      "errorRate": 0.00760233918128655,
+      "avgResponseTime": 583.1902775001827,
+      "totalRequests": 3420,
       "totalErrors": 26,
-      "uptime": 1751637613317,
+      "uptime": 213571865,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 3752
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-07T01:18:45.217Z",
+      "lastCheck": "2025-07-07T01:19:45.180Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

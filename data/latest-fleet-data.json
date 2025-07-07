@@ -38933,22 +38933,22 @@
   "metadata": {
     "totalCaptured": 3539,
     "duplicateCount": 27276,
-    "lastUpdate": "2025-07-07T00:08:51.202Z",
+    "lastUpdate": "2025-07-07T00:09:51.194Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007772795216741405,
-      "avgResponseTime": 696.4476688753741,
-      "totalRequests": 3349,
+      "errorRate": 0.007761194029850746,
+      "avgResponseTime": 590.7238344376871,
+      "totalRequests": 3350,
       "totalErrors": 26,
-      "uptime": 1751635513268,
+      "uptime": 211471916,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 3539
     },
     "dateAutomation": {
       "lastReset": "Sun Jul 06 2025",
-      "lastCheck": "2025-07-07T00:08:45.216Z",
+      "lastCheck": "2025-07-07T00:09:45.181Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

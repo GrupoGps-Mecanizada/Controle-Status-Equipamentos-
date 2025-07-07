@@ -44554,22 +44554,22 @@
   "metadata": {
     "totalCaptured": 4050,
     "duplicateCount": 32234,
-    "lastUpdate": "2025-07-07T03:18:51.203Z",
+    "lastUpdate": "2025-07-07T03:19:51.199Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
       "captureRate": 0,
-      "errorRate": 0.007352941176470588,
-      "avgResponseTime": 635.8329997442775,
-      "totalRequests": 3540,
+      "errorRate": 0.0073425585992657446,
+      "avgResponseTime": 724.4164998721387,
+      "totalRequests": 3541,
       "totalErrors": 26,
-      "uptime": 1751641213322,
+      "uptime": 217171855,
       "lastErrorTime": 1751826377692,
       "dailyCaptures": 4050
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",
-      "lastCheck": "2025-07-07T03:18:45.190Z",
+      "lastCheck": "2025-07-07T03:19:45.176Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

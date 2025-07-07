@@ -11263,12 +11263,56 @@
       "total_time": "0.096944444444444",
       "captured_at": "2025-07-07T17:38:08.857Z",
       "id": 1751909888857.6296
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "no_data",
+      "status_title": "Sem dados de bordo",
+      "start": "2025-07-07 14:32:46",
+      "end": "2025-07-07 14:38:13",
+      "total_time": "0.090833333333333",
+      "captured_at": "2025-07-07T17:38:30.759Z",
+      "id": 1751909910759.94
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-07 14:05:15",
+      "end": "2025-07-07 14:28:49",
+      "total_time": "0.39277777777778",
+      "captured_at": "2025-07-07T17:38:30.760Z",
+      "id": 1751909910760.1514
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-07 14:32:04",
+      "end": "2025-07-07 14:32:46",
+      "total_time": "0.011666666666667",
+      "captured_at": "2025-07-07T17:38:30.760Z",
+      "id": 1751909910760.8174
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-07 14:28:49",
+      "end": "2025-07-07 14:32:04",
+      "total_time": "0.054166666666667",
+      "captured_at": "2025-07-07T17:38:30.761Z",
+      "id": 1751909910761.2266
     }
   ],
   "metadata": {
-    "totalCaptured": 1024,
-    "duplicateCount": 7543,
-    "lastUpdate": "2025-07-07T17:38:12.108Z",
+    "totalCaptured": 1028,
+    "duplicateCount": 7560,
+    "lastUpdate": "2025-07-07T17:38:34.114Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -11279,7 +11323,7 @@
       "totalErrors": 27,
       "uptime": 1751654179495,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 1024
+      "dailyCaptures": 1028
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",

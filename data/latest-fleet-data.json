@@ -17830,12 +17830,56 @@
       "total_time": "1.4769444444444",
       "captured_at": "2025-07-08T17:40:24.916Z",
       "id": 1751996424916.72
+    },
+    {
+      "vacancy_code": "807",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 07",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 11:55:57",
+      "end": "2025-07-08 14:40:23",
+      "total_time": "2.7405555555556",
+      "captured_at": "2025-07-08T17:40:28.680Z",
+      "id": 1751996428680.5083
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "no_data",
+      "status_title": "Sem dados de bordo",
+      "start": "2025-07-08 14:34:49",
+      "end": "2025-07-08 14:40:04",
+      "total_time": "0.0875",
+      "captured_at": "2025-07-08T17:40:29.026Z",
+      "id": 1751996429026.6357
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 13:12:26",
+      "end": "2025-07-08 14:34:49",
+      "total_time": "1.3730555555556",
+      "captured_at": "2025-07-08T17:40:29.026Z",
+      "id": 1751996429026.273
+    },
+    {
+      "vacancy_code": "826",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-08 07:00:00",
+      "end": "2025-07-08 14:40:25",
+      "total_time": "7.6736111111111",
+      "captured_at": "2025-07-08T17:40:30.472Z",
+      "id": 1751996430472.855
     }
   ],
   "metadata": {
-    "totalCaptured": 1621,
-    "duplicateCount": 14518,
-    "lastUpdate": "2025-07-08T17:40:27.931Z",
+    "totalCaptured": 1625,
+    "duplicateCount": 14561,
+    "lastUpdate": "2025-07-08T17:40:33.509Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -17846,7 +17890,7 @@
       "totalErrors": 28,
       "uptime": 299328245,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 1621
+      "dailyCaptures": 1625
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",

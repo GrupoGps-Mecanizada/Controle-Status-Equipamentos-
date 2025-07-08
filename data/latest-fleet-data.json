@@ -18347,12 +18347,67 @@
       "total_time": "7.8527777777778",
       "captured_at": "2025-07-08T17:51:15.201Z",
       "id": 1751997075201.4463
+    },
+    {
+      "vacancy_code": "531",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 10",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 13:09:50",
+      "end": "2025-07-08 14:51:06",
+      "total_time": "1.6877777777778",
+      "captured_at": "2025-07-08T17:51:21.788Z",
+      "id": 1751997081788.9016
+    },
+    {
+      "vacancy_code": "533",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 12",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-07-08 14:35:30",
+      "end": "2025-07-08 14:50:30",
+      "total_time": "0.25",
+      "captured_at": "2025-07-08T17:51:23.850Z",
+      "id": 1751997083850.1277
+    },
+    {
+      "vacancy_code": "533",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 12",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 14:50:30",
+      "end": "2025-07-08 14:51:12",
+      "total_time": "0.011666666666667",
+      "captured_at": "2025-07-08T17:51:23.851Z",
+      "id": 1751997083851.2834
+    },
+    {
+      "vacancy_code": "545",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 13:12:26",
+      "end": "2025-07-08 14:51:08",
+      "total_time": "1.645",
+      "captured_at": "2025-07-08T17:51:24.647Z",
+      "id": 1751997084647.963
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 11:22:30",
+      "end": "2025-07-08 14:51:15",
+      "total_time": "3.4791666666667",
+      "captured_at": "2025-07-08T17:51:26.097Z",
+      "id": 1751997086097.9062
     }
   ],
   "metadata": {
-    "totalCaptured": 1668,
-    "duplicateCount": 15103,
-    "lastUpdate": "2025-07-08T17:51:18.216Z",
+    "totalCaptured": 1673,
+    "duplicateCount": 15179,
+    "lastUpdate": "2025-07-08T17:51:29.113Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -18363,11 +18418,11 @@
       "totalErrors": 28,
       "uptime": 1751697427400,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 1668
+      "dailyCaptures": 1673
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",
-      "lastCheck": "2025-07-08T17:50:55.633Z",
+      "lastCheck": "2025-07-08T17:51:25.633Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

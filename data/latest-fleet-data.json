@@ -23627,12 +23627,56 @@
       "total_time": "0.20805555555556",
       "captured_at": "2025-07-08T19:40:36.920Z",
       "id": 1752003636920.948
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-08 16:26:45",
+      "end": "2025-07-08 16:40:32",
+      "total_time": "0.22972222222222",
+      "captured_at": "2025-07-08T19:40:50.152Z",
+      "id": 1752003650152.5747
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-08 16:26:14",
+      "end": "2025-07-08 16:26:34",
+      "total_time": "0.0055555555555556",
+      "captured_at": "2025-07-08T19:40:50.154Z",
+      "id": 1752003650154.3716
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 16:20:52",
+      "end": "2025-07-08 16:26:14",
+      "total_time": "0.089444444444444",
+      "captured_at": "2025-07-08T19:40:50.155Z",
+      "id": 1752003650155.101
+    },
+    {
+      "vacancy_code": "314",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 09",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 16:26:34",
+      "end": "2025-07-08 16:26:45",
+      "total_time": "0.0030555555555556",
+      "captured_at": "2025-07-08T19:40:50.156Z",
+      "id": 1752003650156.0427
     }
   ],
   "metadata": {
-    "totalCaptured": 2148,
-    "duplicateCount": 22247,
-    "lastUpdate": "2025-07-08T19:40:39.938Z",
+    "totalCaptured": 2152,
+    "duplicateCount": 22289,
+    "lastUpdate": "2025-07-08T19:40:53.181Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -23643,7 +23687,7 @@
       "totalErrors": 28,
       "uptime": 302928214,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 2148
+      "dailyCaptures": 2152
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",

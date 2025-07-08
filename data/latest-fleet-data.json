@@ -5389,12 +5389,67 @@
       "total_time": "0.57944444444444",
       "captured_at": "2025-07-08T11:57:14.274Z",
       "id": 1751975834274.9214
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-07-08 08:54:49",
+      "end": "2025-07-08 08:55:49",
+      "total_time": "0.016666666666667",
+      "captured_at": "2025-07-08T11:57:21.141Z",
+      "id": 1751975841141.8403
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 08:52:34",
+      "end": "2025-07-08 08:54:49",
+      "total_time": "0.0375",
+      "captured_at": "2025-07-08T11:57:21.142Z",
+      "id": 1751975841142.0188
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 08:55:49",
+      "end": "2025-07-08 08:57:14",
+      "total_time": "0.023611111111111",
+      "captured_at": "2025-07-08T11:57:21.142Z",
+      "id": 1751975841142.0981
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-08 08:47:04",
+      "end": "2025-07-08 08:52:34",
+      "total_time": "0.091666666666667",
+      "captured_at": "2025-07-08T11:57:21.142Z",
+      "id": 1751975841142.2263
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 08:40:24",
+      "end": "2025-07-08 08:47:04",
+      "total_time": "0.11111111111111",
+      "captured_at": "2025-07-08T11:57:21.142Z",
+      "id": 1751975841142.0237
     }
   ],
   "metadata": {
-    "totalCaptured": 490,
-    "duplicateCount": 1403,
-    "lastUpdate": "2025-07-08T11:57:17.279Z",
+    "totalCaptured": 495,
+    "duplicateCount": 1410,
+    "lastUpdate": "2025-07-08T11:57:24.148Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -5405,7 +5460,7 @@
       "totalErrors": 28,
       "uptime": 289176198,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 490
+      "dailyCaptures": 495
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",

@@ -31800,12 +31800,111 @@
       "total_time": "0.092777777777778",
       "captured_at": "2025-07-08T23:34:41.028Z",
       "id": 1752017681028.1936
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-08 16:22:22",
+      "end": "2025-07-08 20:34:39",
+      "total_time": "4.2047222222222",
+      "captured_at": "2025-07-08T23:34:47.070Z",
+      "id": 1752017687070.4053
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 17:15:07",
+      "end": "2025-07-08 20:34:39",
+      "total_time": "3.3255555555556",
+      "captured_at": "2025-07-08T23:34:48.606Z",
+      "id": 1752017688606.052
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-08 16:28:13",
+      "end": "2025-07-08 20:34:48",
+      "total_time": "4.1097222222222",
+      "captured_at": "2025-07-08T23:34:50.300Z",
+      "id": 1752017690300.2915
+    },
+    {
+      "vacancy_code": "372",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 10",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-08 16:26:15",
+      "end": "2025-07-08 20:34:41",
+      "total_time": "4.1405555555556",
+      "captured_at": "2025-07-08T23:34:51.289Z",
+      "id": 1752017691289.5898
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "maintenance",
+      "status_title": "Em manutenção",
+      "start": "2025-07-08 16:26:57",
+      "end": "2025-07-08 20:31:02",
+      "total_time": "4.0680555555556",
+      "captured_at": "2025-07-08T23:34:51.726Z",
+      "id": 1752017691726.2632
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 20:31:02",
+      "end": "2025-07-08 20:34:40",
+      "total_time": "0.060555555555556",
+      "captured_at": "2025-07-08T23:34:51.729Z",
+      "id": 1752017691729.361
+    },
+    {
+      "vacancy_code": "573",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 08 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 19:37:14",
+      "end": "2025-07-08 20:34:35",
+      "total_time": "0.95583333333333",
+      "captured_at": "2025-07-08T23:34:53.237Z",
+      "id": 1752017693237.7283
+    },
+    {
+      "vacancy_code": "546",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 02",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-08 16:40:50",
+      "end": "2025-07-08 20:34:52",
+      "total_time": "3.9005555555556",
+      "captured_at": "2025-07-08T23:34:56.950Z",
+      "id": 1752017696950.9568
+    },
+    {
+      "vacancy_code": "317",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-08 16:25:45",
+      "end": "2025-07-08 20:34:49",
+      "total_time": "4.1511111111111",
+      "captured_at": "2025-07-08T23:34:57.510Z",
+      "id": 1752017697510.0493
     }
   ],
   "metadata": {
-    "totalCaptured": 2891,
-    "duplicateCount": 40550,
-    "lastUpdate": "2025-07-08T23:34:44.665Z",
+    "totalCaptured": 2900,
+    "duplicateCount": 40853,
+    "lastUpdate": "2025-07-08T23:35:04.440Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -31816,7 +31915,7 @@
       "totalErrors": 28,
       "uptime": 1751707725864,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 2891
+      "dailyCaptures": 2900
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",

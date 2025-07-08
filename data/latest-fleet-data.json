@@ -17676,12 +17676,56 @@
       "total_time": "0.0083333333333333",
       "captured_at": "2025-07-08T17:29:55.434Z",
       "id": 1751995795434.8293
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-07-08 14:23:37",
+      "end": "2025-07-08 14:28:37",
+      "total_time": "0.083333333333333",
+      "captured_at": "2025-07-08T17:40:03.793Z",
+      "id": 1751996403793.3867
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "secondary_motor_on",
+      "status_title": "Motor Secundário Ligado",
+      "start": "2025-07-08 14:37:37",
+      "end": "2025-07-08 14:38:37",
+      "total_time": "0.016666666666667",
+      "captured_at": "2025-07-08T17:40:03.797Z",
+      "id": 1751996403797.1863
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 14:28:37",
+      "end": "2025-07-08 14:37:37",
+      "total_time": "0.15",
+      "captured_at": "2025-07-08T17:40:03.812Z",
+      "id": 1751996403812.0315
+    },
+    {
+      "vacancy_code": "535",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 03",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 14:38:37",
+      "end": "2025-07-08 14:39:58",
+      "total_time": "0.0225",
+      "captured_at": "2025-07-08T17:40:03.817Z",
+      "id": 1751996403817.9753
     }
   ],
   "metadata": {
-    "totalCaptured": 1607,
-    "duplicateCount": 14344,
-    "lastUpdate": "2025-07-08T17:29:58.446Z",
+    "totalCaptured": 1611,
+    "duplicateCount": 14363,
+    "lastUpdate": "2025-07-08T17:40:06.833Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -17690,13 +17734,13 @@
       "avgResponseTime": 532.2053353494423,
       "totalRequests": 3669,
       "totalErrors": 28,
-      "uptime": 299028242,
+      "uptime": 299328245,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 1607
+      "dailyCaptures": 1611
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",
-      "lastCheck": "2025-07-08T17:29:55.870Z",
+      "lastCheck": "2025-07-08T17:39:55.633Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

@@ -29985,12 +29985,34 @@
       "total_time": "1.1816666666667",
       "captured_at": "2025-07-08T02:51:28.018Z",
       "id": 1751943088018.7646
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-07 23:14:21",
+      "end": "2025-07-07 23:42:21",
+      "total_time": "0.46666666666667",
+      "captured_at": "2025-07-08T02:51:32.121Z",
+      "id": 1751943092121.255
+    },
+    {
+      "vacancy_code": "823",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 01 - 16 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-07 23:42:21",
+      "end": "2025-07-07 23:51:16",
+      "total_time": "0.14861111111111",
+      "captured_at": "2025-07-08T02:51:32.124Z",
+      "id": 1751943092124.6533
     }
   ],
   "metadata": {
-    "totalCaptured": 2726,
-    "duplicateCount": 47208,
-    "lastUpdate": "2025-07-08T02:51:31.119Z",
+    "totalCaptured": 2728,
+    "duplicateCount": 47274,
+    "lastUpdate": "2025-07-08T02:51:36.120Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -30001,7 +30023,7 @@
       "totalErrors": 27,
       "uptime": 272238846,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 2726
+      "dailyCaptures": 2728
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",

@@ -11307,12 +11307,78 @@
       "total_time": "4.6425",
       "captured_at": "2025-07-08T14:38:38.490Z",
       "id": 1751985518490.0571
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 10:34:08",
+      "end": "2025-07-08 11:38:35",
+      "total_time": "1.0741666666667",
+      "captured_at": "2025-07-08T14:38:43.908Z",
+      "id": 1751985523908.3403
+    },
+    {
+      "vacancy_code": "317",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 04",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 11:19:18",
+      "end": "2025-07-08 11:38:37",
+      "total_time": "0.32194444444444",
+      "captured_at": "2025-07-08T14:38:44.025Z",
+      "id": 1751985524025.4304
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 11:08:20",
+      "end": "2025-07-08 11:38:38",
+      "total_time": "0.505",
+      "captured_at": "2025-07-08T14:38:46.186Z",
+      "id": 1751985526186.7913
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "stopped",
+      "status_title": "Parado Ligado",
+      "start": "2025-07-08 11:23:28",
+      "end": "2025-07-08 11:32:58",
+      "total_time": "0.15833333333333",
+      "captured_at": "2025-07-08T14:38:48.180Z",
+      "id": 1751985528180.06
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 11:12:14",
+      "end": "2025-07-08 11:23:28",
+      "total_time": "0.18722222222222",
+      "captured_at": "2025-07-08T14:38:48.182Z",
+      "id": 1751985528182.0151
+    },
+    {
+      "vacancy_code": "308",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 06",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 11:32:58",
+      "end": "2025-07-08 11:38:39",
+      "total_time": "0.094722222222222",
+      "captured_at": "2025-07-08T14:38:48.183Z",
+      "id": 1751985528183.9302
     }
   ],
   "metadata": {
-    "totalCaptured": 1028,
-    "duplicateCount": 6335,
-    "lastUpdate": "2025-07-08T14:38:41.642Z",
+    "totalCaptured": 1034,
+    "duplicateCount": 6404,
+    "lastUpdate": "2025-07-08T14:38:51.651Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -11323,11 +11389,11 @@
       "totalErrors": 28,
       "uptime": 293976200,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 1028
+      "dailyCaptures": 1034
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",
-      "lastCheck": "2025-07-08T14:37:43.632Z",
+      "lastCheck": "2025-07-08T14:38:44.031Z",
       "consecutiveFailures": 0,
       "isRunning": false,
       "status": "success"

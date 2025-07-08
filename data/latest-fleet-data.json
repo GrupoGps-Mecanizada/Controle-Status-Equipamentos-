@@ -29688,12 +29688,23 @@
       "total_time": "7.1116666666667",
       "captured_at": "2025-07-08T02:40:32.610Z",
       "id": 1751942432610.9211
+    },
+    {
+      "vacancy_code": "416",
+      "vacancy_name": "CAMINHÃO HIPER VÁCUO - GPS - 01",
+      "status": "main_switch_off",
+      "status_title": "Chave Geral Desligada",
+      "start": "2025-07-07 19:49:25",
+      "end": "2025-07-07 23:40:32",
+      "total_time": "3.8519444444444",
+      "captured_at": "2025-07-08T02:40:40.963Z",
+      "id": 1751942440963.959
     }
   ],
   "metadata": {
-    "totalCaptured": 2699,
-    "duplicateCount": 46426,
-    "lastUpdate": "2025-07-08T02:40:38.651Z",
+    "totalCaptured": 2700,
+    "duplicateCount": 46449,
+    "lastUpdate": "2025-07-08T02:40:44.134Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -29704,7 +29715,7 @@
       "totalErrors": 27,
       "uptime": 271938853,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 2699
+      "dailyCaptures": 2700
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",

@@ -29853,12 +29853,56 @@
       "total_time": "7.2811111111111",
       "captured_at": "2025-07-08T02:50:58.416Z",
       "id": 1751943058416.666
+    },
+    {
+      "vacancy_code": "309",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 07",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 18:36:57",
+      "end": "2025-07-07 23:50:58",
+      "total_time": "5.2336111111111",
+      "captured_at": "2025-07-08T02:51:05.158Z",
+      "id": 1751943065158.3342
+    },
+    {
+      "vacancy_code": "317",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 04",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 16:30:00",
+      "end": "2025-07-07 23:50:58",
+      "total_time": "7.3494444444444",
+      "captured_at": "2025-07-08T02:51:05.529Z",
+      "id": 1751943065529.0732
+    },
+    {
+      "vacancy_code": "312",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 03",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 16:30:00",
+      "end": "2025-07-07 23:50:57",
+      "total_time": "7.3491666666667",
+      "captured_at": "2025-07-08T02:51:05.950Z",
+      "id": 1751943065950.695
+    },
+    {
+      "vacancy_code": "316",
+      "vacancy_name": "CAMINHÃO AUTO VÁCUO - GPS - 05",
+      "status": "not_appropriated",
+      "status_title": "Indisponível / Sem Apropriação",
+      "start": "2025-07-07 16:30:00",
+      "end": "2025-07-07 23:50:58",
+      "total_time": "7.3494444444444",
+      "captured_at": "2025-07-08T02:51:06.684Z",
+      "id": 1751943066684.063
     }
   ],
   "metadata": {
-    "totalCaptured": 2714,
-    "duplicateCount": 46821,
-    "lastUpdate": "2025-07-08T02:51:03.926Z",
+    "totalCaptured": 2718,
+    "duplicateCount": 46954,
+    "lastUpdate": "2025-07-08T02:51:10.121Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -29869,7 +29913,7 @@
       "totalErrors": 27,
       "uptime": 272238846,
       "lastErrorTime": 1751891571169,
-      "dailyCaptures": 2714
+      "dailyCaptures": 2718
     },
     "dateAutomation": {
       "lastReset": "Mon Jul 07 2025",

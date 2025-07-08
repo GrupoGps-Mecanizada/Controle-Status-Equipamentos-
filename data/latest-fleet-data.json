@@ -9470,12 +9470,56 @@
       "total_time": "1.9013888888889",
       "captured_at": "2025-07-08T13:54:18.703Z",
       "id": 1751982858703.4468
+    },
+    {
+      "vacancy_code": "533",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 12",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 10:29:58",
+      "end": "2025-07-08 10:54:16",
+      "total_time": "0.405",
+      "captured_at": "2025-07-08T13:54:22.830Z",
+      "id": 1751982862830.6414
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 10:39:16",
+      "end": "2025-07-08 10:46:46",
+      "total_time": "0.125",
+      "captured_at": "2025-07-08T13:54:23.139Z",
+      "id": 1751982863139.7693
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 10:50:30",
+      "end": "2025-07-08 10:54:09",
+      "total_time": "0.060833333333333",
+      "captured_at": "2025-07-08T13:54:23.140Z",
+      "id": 1751982863140.083
+    },
+    {
+      "vacancy_code": "404",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 11",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 10:46:46",
+      "end": "2025-07-08 10:50:30",
+      "total_time": "0.062222222222222",
+      "captured_at": "2025-07-08T13:54:23.141Z",
+      "id": 1751982863141.8262
     }
   ],
   "metadata": {
-    "totalCaptured": 861,
-    "duplicateCount": 4709,
-    "lastUpdate": "2025-07-08T13:54:22.637Z",
+    "totalCaptured": 865,
+    "duplicateCount": 4729,
+    "lastUpdate": "2025-07-08T13:54:26.649Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -9486,7 +9530,7 @@
       "totalErrors": 28,
       "uptime": 1751690227472,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 862
+      "dailyCaptures": 865
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",

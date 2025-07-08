@@ -17731,12 +17731,45 @@
       "total_time": "0.6075",
       "captured_at": "2025-07-08T17:40:08.361Z",
       "id": 1751996408361.4092
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 14:23:50",
+      "end": "2025-07-08 14:29:11",
+      "total_time": "0.089166666666667",
+      "captured_at": "2025-07-08T17:40:15.039Z",
+      "id": 1751996415039.4336
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "off",
+      "status_title": "Motor Desligado",
+      "start": "2025-07-08 14:30:41",
+      "end": "2025-07-08 14:39:58",
+      "total_time": "0.15472222222222",
+      "captured_at": "2025-07-08T17:40:15.039Z",
+      "id": 1751996415039.031
+    },
+    {
+      "vacancy_code": "530",
+      "vacancy_name": "CAMINHÃO ALTA PRESSÃO - GPS - 01 - 24 HS",
+      "status": "on",
+      "status_title": "Motor Ligado",
+      "start": "2025-07-08 14:29:11",
+      "end": "2025-07-08 14:30:41",
+      "total_time": "0.025",
+      "captured_at": "2025-07-08T17:40:15.040Z",
+      "id": 1751996415040.1797
     }
   ],
   "metadata": {
-    "totalCaptured": 1612,
-    "duplicateCount": 14387,
-    "lastUpdate": "2025-07-08T17:40:11.375Z",
+    "totalCaptured": 1615,
+    "duplicateCount": 14435,
+    "lastUpdate": "2025-07-08T17:40:18.052Z",
     "source": "tampermonkey-v3",
     "version": "3.0",
     "metrics": {
@@ -17747,7 +17780,7 @@
       "totalErrors": 28,
       "uptime": 299328245,
       "lastErrorTime": 1751971266689,
-      "dailyCaptures": 1612
+      "dailyCaptures": 1615
     },
     "dateAutomation": {
       "lastReset": "Tue Jul 08 2025",

@@ -5288,50 +5288,50 @@
     "lastReset": null,
     "version": "4.2.0-enterprise-complete",
     "lastPersist": 1752028171181,
-    "lastUpdate": "2025-07-09T13:02:21.187Z",
+    "lastUpdate": "2025-07-09T13:03:24.166Z",
     "source": "gaussfleet-enterprise",
     "environment": "production",
     "metrics": {
       "captureRate": 0,
       "errorRate": 0,
-      "avgResponseTime": 197.19000499245365,
-      "totalRequests": 100,
+      "avgResponseTime": 161.0950024962268,
+      "totalRequests": 101,
       "totalErrors": 0,
       "uptime": 1752063648386,
-      "memoryUsage": 52,
+      "memoryUsage": 49,
       "cpuUsage": 0,
       "lastGCTime": 1752066049179,
       "requestsPerMinute": 0,
-      "dataProcessingTime": 0.00025723129544719114,
-      "githubSyncTime": 2007,
+      "dataProcessingTime": 0.00006430782386179779,
+      "githubSyncTime": 1233,
       "dailyCaptures": 440
     },
     "health": {
-      "status": "healthy",
-      "lastHealthCheck": 1752066133230,
+      "status": "warning",
+      "lastHealthCheck": 1752066198399,
       "memoryPressure": false,
       "errorThresholdReached": false,
-      "circuitBreakerOpen": false,
-      "lastHeartbeat": 1752066133230,
+      "circuitBreakerOpen": true,
+      "lastHeartbeat": 1752066198400,
       "componentStatus": {
-        "dataCapturer": "healthy",
+        "dataCapturer": "degraded",
         "githubSync": "healthy",
         "dateAutomation": "healthy",
         "memoryManager": "healthy",
-        "networking": "healthy",
+        "networking": "degraded",
         "backupManager": "healthy",
         "uiManager": "healthy"
       }
     },
     "uploadStats": {
-      "totalUploads": 18,
+      "totalUploads": 19,
       "totalFailures": 8,
-      "totalRetries": 64,
-      "avgUploadTime": 8870.0415725708
+      "totalRetries": 68,
+      "avgUploadTime": 7050.5207862854
     },
     "compression": true,
     "recordCount": 440,
-    "uploadTimestamp": 1752066141187,
+    "uploadTimestamp": 1752066204166,
     "sessionId": 1752063647189
   }
 }

@@ -476,6 +476,21 @@
             color: var(--muted);
         }
 
+        .status-badge.danger {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+        }
+
+        .status-badge.warning {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--warning);
+        }
+
+        .status-badge.info {
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary);
+        }
+
         .detail-panel {
             background: var(--bg-primary);
             border-radius: 12px;
@@ -799,6 +814,31 @@
             font-weight: 500;
         }
 
+        .alert-error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--danger);
+            color: var(--danger);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+        }
+
+        .alert-error strong {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .alert-success {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--success);
+            color: var(--success);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+        }
+
         ::-webkit-scrollbar {
             width: 8px;
             height: 8px;
@@ -853,22 +893,6 @@
                 width: 100%;
             }
         }
-
-        /* Alert de erro */
-        .alert-error {
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid var(--danger);
-            color: var(--danger);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            font-size: 0.875rem;
-        }
-
-        .alert-error strong {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
     </style>
 </head>
 <body>
@@ -878,8 +902,8 @@
             <span class="brand">MasterDrive</span>
         </div>
         <nav class="nav">
-            <button class="nav-btn active">Dashboard</button>
-            <button class="nav-btn">Alarmes</button>
+            <button class="nav-btn active" onclick="mostrarDashboard()">Dashboard</button>
+            <button class="nav-btn" onclick="mostrarAlarmes()">Alarmes</button>
         </nav>
         <div class="header-info">Sistema de Telemetria</div>
     </div>
@@ -891,210 +915,214 @@
             <p class="page-subtitle" id="equipmentCount"></p>
         </div>
 
-        <!-- ALERT DE CONFIGURAÇÃO -->
         <div id="configAlert" class="alert-error" style="display: none;">
             <strong>⚠️ Configuração Necessária</strong>
-            Por favor, configure a URL do Google Apps Script na variável SCRIPT_URL no código JavaScript.
+            Por favor, configure a URL do Google Apps Script na variável SCRIPT_URL no código JavaScript (linha 1247).
         </div>
 
-        <div class="stats-grid">
-            <div class="stat-card" data-status="trabalhando" onclick="filterByStatus('trabalhando')">
-                <div class="stat-icon success">T</div>
-                <div class="stat-content">
-                    <div class="stat-label">Trabalhando</div>
-                    <div class="stat-value">
-                        <span id="trabalhando-count">0</span>
-                        <span class="stat-percentage success" id="trabalhando-percent">0%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="stat-card" data-status="parado" onclick="filterByStatus('parado')">
-                <div class="stat-icon danger">P</div>
-                <div class="stat-content">
-                    <div class="stat-label">Parado</div>
-                    <div class="stat-value">
-                        <span id="parado-count">0</span>
-                        <span class="stat-percentage danger" id="parado-percent">0%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="stat-card" data-status="manutencao" onclick="filterByStatus('manutencao')">
-                <div class="stat-icon warning">M</div>
-                <div class="stat-content">
-                    <div class="stat-label">Manutenção</div>
-                    <div class="stat-value">
-                        <span id="manutencao-count">0</span>
-                        <span class="stat-percentage warning" id="manutencao-percent">0%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="stat-card" data-status="sem-apropriacao" onclick="filterByStatus('sem-apropriacao')">
-                <div class="stat-icon muted">S</div>
-                <div class="stat-content">
-                    <div class="stat-label">Sem Apropriação</div>
-                    <div class="stat-value">
-                        <span id="sem-apropriacao-count">0</span>
-                        <span class="stat-percentage muted" id="sem-apropriacao-percent">0%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="controls">
-            <div class="date-selector">
-                <span>Data:</span>
-                <input type="date" id="dateFilter" onchange="loadData()">
-            </div>
-            <div class="view-toggle">
-                <button class="toggle-btn active" onclick="setToday()">Hoje</button>
-                <button class="toggle-btn" onclick="setYesterday()">Ontem</button>
-            </div>
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Buscar equipamento..." oninput="filterEquipment()">
-            </div>
-            <select class="filter-select" id="statusFilter" onchange="filterEquipment()">
-                <option value="">Todos os status</option>
-                <option value="trabalhando">Trabalhando</option>
-                <option value="parado">Parado</option>
-                <option value="manutencao">Manutenção</option>
-                <option value="sem-apropriacao">Sem Apropriação</option>
-            </select>
-            <select class="filter-select" id="vagaFilter" onchange="filterEquipment()">
-                <option value="">Todas as vagas</option>
-            </select>
-            <button class="refresh-btn" onclick="loadData()">Atualizar</button>
-        </div>
-
-        <div class="content-grid">
-            <div class="equipment-section">
-                <div class="section-header">
-                    <h2 class="section-title">Equipamentos <span class="equipment-count" id="equipmentCountDisplay"></span></h2>
-                </div>
-                <div id="loadingState" class="loading">
-                    <div class="spinner"></div>
-                    <p>Carregando dados da planilha...</p>
-                </div>
-                <div id="equipmentGrid" class="equipment-grid" style="display:none;"></div>
-                <div id="emptyState" class="empty-state" style="display:none;">
-                    <p class="empty-state-text">Nenhum equipamento encontrado</p>
-                </div>
-            </div>
-
-            <div class="detail-panel" id="detailPanel" style="display:none;">
-                <div class="detail-header">
-                    <div class="detail-title-section">
-                        <div class="detail-equipment-id" id="detailEquipmentId"></div>
-                        <div class="detail-equipment-type" id="detailEquipmentType"></div>
-                    </div>
-                    <button class="detail-close" onclick="closeDetail()">×</button>
-                </div>
-                <div class="detail-body">
-                    <div class="detail-section">
-                        <div class="status-badge" id="detailStatus"></div>
-                    </div>
-
-                    <div class="detail-section">
-                        <div class="detail-section-title">Informações</div>
-                        <div class="detail-info-grid">
-                            <div class="info-item">
-                                <div class="info-label">Vaga</div>
-                                <div class="info-value" id="detailVaga">-</div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-label">Última Atualização</div>
-                                <div class="info-value" id="detailUpdate">-</div>
-                            </div>
+        <div id="dashboardSection">
+            <div class="stats-grid">
+                <div class="stat-card" data-status="trabalhando" onclick="filterByStatus('trabalhando')">
+                    <div class="stat-icon success">T</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Trabalhando</div>
+                        <div class="stat-value">
+                            <span id="trabalhando-count">0</span>
+                            <span class="stat-percentage success" id="trabalhando-percent">0%</span>
                         </div>
                     </div>
-
-                    <div class="detail-section">
-                        <div class="detail-section-title">Resumo do Dia</div>
-                        <div class="summary-grid">
-                            <div class="summary-item">
-                                <div class="summary-label">
-                                    <span class="legend-dot trabalhando"></span> Trabalhando
-                                </div>
-                                <div class="summary-value" style="color: var(--success);">
-                                    <span id="detailTrabalhando">0h 0min</span>
-                                    <span class="summary-percentage" id="detailTrabalhandoPercent">0%</span>
-                                </div>
-                            </div>
-                            <div class="summary-item">
-                                <div class="summary-label">
-                                    <span class="legend-dot parado"></span> Parado
-                                </div>
-                                <div class="summary-value" style="color: var(--danger);">
-                                    <span id="detailParado">0h 0min</span>
-                                    <span class="summary-percentage" id="detailParadoPercent">0%</span>
-                                </div>
-                            </div>
-                            <div class="summary-item">
-                                <div class="summary-label">
-                                    <span class="legend-dot manutencao"></span> Manutenção
-                                </div>
-                                <div class="summary-value" style="color: var(--warning);">
-                                    <span id="detailManutencao">0h 0min</span>
-                                    <span class="summary-percentage" id="detailManutencaoPercent">0%</span>
-                                </div>
-                            </div>
-                            <div class="summary-item">
-                                <div class="summary-label">
-                                    <span class="legend-dot sem-apropriacao"></span> Sem Apropriação
-                                </div>
-                                <div class="summary-value" style="color: var(--muted);">
-                                    <span id="detailSemApropriacao">0h 0min</span>
-                                    <span class="summary-percentage" id="detailSemApropriacaoPercent">0%</span>
-                                </div>
-                            </div>
+                </div>
+                <div class="stat-card" data-status="parado" onclick="filterByStatus('parado')">
+                    <div class="stat-icon danger">P</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Parado</div>
+                        <div class="stat-value">
+                            <span id="parado-count">0</span>
+                            <span class="stat-percentage danger" id="parado-percent">0%</span>
                         </div>
                     </div>
-
-                    <div class="detail-section">
-                        <div class="timeline-container">
-                            <div class="timeline-title">Timeline do Dia</div>
-                            <div class="timeline-header">
-                                <span>00:00</span>
-                                <span>06:00</span>
-                                <span>12:00</span>
-                                <span>18:00</span>
-                                <span>24:00</span>
-                            </div>
-                            <div class="timeline-bar" id="timelineBar"></div>
-                            
-                            <div class="timeline-legend">
-                                <div class="legend-item">
-                                    <span class="legend-dot trabalhando"></span>
-                                    <span>Trabalhando</span>
-                                </div>
-                                <div class="legend-item">
-                                    <span class="legend-dot parado"></span>
-                                    <span>Parado</span>
-                                </div>
-                                <div class="legend-item">
-                                    <span class="legend-dot manutencao"></span>
-                                    <span>Manutenção</span>
-                                </div>
-                                <div class="legend-item">
-                                    <span class="legend-dot sem-apropriacao"></span>
-                                    <span>Sem Apropriação</span>
-                                </div>
-                            </div>
-
-                            <div class="events-list" id="eventsList"></div>
+                </div>
+                <div class="stat-card" data-status="manutencao" onclick="filterByStatus('manutencao')">
+                    <div class="stat-icon warning">M</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Manutenção</div>
+                        <div class="stat-value">
+                            <span id="manutencao-count">0</span>
+                            <span class="stat-percentage warning" id="manutencao-percent">0%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card" data-status="sem-apropriacao" onclick="filterByStatus('sem-apropriacao')">
+                    <div class="stat-icon muted">S</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Sem Apropriação</div>
+                        <div class="stat-value">
+                            <span id="sem-apropriacao-count">0</span>
+                            <span class="stat-percentage muted" id="sem-apropriacao-percent">0%</span>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="controls">
+                <div class="date-selector">
+                    <span>Data:</span>
+                    <input type="date" id="dateFilter" onchange="loadData()">
+                </div>
+                <div class="view-toggle">
+                    <button class="toggle-btn active" onclick="setToday()">Hoje</button>
+                    <button class="toggle-btn" onclick="setYesterday()">Ontem</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar equipamento..." oninput="filterEquipment()">
+                </div>
+                <select class="filter-select" id="statusFilter" onchange="filterEquipment()">
+                    <option value="">Todos os status</option>
+                    <option value="trabalhando">Trabalhando</option>
+                    <option value="parado">Parado</option>
+                    <option value="manutencao">Manutenção</option>
+                    <option value="sem-apropriacao">Sem Apropriação</option>
+                </select>
+                <select class="filter-select" id="vagaFilter" onchange="filterEquipment()">
+                    <option value="">Todas as vagas</option>
+                </select>
+                <button class="refresh-btn" onclick="loadData()">Atualizar</button>
+            </div>
+
+            <div class="content-grid">
+                <div class="equipment-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Equipamentos <span class="equipment-count" id="equipmentCountDisplay"></span></h2>
+                    </div>
+                    <div id="loadingState" class="loading">
+                        <div class="spinner"></div>
+                        <p>Carregando dados da planilha...</p>
+                    </div>
+                    <div id="equipmentGrid" class="equipment-grid" style="display:none;"></div>
+                    <div id="emptyState" class="empty-state" style="display:none;">
+                        <p class="empty-state-text">Nenhum equipamento encontrado</p>
+                    </div>
+                </div>
+
+                <div class="detail-panel" id="detailPanel" style="display:none;">
+                    <div class="detail-header">
+                        <div class="detail-title-section">
+                            <div class="detail-equipment-id" id="detailEquipmentId"></div>
+                            <div class="detail-equipment-type" id="detailEquipmentType"></div>
+                        </div>
+                        <button class="detail-close" onclick="closeDetail()">×</button>
+                    </div>
+                    <div class="detail-body">
+                        <div class="detail-section">
+                            <div class="status-badge" id="detailStatus"></div>
+                        </div>
+
+                        <div class="detail-section">
+                            <div class="detail-section-title">Informações</div>
+                            <div class="detail-info-grid">
+                                <div class="info-item">
+                                    <div class="info-label">Vaga</div>
+                                    <div class="info-value" id="detailVaga">-</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">Última Atualização</div>
+                                    <div class="info-value" id="detailUpdate">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <div class="detail-section-title">Resumo do Dia</div>
+                            <div class="summary-grid">
+                                <div class="summary-item">
+                                    <div class="summary-label">
+                                        <span class="legend-dot trabalhando"></span> Trabalhando
+                                    </div>
+                                    <div class="summary-value" style="color: var(--success);">
+                                        <span id="detailTrabalhando">0h 0min</span>
+                                        <span class="summary-percentage" id="detailTrabalhandoPercent">0%</span>
+                                    </div>
+                                </div>
+                                <div class="summary-item">
+                                    <div class="summary-label">
+                                        <span class="legend-dot parado"></span> Parado
+                                    </div>
+                                    <div class="summary-value" style="color: var(--danger);">
+                                        <span id="detailParado">0h 0min</span>
+                                        <span class="summary-percentage" id="detailParadoPercent">0%</span>
+                                    </div>
+                                </div>
+                                <div class="summary-item">
+                                    <div class="summary-label">
+                                        <span class="legend-dot manutencao"></span> Manutenção
+                                    </div>
+                                    <div class="summary-value" style="color: var(--warning);">
+                                        <span id="detailManutencao">0h 0min</span>
+                                        <span class="summary-percentage" id="detailManutencaoPercent">0%</span>
+                                    </div>
+                                </div>
+                                <div class="summary-item">
+                                    <div class="summary-label">
+                                        <span class="legend-dot sem-apropriacao"></span> Sem Apropriação
+                                    </div>
+                                    <div class="summary-value" style="color: var(--muted);">
+                                        <span id="detailSemApropriacao">0h 0min</span>
+                                        <span class="summary-percentage" id="detailSemApropriacaoPercent">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <div class="timeline-container">
+                                <div class="timeline-title">Timeline do Dia</div>
+                                <div class="timeline-header">
+                                    <span>00:00</span>
+                                    <span>06:00</span>
+                                    <span>12:00</span>
+                                    <span>18:00</span>
+                                    <span>24:00</span>
+                                </div>
+                                <div class="timeline-bar" id="timelineBar"></div>
+                                
+                                <div class="timeline-legend">
+                                    <div class="legend-item">
+                                        <span class="legend-dot trabalhando"></span>
+                                        <span>Trabalhando</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-dot parado"></span>
+                                        <span>Parado</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-dot manutencao"></span>
+                                        <span>Manutenção</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-dot sem-apropriacao"></span>
+                                        <span>Sem Apropriação</span>
+                                    </div>
+                                </div>
+
+                                <div class="events-list" id="eventsList"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div id="alarmesSection" style="display: none;"></div>
     </div>
 
     <script>
         // =========================================
         // ⚠️ CONFIGURAÇÃO OBRIGATÓRIA
         // =========================================
-        // Cole APENAS a URL base (sem parâmetros)
-        // Exemplo: https://script.google.com/macros/s/SEU_ID/exec
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzf1c_N0sqFjYV6V5rUljxBvNPaTIyFPFEG27KLZNBuLZRHrpJnVwLUga3V3SvW9-s-nA/exec';
+        // Cole a URL do seu Google Apps Script aqui (LINHA IMPORTANTE!)
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx3Lky2zOae2rxsBu3M9MzJnrELPxQcr9xfSLL4lLZGVxZrkkpYmypSaj1SsNFOd6BhIg/exec';
+        
+        // Exemplo: const SCRIPT_URL = 'https://script.google.com/macros/s/SEU_ID_AQUI/exec';
 
         // =========================================
         // VARIÁVEIS GLOBAIS
@@ -1111,35 +1139,58 @@
             const today = new Date().toISOString().split('T')[0];
             document.getElementById('dateFilter').value = today;
             
-            // Verifica se a URL do script foi configurada
             if (!SCRIPT_URL || SCRIPT_URL === 'COLE_AQUI_A_URL_DO_SEU_APPS_SCRIPT' || !SCRIPT_URL.includes('script.google.com')) {
                 document.getElementById('configAlert').style.display = 'block';
                 showLoading(false);
             } else {
+                testarConexao();
                 loadData();
             }
         });
+
+        // =========================================
+        // TESTAR CONEXÃO
+        // =========================================
+        async function testarConexao() {
+            try {
+                console.log('🔌 Testando conexão com Apps Script...');
+                const response = await fetch(`${SCRIPT_URL}?action=test`);
+                const result = await response.json();
+                
+                if (result.success) {
+                    console.log('✅ Conexão OK:', result.message);
+                } else {
+                    console.error('❌ Erro na conexão:', result.error);
+                }
+            } catch (error) {
+                console.error('❌ Erro ao testar conexão:', error);
+            }
+        }
 
         // =========================================
         // CARREGAR DADOS DO GOOGLE APPS SCRIPT
         // =========================================
         async function loadData() {
             if (!SCRIPT_URL || !SCRIPT_URL.includes('script.google.com')) {
-                alert('Por favor, configure a URL do Google Apps Script no código JavaScript.');
+                alert('⚠️ Configure a URL do Google Apps Script no código JavaScript (linha 1247).');
                 return;
             }
 
             showLoading(true);
             
             try {
-                // Pega a data selecionada
                 const dateInput = document.getElementById('dateFilter');
                 const selectedDate = dateInput ? dateInput.value : '';
                 
-                // Monta a URL com o parâmetro de data
+                console.log('🔍 Carregando dados para data:', selectedDate);
+                
                 const url = `${SCRIPT_URL}?action=getData${selectedDate ? '&date=' + selectedDate : ''}`;
                 
+                console.log('📡 URL da requisição:', url);
+                
                 const response = await fetch(url);
+                
+                console.log('📥 Status HTTP:', response.status);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -1147,23 +1198,26 @@
                 
                 const result = await response.json();
                 
+                console.log('📊 Resposta completa:', result);
+                
                 if (result.success && result.data && result.data.length > 0) {
+                    console.log(`✅ ${result.data.length} registros encontrados`);
                     processServerData(result.data);
-                } else if (result.success && result.data.length === 0) {
-                    console.log('Nenhum dado encontrado para a data selecionada');
+                } else if (result.success && result.data && result.data.length === 0) {
+                    console.log('⚠️ Nenhum dado para a data selecionada');
                     allEquipment = [];
                     allEvents = [];
                     showLoading(false);
                     showEmptyState(true);
                     updateStats();
                 } else {
-                    console.error('Erro na resposta:', result.error);
-                    alert('Erro ao carregar dados: ' + (result.error || 'Erro desconhecido'));
+                    console.error('❌ Erro na resposta:', result.error);
+                    alert(`Erro ao carregar dados: ${result.error || 'Erro desconhecido'}\n\nVerifique:\n1. URL do Apps Script configurada\n2. Apps Script implantado como Web App\n3. Permissões concedidas`);
                     showLoading(false);
                 }
             } catch (error) {
-                console.error('Error loading data:', error);
-                alert('Erro ao carregar dados. Verifique:\n1. URL do Apps Script configurada\n2. Apps Script implantado como Web App\n3. Permissões concedidas');
+                console.error('❌ Erro ao carregar dados:', error);
+                alert(`ERRO DE CONEXÃO:\n\n1. Verifique se a URL do Apps Script está correta\n2. Certifique-se de que o Apps Script foi implantado como Web App\n3. Verifique se deu as permissões necessárias\n4. Abra o Console (F12) para mais detalhes\n\nErro: ${error.message}`);
                 showLoading(false);
             }
         }
@@ -1172,6 +1226,8 @@
         // PROCESSAR DADOS DO SERVIDOR
         // =========================================
         function processServerData(data) {
+            console.log('📦 Processando', data.length, 'eventos...');
+            
             allEvents = data;
             const equipmentMap = new Map();
 
@@ -1192,7 +1248,6 @@
 
             allEquipment = Array.from(equipmentMap.values());
             
-            // Ordena eventos por data e define status atual
             allEquipment.forEach(eq => {
                 eq.events.sort((a, b) => {
                     const dateA = new Date(a.dataInicio.split(' ').reverse().join('-'));
@@ -1205,6 +1260,8 @@
                 eq.lastUpdate = latestEvent.dataFim || latestEvent.dataInicio;
             });
 
+            console.log('✅ Processados', allEquipment.length, 'equipamentos');
+            
             renderDashboard();
             showLoading(false);
         }
@@ -1291,7 +1348,6 @@
             const today = new Date().toISOString().split('T')[0];
             document.getElementById('dateFilter').value = today;
             
-            // Atualiza botões ativos
             document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
             
@@ -1303,7 +1359,6 @@
             yesterday.setDate(yesterday.getDate() - 1);
             document.getElementById('dateFilter').value = yesterday.toISOString().split('T')[0];
             
-            // Atualiza botões ativos
             document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
             
@@ -1613,6 +1668,144 @@
         function showEmptyState(show) {
             const empty = document.getElementById('emptyState');
             if (empty) empty.style.display = show ? 'block' : 'none';
+        }
+
+        // =========================================
+        // NAVEGAÇÃO ENTRE PÁGINAS
+        // =========================================
+        function mostrarDashboard() {
+            document.getElementById('dashboardSection').style.display = 'block';
+            
+            const alarmesSection = document.getElementById('alarmesSection');
+            if (alarmesSection) alarmesSection.style.display = 'none';
+            
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function mostrarAlarmes() {
+            document.getElementById('dashboardSection').style.display = 'none';
+            
+            let alarmesSection = document.getElementById('alarmesSection');
+            if (!alarmesSection) {
+                alarmesSection = criarSecaoAlarmes();
+                document.querySelector('.container').appendChild(alarmesSection);
+            }
+            
+            alarmesSection.style.display = 'block';
+            carregarAlarmes();
+            
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function criarSecaoAlarmes() {
+            const section = document.createElement('div');
+            section.id = 'alarmesSection';
+            section.innerHTML = `
+                <div class="page-header" style="margin-top: 2rem;">
+                    <h1 class="page-title">🚨 Alarmes e Notificações</h1>
+                    <p class="page-subtitle">Eventos que requerem atenção</p>
+                </div>
+                
+                <div class="equipment-section" style="margin-top: 1.5rem;">
+                    <div class="section-header">
+                        <h2 class="section-title">Alarmes Ativos <span class="equipment-count" id="alarmesCount"></span></h2>
+                    </div>
+                    <div id="alarmesLoading" class="loading" style="display:none;">
+                        <div class="spinner"></div>
+                        <p>Carregando alarmes...</p>
+                    </div>
+                    <div id="alarmesGrid" class="equipment-grid"></div>
+                    <div id="alarmesEmpty" class="empty-state" style="display:none;">
+                        <p class="empty-state-text">✅ Nenhum alarme no momento</p>
+                    </div>
+                </div>
+            `;
+            return section;
+        }
+
+        async function carregarAlarmes() {
+            const grid = document.getElementById('alarmesGrid');
+            const empty = document.getElementById('alarmesEmpty');
+            const loading = document.getElementById('alarmesLoading');
+            const countEl = document.getElementById('alarmesCount');
+            
+            if (!grid) return;
+            
+            try {
+                if (loading) loading.style.display = 'block';
+                grid.style.display = 'none';
+                empty.style.display = 'none';
+                
+                console.log('🚨 Carregando alarmes...');
+                
+                const url = `${SCRIPT_URL}?action=getAlarmes`;
+                const response = await fetch(url);
+                const result = await response.json();
+                
+                console.log('🚨 Resposta de alarmes:', result);
+                
+                if (loading) loading.style.display = 'none';
+                
+                if (result.success && result.alarmes && result.alarmes.length > 0) {
+                    grid.innerHTML = '';
+                    grid.style.display = 'grid';
+                    empty.style.display = 'none';
+                    
+                    result.alarmes.forEach(alarme => {
+                        const card = criarCardAlarme(alarme);
+                        grid.appendChild(card);
+                    });
+                    
+                    if (countEl) countEl.textContent = `(${result.alarmes.length})`;
+                } else {
+                    grid.style.display = 'none';
+                    empty.style.display = 'block';
+                    if (countEl) countEl.textContent = '(0)';
+                }
+            } catch (error) {
+                console.error('❌ Erro ao carregar alarmes:', error);
+                if (loading) loading.style.display = 'none';
+                alert('Erro ao carregar alarmes: ' + error.message);
+            }
+        }
+
+        function criarCardAlarme(alarme) {
+            const card = document.createElement('div');
+            card.className = 'equipment-card';
+            
+            const severidadeIcon = {
+                'danger': '🔴',
+                'warning': '⚠️',
+                'info': '🔵'
+            };
+            
+            const icon = severidadeIcon[alarme.severidade] || '🔔';
+            
+            card.innerHTML = `
+                <div class="equipment-header">
+                    <div class="equipment-id">${icon} ${alarme.equipamento}</div>
+                    <div class="status-badge ${alarme.severidade}">${alarme.tipo}</div>
+                </div>
+                <div class="equipment-type">${alarme.vaga.substring(0, 40)}</div>
+                <div class="equipment-details">
+                    <div class="detail-item">
+                        <span class="detail-item-label">Descrição:</span>
+                        <span class="detail-item-value">${alarme.descricao.substring(0, 25)}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-item-label">Tempo:</span>
+                        <span class="detail-item-value">${alarme.tempoTotal}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-item-label">Data:</span>
+                        <span class="detail-item-value">${alarme.dataInicio.split(' ')[0]}</span>
+                    </div>
+                </div>
+            `;
+            
+            return card;
         }
     </script>
 </body>

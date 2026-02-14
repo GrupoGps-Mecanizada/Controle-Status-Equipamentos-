@@ -3,1028 +3,1799 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasterDrive - Sistema de Telemetria Profissional</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Monitoramento de Frota | Sistema Inteligente de Telemetria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
     <style>
-        * { font-family: 'Inter', sans-serif; }
-        
-        body { 
-            background: #f8fafc;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Paleta de cores única - Cyber Industrial */
+            --primary: #00d9ff;
+            --primary-dark: #00a8cc;
+            --secondary: #ff006e;
+            --accent: #ffbe0b;
+            --success: #00f5a0;
+            --warning: #fb5607;
+            --danger: #ff006e;
+            --bg-dark: #0a0e27;
+            --bg-card: #141b3d;
+            --bg-hover: #1a2351;
+            --text-primary: #ffffff;
+            --text-secondary: #8892b0;
+            --text-muted: #495670;
+            --border: #1a2351;
+            --glow: rgba(0, 217, 255, 0.3);
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
             overflow-x: hidden;
         }
-        
-        .sidebar {
+
+        /* Background animado */
+        body::before {
+            content: '';
             position: fixed;
-            left: 0;
             top: 0;
-            height: 100vh;
-            width: 280px;
-            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
-            box-shadow: 4px 0 24px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
-            z-index: 1000;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 0, 110, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
         }
-        
-        .sidebar.closed { transform: translateX(-100%); }
-        
-        .main-content {
-            margin-left: 280px;
-            min-height: 100vh;
-            transition: margin-left 0.3s ease;
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
         }
-        
-        .main-content.expanded { margin-left: 0; }
-        
-        .status-badge {
-            padding: 4px 12px;
-            border-radius: 6px;
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+
+        /* Header com gradiente animado */
+        .header {
+            background: linear-gradient(135deg, var(--bg-card) 0%, #1a2351 100%);
+            border-bottom: 2px solid var(--primary);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 217, 255, 0.1);
         }
-        
-        .status-trabalhando { background: #d1fae5; color: #065f46; }
-        .status-parado { background: #fee2e2; color: #991b1b; }
-        .status-manutencao { background: #fef3c7; color: #92400e; }
-        .status-sem-apropriacao { background: #e5e7eb; color: #374151; }
-        
-        .vaga-card {
-            background: white;
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-            cursor: pointer;
-        }
-        
-        .vaga-card:hover {
-            border-color: #3b82f6;
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
-            transform: translateY(-2px);
-        }
-        
-        .modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 9999;
+            display: flex;
             align-items: center;
             justify-content: center;
-            backdrop-filter: blur(4px);
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            font-size: 1.5rem;
+            box-shadow: 0 0 20px var(--glow);
+            animation: pulse 2s ease-in-out infinite;
         }
-        
-        .modal.active { display: flex; }
-        
-        .timeline-segment {
-            height: 32px;
-            transition: all 0.3s;
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 20px var(--glow); }
+            50% { box-shadow: 0 0 30px var(--glow), 0 0 40px var(--glow); }
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .brand-subtitle {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .nav {
+            display: flex;
+            gap: 0.5rem;
+            background: var(--bg-dark);
+            padding: 0.5rem;
+            border-radius: 12px;
+        }
+
+        .nav-btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .nav-btn:hover {
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .nav-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--bg-dark);
+            box-shadow: 0 4px 15px rgba(0, 217, 255, 0.4);
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-dark);
+            border-radius: 12px;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--success);
+            animation: blink 2s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Dashboard principal */
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        .page-header {
+            margin-bottom: 2rem;
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* KPI Cards com efeito glassmorphism */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .kpi-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.75rem;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .kpi-card:nth-child(1) { animation-delay: 0.1s; }
+        .kpi-card:nth-child(2) { animation-delay: 0.2s; }
+        .kpi-card:nth-child(3) { animation-delay: 0.3s; }
+        .kpi-card:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+        }
+
+        .kpi-card:hover::before {
+            opacity: 1;
+        }
+
+        .kpi-card.active {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+        }
+
+        .kpi-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .kpi-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .kpi-icon.working {
+            background: linear-gradient(135deg, rgba(0, 245, 160, 0.2), rgba(0, 245, 160, 0.05));
+            color: var(--success);
+        }
+
+        .kpi-icon.stopped {
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.2), rgba(255, 0, 110, 0.05));
+            color: var(--danger);
+        }
+
+        .kpi-icon.maintenance {
+            background: linear-gradient(135deg, rgba(251, 86, 7, 0.2), rgba(251, 86, 7, 0.05));
+            color: var(--warning);
+        }
+
+        .kpi-icon.idle {
+            background: linear-gradient(135deg, rgba(136, 146, 176, 0.2), rgba(136, 146, 176, 0.05));
+            color: var(--text-muted);
+        }
+
+        .kpi-trend {
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .kpi-trend.up {
+            background: rgba(0, 245, 160, 0.1);
+            color: var(--success);
+        }
+
+        .kpi-trend.down {
+            background: rgba(255, 0, 110, 0.1);
+            color: var(--danger);
+        }
+
+        .kpi-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .kpi-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .kpi-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Controles e Filtros */
+        .controls-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--bg-dark);
+            padding: 0.75rem 1.25rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .control-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .date-input, .search-input, .filter-select {
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            font-family: 'Space Mono', monospace;
+            outline: none;
+            min-width: 150px;
+        }
+
+        .date-input::-webkit-calendar-picker-indicator {
+            filter: invert(1);
             cursor: pointer;
         }
-        
-        .timeline-segment:hover { opacity: 0.8; transform: scaleY(1.1); }
-        
-        .toast {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: white;
-            padding: 16px 20px;
+
+        .quick-filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .quick-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg-dark);
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .quick-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .quick-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--bg-dark);
+            border-color: var(--primary);
+        }
+
+        .refresh-btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
             border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            z-index: 10000;
-            animation: slideIn 0.3s ease-out;
-            border-left: 4px solid;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--bg-dark);
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Space Mono', monospace;
+            box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
         }
-        
-        @keyframes slideIn {
-            from { transform: translateX(100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 217, 255, 0.4);
         }
-        
-        .toast.success { border-color: #10b981; }
-        .toast.error { border-color: #ef4444; }
-        .toast.warning { border-color: #f59e0b; }
-        .toast.info { border-color: #3b82f6; }
-        
+
+        /* Layout principal com grid */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Seção de equipamentos */
+        .equipment-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .equipment-count {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-family: 'Space Mono', monospace;
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.25rem;
+            padding: 1.5rem;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        /* Card de equipamento estilo neon */
+        .equipment-card {
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .equipment-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .equipment-card:hover {
+            transform: translateX(5px);
+            border-color: var(--primary);
+            box-shadow: -5px 0 20px rgba(0, 217, 255, 0.2);
+        }
+
+        .equipment-card:hover::before {
+            opacity: 1;
+        }
+
+        .equipment-card.selected {
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+        }
+
+        .equipment-card.selected::before {
+            opacity: 1;
+            background: var(--primary);
+        }
+
+        .equipment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .equipment-id {
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .equipment-type {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .status-badge {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .status-badge.trabalhando {
+            background: rgba(0, 245, 160, 0.15);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .status-badge.parado {
+            background: rgba(255, 0, 110, 0.15);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .status-badge.manutencao {
+            background: rgba(251, 86, 7, 0.15);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+        }
+
+        .status-badge.sem-apropriacao {
+            background: rgba(136, 146, 176, 0.15);
+            color: var(--text-muted);
+            border: 1px solid var(--text-muted);
+        }
+
+        .equipment-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+        }
+
+        .detail-label {
+            color: var(--text-secondary);
+        }
+
+        .detail-value {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-family: 'Space Mono', monospace;
+        }
+
+        /* Painel de detalhes */
+        .detail-panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
+            position: sticky;
+            top: 100px;
+        }
+
+        .detail-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: sticky;
+            top: 0;
+            background: var(--bg-card);
+            z-index: 10;
+        }
+
+        .detail-title-section {
+            flex: 1;
+        }
+
+        .detail-equipment-id {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+            margin-bottom: 0.25rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .detail-equipment-type {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .close-btn {
+            width: 36px;
+            height: 36px;
+            border: none;
+            border-radius: 8px;
+            background: var(--bg-dark);
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .close-btn:hover {
+            background: var(--danger);
+            color: white;
+            transform: rotate(90deg);
+        }
+
+        .detail-body {
+            padding: 1.5rem;
+        }
+
+        .detail-section {
+            margin-bottom: 2rem;
+        }
+
+        .detail-section-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-section-title::before {
+            content: '';
+            width: 3px;
+            height: 14px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        /* Métricas de resumo */
+        .metrics-grid {
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .metric-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: var(--bg-dark);
+            border-radius: 10px;
+            border-left: 3px solid;
+        }
+
+        .metric-item.trabalhando { border-color: var(--success); }
+        .metric-item.parado { border-color: var(--danger); }
+        .metric-item.manutencao { border-color: var(--warning); }
+        .metric-item.sem-apropriacao { border-color: var(--text-muted); }
+
+        .metric-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .metric-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .metric-dot.trabalhando { background: var(--success); }
+        .metric-dot.parado { background: var(--danger); }
+        .metric-dot.manutencao { background: var(--warning); }
+        .metric-dot.sem-apropriacao { background: var(--text-muted); }
+
+        .metric-value {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .metric-time {
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .metric-percent {
+            font-size: 0.85rem;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+
+        /* Timeline visual */
+        .timeline-container {
+            background: var(--bg-dark);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .timeline-bar {
+            display: flex;
+            height: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-segment {
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .timeline-segment:hover {
+            filter: brightness(1.2);
+            z-index: 1;
+        }
+
+        .timeline-segment.trabalhando { background: var(--success); }
+        .timeline-segment.parado { background: var(--danger); }
+        .timeline-segment.manutencao { background: var(--warning); }
+        .timeline-segment.sem-apropriacao { background: var(--text-muted); }
+
+        /* Lista de eventos */
+        .events-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .event-item {
+            display: grid;
+            grid-template-columns: auto auto auto 1fr auto;
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem;
+            background: var(--bg-dark);
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+            font-size: 0.85rem;
+        }
+
+        .event-time {
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+            color: var(--primary);
+        }
+
+        .event-arrow {
+            color: var(--text-muted);
+        }
+
+        .event-duration {
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+        }
+
+        /* Gráficos */
         .chart-container {
             position: relative;
-            height: 300px;
-            margin-top: 20px;
+            height: 250px;
+            margin-top: 1rem;
         }
-        
-        .alert-card {
-            background: white;
+
+        /* Estados de loading e vazio */
+        .loading, .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Alertas */
+        .alert {
+            padding: 1rem 1.25rem;
             border-radius: 12px;
+            margin-bottom: 1.5rem;
             border-left: 4px solid;
-            padding: 16px;
-            margin-bottom: 12px;
-            transition: all 0.2s;
+            font-size: 0.9rem;
         }
-        
-        .alert-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .alert-critical { border-color: #ef4444; }
-        .alert-warning { border-color: #f59e0b; }
-        .alert-info { border-color: #3b82f6; }
-        
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: #f1f5f9; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-        
+
+        .alert-error {
+            background: rgba(255, 0, 110, 0.1);
+            border-color: var(--danger);
+            color: var(--danger);
+        }
+
+        .alert-success {
+            background: rgba(0, 245, 160, 0.1);
+            border-color: var(--success);
+            color: var(--success);
+        }
+
+        .alert-warning {
+            background: rgba(251, 86, 7, 0.1);
+            border-color: var(--warning);
+            color: var(--warning);
+        }
+
+        /* Scrollbar customizada */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary);
+        }
+
+        /* Página de Análise */
+        .analytics-section {
+            display: none;
+        }
+
+        .analytics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        /* Responsivo */
+        @media (max-width: 1200px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .detail-panel {
+                position: relative;
+                top: 0;
+                max-height: 600px;
+            }
+        }
+
         @media (max-width: 768px) {
-            .sidebar { transform: translateX(-100%); }
-            .sidebar.open { transform: translateX(0); }
-            .main-content { margin-left: 0; }
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .kpi-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .equipment-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .controls-section {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .analytics-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Toast Container -->
-    <div id="toastContainer"></div>
-    
-    <!-- Loading Overlay -->
-    <div id="loadingOverlay" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-        <div class="bg-white rounded-xl p-8 text-center shadow-2xl">
-            <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-            <p class="text-gray-700 font-semibold">Carregando...</p>
-        </div>
-    </div>
-    
-    <!-- Timeline Modal -->
-    <div id="timelineModal" class="modal">
-        <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full mx-4 max-h-[90vh] overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-6 flex justify-between items-center">
-                <div>
-                    <h2 class="text-2xl font-bold text-white" id="modalTitle"></h2>
-                    <p class="text-blue-100 text-sm" id="modalSubtitle"></p>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">⚡</div>
+                <div class="brand">
+                    <div class="brand-title">FLEET MONITOR</div>
+                    <div class="brand-subtitle">Sistema Inteligente de Telemetria</div>
                 </div>
-                <button onclick="closeModal()" class="text-white hover:bg-white hover:bg-opacity-20 rounded-lg p-2 transition-all">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
             </div>
-            <div id="modalBody" class="p-6 overflow-y-auto max-h-[calc(90vh-100px)]"></div>
+            <nav class="nav">
+                <button class="nav-btn active" onclick="showDashboard()">⚡ Dashboard</button>
+                <button class="nav-btn" onclick="showAnalytics()">📊 Análises</button>
+                <button class="nav-btn" onclick="showAlerts()">🚨 Alertas</button>
+            </nav>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span id="statusText">TEMPO REAL</span>
+            </div>
         </div>
     </div>
-    
-    <!-- App Container -->
-    <div id="app"></div>
+
+    <div class="container">
+        <div class="main-content">
+            <div id="configAlert" class="alert alert-error" style="display: none;">
+                <strong>⚠️ CONFIGURAÇÃO NECESSÁRIA</strong><br>
+                Configure a URL do Google Apps Script na variável SCRIPT_URL (linha do código JavaScript).
+            </div>
+
+            <!-- Dashboard Principal -->
+            <div id="dashboardSection">
+                <div class="page-header">
+                    <h1 class="page-title">Monitoramento de Frota</h1>
+                    <p class="page-subtitle" id="equipmentTotal">Carregando dados da frota...</p>
+                </div>
+
+                <!-- KPIs Principais -->
+                <div class="kpi-grid">
+                    <div class="kpi-card" data-status="trabalhando" onclick="filterByStatus('trabalhando')">
+                        <div class="kpi-header">
+                            <div class="kpi-icon working">⚡</div>
+                            <div class="kpi-trend up">+12%</div>
+                        </div>
+                        <div class="kpi-label">Trabalhando</div>
+                        <div class="kpi-value" id="kpi-trabalhando">0</div>
+                        <div class="kpi-subtitle">
+                            <span id="kpi-trabalhando-percent">0%</span> da frota ativa
+                        </div>
+                    </div>
+
+                    <div class="kpi-card" data-status="parado" onclick="filterByStatus('parado')">
+                        <div class="kpi-header">
+                            <div class="kpi-icon stopped">⏸</div>
+                            <div class="kpi-trend down">-8%</div>
+                        </div>
+                        <div class="kpi-label">Parado</div>
+                        <div class="kpi-value" id="kpi-parado">0</div>
+                        <div class="kpi-subtitle">
+                            <span id="kpi-parado-percent">0%</span> inativo
+                        </div>
+                    </div>
+
+                    <div class="kpi-card" data-status="manutencao" onclick="filterByStatus('manutencao')">
+                        <div class="kpi-header">
+                            <div class="kpi-icon maintenance">🔧</div>
+                            <div class="kpi-trend up">+5%</div>
+                        </div>
+                        <div class="kpi-label">Manutenção</div>
+                        <div class="kpi-value" id="kpi-manutencao">0</div>
+                        <div class="kpi-subtitle">
+                            <span id="kpi-manutencao-percent">0%</span> em serviço
+                        </div>
+                    </div>
+
+                    <div class="kpi-card" data-status="sem-apropriacao" onclick="filterByStatus('sem-apropriacao')">
+                        <div class="kpi-header">
+                            <div class="kpi-icon idle">○</div>
+                            <div class="kpi-trend">--</div>
+                        </div>
+                        <div class="kpi-label">Sem Apropriação</div>
+                        <div class="kpi-value" id="kpi-sem-apropriacao">0</div>
+                        <div class="kpi-subtitle">
+                            <span id="kpi-sem-apropriacao-percent">0%</span> não registrado
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles e Filtros -->
+                <div class="controls-section">
+                    <div class="control-group">
+                        <span class="control-label">📅 Data</span>
+                        <input type="date" class="date-input" id="dateFilter" onchange="loadData()">
+                    </div>
+
+                    <div class="quick-filter-buttons">
+                        <button class="quick-btn active" onclick="setToday()">Hoje</button>
+                        <button class="quick-btn" onclick="setYesterday()">Ontem</button>
+                        <button class="quick-btn" onclick="setLastWeek()">Semana</button>
+                    </div>
+
+                    <div class="control-group" style="flex: 1;">
+                        <span class="control-label">🔍</span>
+                        <input type="text" class="search-input" id="searchInput" placeholder="Buscar equipamento..." oninput="filterEquipment()">
+                    </div>
+
+                    <div class="control-group">
+                        <select class="filter-select" id="statusFilter" onchange="filterEquipment()">
+                            <option value="">Todos os Status</option>
+                            <option value="trabalhando">Trabalhando</option>
+                            <option value="parado">Parado</option>
+                            <option value="manutencao">Manutenção</option>
+                            <option value="sem-apropriacao">Sem Apropriação</option>
+                        </select>
+                    </div>
+
+                    <button class="refresh-btn" onclick="loadData()">
+                        🔄 ATUALIZAR
+                    </button>
+                </div>
+
+                <!-- Grid principal -->
+                <div class="dashboard-grid">
+                    <!-- Lista de equipamentos -->
+                    <div class="equipment-section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                🚛 Equipamentos
+                                <span class="equipment-count" id="equipmentCount">(0)</span>
+                            </h2>
+                        </div>
+                        <div id="loadingState" class="loading">
+                            <div class="spinner"></div>
+                            <p>Carregando dados da planilha...</p>
+                        </div>
+                        <div id="equipmentGrid" class="equipment-grid" style="display:none;"></div>
+                        <div id="emptyState" class="empty-state" style="display:none;">
+                            <p>Nenhum equipamento encontrado</p>
+                        </div>
+                    </div>
+
+                    <!-- Painel de detalhes -->
+                    <div class="detail-panel" id="detailPanel" style="display:none;">
+                        <div class="detail-header">
+                            <div class="detail-title-section">
+                                <div class="detail-equipment-id" id="detailEquipmentId">---</div>
+                                <div class="detail-equipment-type" id="detailEquipmentType">---</div>
+                            </div>
+                            <button class="close-btn" onclick="closeDetail()">×</button>
+                        </div>
+                        <div class="detail-body">
+                            <div class="detail-section">
+                                <div id="detailStatus" class="status-badge">---</div>
+                            </div>
+
+                            <div class="detail-section">
+                                <div class="detail-section-title">📍 INFORMAÇÕES</div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Vaga</span>
+                                    <span class="detail-value" id="detailVaga">---</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Última Atualização</span>
+                                    <span class="detail-value" id="detailUpdate">---</span>
+                                </div>
+                            </div>
+
+                            <div class="detail-section">
+                                <div class="detail-section-title">📊 RESUMO DO DIA</div>
+                                <div class="metrics-grid">
+                                    <div class="metric-item trabalhando">
+                                        <div class="metric-label">
+                                            <div class="metric-dot trabalhando"></div>
+                                            Trabalhando
+                                        </div>
+                                        <div class="metric-value">
+                                            <span class="metric-time" id="detailTrabalhando" style="color: var(--success)">0h 0min</span>
+                                            <span class="metric-percent" id="detailTrabalhandoPercent">0%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="metric-item parado">
+                                        <div class="metric-label">
+                                            <div class="metric-dot parado"></div>
+                                            Parado
+                                        </div>
+                                        <div class="metric-value">
+                                            <span class="metric-time" id="detailParado" style="color: var(--danger)">0h 0min</span>
+                                            <span class="metric-percent" id="detailParadoPercent">0%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="metric-item manutencao">
+                                        <div class="metric-label">
+                                            <div class="metric-dot manutencao"></div>
+                                            Manutenção
+                                        </div>
+                                        <div class="metric-value">
+                                            <span class="metric-time" id="detailManutencao" style="color: var(--warning)">0h 0min</span>
+                                            <span class="metric-percent" id="detailManutencaoPercent">0%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="metric-item sem-apropriacao">
+                                        <div class="metric-label">
+                                            <div class="metric-dot sem-apropriacao"></div>
+                                            Sem Apropriação
+                                        </div>
+                                        <div class="metric-value">
+                                            <span class="metric-time" id="detailSemApropriacao" style="color: var(--text-muted)">0h 0min</span>
+                                            <span class="metric-percent" id="detailSemApropriacaoPercent">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail-section">
+                                <div class="detail-section-title">⏱ TIMELINE</div>
+                                <div class="timeline-container">
+                                    <div class="timeline-header">
+                                        <span>00:00</span>
+                                        <span>06:00</span>
+                                        <span>12:00</span>
+                                        <span>18:00</span>
+                                        <span>24:00</span>
+                                    </div>
+                                    <div class="timeline-bar" id="timelineBar"></div>
+                                </div>
+                            </div>
+
+                            <div class="detail-section">
+                                <div class="detail-section-title">📋 EVENTOS</div>
+                                <div class="events-list" id="eventsList"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção de Análises -->
+            <div id="analyticsSection" class="analytics-section">
+                <div class="page-header">
+                    <h1 class="page-title">Análises Avançadas</h1>
+                    <p class="page-subtitle">Insights e tendências da sua frota</p>
+                </div>
+
+                <div class="analytics-grid">
+                    <div class="chart-card">
+                        <div class="chart-title">📈 Utilização da Frota (7 dias)</div>
+                        <div class="chart-container">
+                            <canvas id="utilizationChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-title">⚡ Distribuição de Status</div>
+                        <div class="chart-container">
+                            <canvas id="statusChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-title">🔧 Tempo de Manutenção por Equipamento</div>
+                        <div class="chart-container">
+                            <canvas id="maintenanceChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-title">📊 Eficiência Operacional</div>
+                        <div class="chart-container">
+                            <canvas id="efficiencyChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção de Alertas -->
+            <div id="alertsSection" class="analytics-section">
+                <div class="page-header">
+                    <h1 class="page-title">Sistema de Alertas</h1>
+                    <p class="page-subtitle">Notificações e eventos críticos</p>
+                </div>
+
+                <div id="alertsGrid" class="equipment-grid"></div>
+            </div>
+        </div>
+    </div>
 
     <script>
-        // ============================================
-        // CONFIGURAÇÃO
-        // ============================================
-        const CONFIG = {
-            API_URL: 'https://script.google.com/macros/s/AKfycbyMoOEk0_m6CjqvPZcC6LaMtv_V9Ef5r8XbH8j-ioiuM7_B3NooUTYjiqSNchxuf1w9nw/exec',
-            REFRESH_INTERVAL: 60000
-        };
+        // =========================================
+        // ⚠️ CONFIGURAÇÃO - COLE SUA URL AQUI
+        // =========================================
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyMoOEk0_m6CjqvPZcC6LaMtv_V9Ef5r8XbH8j-ioiuM7_B3NooUTYjiqSNchxuf1w9nw/exec';
         
-        // ============================================
-        // ESTADO GLOBAL
-        // ============================================
-        let state = {
-            view: 'dashboard',
-            vagas: [],
-            selectedDate: getCurrentDate(),
-            sidebarOpen: window.innerWidth >= 768,
-            filters: {
-                search: '',
-                status: 'all',
-                startDate: getMonthStart(),
-                endDate: getCurrentDate()
-            },
-            alerts: [],
-            rules: [],
-            dashboardData: null,
-            charts: {}
-        };
-        
-        // ============================================
-        // UTILITY FUNCTIONS
-        // ============================================
-        function getCurrentDate() { return new Date().toISOString().split('T')[0]; }
-        function getMonthStart() { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), 1).toISOString().split('T')[0]; }
-        function formatDate(d) { return new Date(d+'T00:00:00').toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }); }
-        function formatDateTime(d) { return new Date(d).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); }
-        function showLoading(show = true) { document.getElementById('loadingOverlay').classList.toggle('hidden', !show); }
-        
-        // ============================================
-        // TOAST SYSTEM
-        // ============================================
-        const Toast = {
-            show(message, type = 'info') {
-                const container = document.getElementById('toastContainer');
-                const toast = document.createElement('div');
-                toast.className = `toast ${type}`;
-                const icons = { success: '✓', error: '✕', info: 'ℹ', warning: '⚠' };
-                toast.innerHTML = `<div class="flex items-center gap-3"><span class="text-xl">${icons[type]}</span><p class="font-semibold">${message}</p></div>`;
-                container.appendChild(toast);
-                setTimeout(() => {
-                    toast.style.opacity = '0';
-                    setTimeout(() => toast.remove(), 300);
-                }, 4000);
-            },
-            success(m) { this.show(m, 'success'); },
-            error(m) { this.show(m, 'error'); },
-            info(m) { this.show(m, 'info'); },
-            warning(m) { this.show(m, 'warning'); }
-        };
-        
-        // ============================================
-        // API CALLS
-        // ============================================
-        async function apiCall(action, params = {}) {
-            try {
-                const url = new URL(CONFIG.API_URL);
-                url.searchParams.append('action', action);
-                Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
-                
-                const response = await fetch(url);
-                return await response.json();
-            } catch (error) {
-                console.error('API Error:', error);
-                Toast.error('Erro de conexão');
-                return { success: false, error: error.message };
-            }
-        }
-        
-        async function loadVagas() {
-            const result = await apiCall('getVagas', { date: state.selectedDate });
-            if (result.success) {
-                state.vagas = result.vagas;
-                render();
-            }
-        }
-        
-        async function loadAlerts() {
-            const result = await apiCall('getAlerts');
-            if (result.success) {
-                state.alerts = result.alerts;
-                render();
-            }
-        }
-        
-        async function loadRules() {
-            const result = await apiCall('getRules');
-            if (result.success) {
-                state.rules = result.rules;
-                render();
-            }
-        }
-        
-        async function loadDashboard() {
-            const result = await apiCall('getDashboardData', {
-                startDate: state.filters.startDate,
-                endDate: state.filters.endDate
-            });
-            if (result.success) {
-                state.dashboardData = result.data;
-                render();
-                setTimeout(renderCharts, 100);
-            }
-        }
-        
-        async function saveRule(rule) {
-            showLoading();
-            const result = await apiCall('saveRule', rule);
-            showLoading(false);
-            if (result.success) {
-                Toast.success('Regra salva com sucesso!');
-                await loadRules();
+        // =========================================
+        // VARIÁVEIS GLOBAIS
+        // =========================================
+        let allEquipment = [];
+        let allEvents = [];
+        let selectedEquipment = null;
+        let currentFilter = '';
+        let charts = {};
+
+        // =========================================
+        // INICIALIZAÇÃO
+        // =========================================
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('dateFilter').value = today;
+            
+            if (!SCRIPT_URL || SCRIPT_URL === 'COLE_AQUI_A_URL_DO_SEU_APPS_SCRIPT') {
+                document.getElementById('configAlert').style.display = 'block';
+                showLoading(false);
             } else {
-                Toast.error('Erro ao salvar regra');
+                loadData();
+                initCharts();
+                setInterval(loadData, 30000); // Atualiza a cada 30s
+            }
+        });
+
+        // =========================================
+        // CARREGAR DADOS
+        // =========================================
+        async function loadData() {
+            if (!SCRIPT_URL || !SCRIPT_URL.includes('script.google.com')) {
+                return;
+            }
+
+            showLoading(true);
+            
+            try {
+                const dateInput = document.getElementById('dateFilter');
+                const selectedDate = dateInput ? dateInput.value : '';
+                
+                const url = `${SCRIPT_URL}?action=getData${selectedDate ? '&date=' + selectedDate : ''}`;
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                
+                if (result.success && result.data && result.data.length > 0) {
+                    processServerData(result.data);
+                    updateStatusIndicator('SINCRONIZADO', 'success');
+                } else {
+                    allEquipment = [];
+                    allEvents = [];
+                    showLoading(false);
+                    showEmptyState(true);
+                    updateStats();
+                }
+            } catch (error) {
+                console.error('Erro ao carregar dados:', error);
+                updateStatusIndicator('ERRO', 'error');
+                showLoading(false);
             }
         }
-        
-        // ============================================
-        // NAVIGATION
-        // ============================================
-        function navigateTo(view) {
-            state.view = view;
-            state.sidebarOpen = window.innerWidth >= 768;
+
+        function processServerData(data) {
+            allEvents = data;
+            const equipmentMap = new Map();
+
+            data.forEach(event => {
+                if (!event.equipamento) return;
+                
+                if (!equipmentMap.has(event.equipamento)) {
+                    equipmentMap.set(event.equipamento, {
+                        id: event.equipamento,
+                        vaga: event.vaga,
+                        type: getEquipmentType(event.vaga),
+                        events: []
+                    });
+                }
+
+                equipmentMap.get(event.equipamento).events.push(event);
+            });
+
+            allEquipment = Array.from(equipmentMap.values());
             
-            if (view === 'dashboard') loadDashboard();
-            else if (view === 'monitoring') loadVagas();
-            else if (view === 'alerts') loadAlerts();
-            else if (view === 'settings') loadRules();
-            
-            render();
+            allEquipment.forEach(eq => {
+                eq.events.sort((a, b) => {
+                    const dateA = new Date(a.dataInicio.split(' ').reverse().join('-'));
+                    const dateB = new Date(b.dataInicio.split(' ').reverse().join('-'));
+                    return dateA - dateB;
+                });
+                
+                const latestEvent = eq.events[eq.events.length - 1];
+                eq.currentStatus = latestEvent.status || getStatusFromDescription(latestEvent.descricao);
+                eq.lastUpdate = latestEvent.dataFim || latestEvent.dataInicio;
+            });
+
+            renderDashboard();
+            showLoading(false);
         }
-        
-        function toggleSidebar() {
-            state.sidebarOpen = !state.sidebarOpen;
-            render();
-        }
-        
-        // ============================================
-        // MODAL FUNCTIONS
-        // ============================================
-        function showTimeline(vaga) {
-            const modal = document.getElementById('timelineModal');
-            const title = document.getElementById('modalTitle');
-            const subtitle = document.getElementById('modalSubtitle');
-            const body = document.getElementById('modalBody');
+
+        // =========================================
+        // FUNÇÕES AUXILIARES
+        // =========================================
+        function getEquipmentType(vaga) {
+            if (!vaga) return 'Equipamento';
+            const vagaLower = vaga.toLowerCase();
             
-            title.textContent = vaga.nome;
-            subtitle.textContent = vaga.equipamento || 'Sem equipamento';
+            if (vagaLower.includes('escavadeira')) return 'Escavadeira CAT 320';
+            if (vagaLower.includes('carregadeira')) return 'Carregadeira 938M';
+            if (vagaLower.includes('rolo')) return 'Rolo Compactador CS54';
+            if (vagaLower.includes('trator')) return 'Trator';
+            if (vagaLower.includes('caminhão') || vagaLower.includes('caminhao')) return 'Caminhão';
             
-            body.innerHTML = renderTimelineContent(vaga);
+            return 'Equipamento';
+        }
+
+        function getStatusFromDescription(descricao) {
+            if (!descricao) return 'Sem Apropriação';
             
-            modal.classList.add('active');
-        }
-        
-        function closeModal() {
-            document.getElementById('timelineModal').classList.remove('active');
-        }
-        
-        function renderTimelineContent(vaga) {
-            if (!vaga.eventos || vaga.eventos.length === 0) {
-                return '<p class="text-gray-500 text-center py-8">Nenhum evento registrado</p>';
+            const desc = descricao.toLowerCase();
+            
+            if (desc.includes('ligado') || desc.includes('trabalhando') || desc.includes('operando')) {
+                return 'Trabalhando';
             }
+            if (desc.includes('desligado') || desc.includes('parado')) {
+                return 'Parado';
+            }
+            if (desc.includes('manutenção') || desc.includes('manutencao')) {
+                return 'Manutenção';
+            }
+            
+            return 'Sem Apropriação';
+        }
+
+        function normalizeStatus(status) {
+            if (!status) return 'sem-apropriacao';
+            
+            const normalized = status.toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/ /g, '-');
+            
+            if (normalized.includes('trabalh')) return 'trabalhando';
+            if (normalized.includes('parado')) return 'parado';
+            if (normalized.includes('manutenc')) return 'manutencao';
+            
+            return 'sem-apropriacao';
+        }
+
+        // =========================================
+        // RENDERIZAÇÃO
+        // =========================================
+        function renderDashboard() {
+            updateStats();
+            renderEquipment();
+            updateCharts();
+        }
+
+        function updateStats() {
+            const stats = {
+                trabalhando: 0,
+                parado: 0,
+                manutencao: 0,
+                'sem-apropriacao': 0
+            };
+
+            allEquipment.forEach(eq => {
+                const status = normalizeStatus(eq.currentStatus);
+                stats[status]++;
+            });
+
+            const total = allEquipment.length;
+            
+            Object.keys(stats).forEach(status => {
+                const count = stats[status];
+                const percent = total > 0 ? Math.round((count / total) * 100) : 0;
+                
+                const countEl = document.getElementById(`kpi-${status}`);
+                const percentEl = document.getElementById(`kpi-${status}-percent`);
+                
+                if (countEl) countEl.textContent = count;
+                if (percentEl) percentEl.textContent = percent + '%';
+            });
+
+            const totalEl = document.getElementById('equipmentTotal');
+            if (totalEl) {
+                totalEl.textContent = `${total} equipamento${total !== 1 ? 's' : ''} monitorado${total !== 1 ? 's' : ''}`;
+            }
+        }
+
+        function renderEquipment() {
+            const grid = document.getElementById('equipmentGrid');
+            if (!grid) return;
+            
+            const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
+            const statusFilter = document.getElementById('statusFilter')?.value || '';
+
+            let filtered = allEquipment.filter(eq => {
+                const matchSearch = !searchTerm || 
+                    eq.id.toLowerCase().includes(searchTerm) || 
+                    eq.type.toLowerCase().includes(searchTerm) ||
+                    eq.vaga.toLowerCase().includes(searchTerm);
+                
+                const matchStatus = !statusFilter || normalizeStatus(eq.currentStatus) === statusFilter;
+                
+                return matchSearch && matchStatus;
+            });
+
+            if (currentFilter) {
+                filtered = filtered.filter(eq => normalizeStatus(eq.currentStatus) === currentFilter);
+            }
+
+            grid.innerHTML = '';
+            
+            if (filtered.length === 0) {
+                showEmptyState(true);
+                grid.style.display = 'none';
+            } else {
+                showEmptyState(false);
+                grid.style.display = 'grid';
+                
+                filtered.forEach(eq => {
+                    const card = createEquipmentCard(eq);
+                    grid.appendChild(card);
+                });
+            }
+
+            const displayEl = document.getElementById('equipmentCount');
+            if (displayEl) {
+                displayEl.textContent = `(${filtered.length} de ${allEquipment.length})`;
+            }
+        }
+
+        function createEquipmentCard(equipment) {
+            const card = document.createElement('div');
+            card.className = 'equipment-card';
+            if (selectedEquipment && selectedEquipment.id === equipment.id) {
+                card.classList.add('selected');
+            }
+            
+            const statusClass = normalizeStatus(equipment.currentStatus);
+            const statusText = equipment.currentStatus;
+            const lastTime = equipment.lastUpdate ? equipment.lastUpdate.split(' ')[1] || '' : '-';
+            
+            card.innerHTML = `
+                <div class="equipment-header">
+                    <div class="equipment-id">${equipment.id}</div>
+                    <div class="status-badge ${statusClass}">${statusText}</div>
+                </div>
+                <div class="equipment-type">${equipment.type}</div>
+                <div class="equipment-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Vaga:</span>
+                        <span class="detail-value">${equipment.vaga.substring(0, 25)}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Horário:</span>
+                        <span class="detail-value">${lastTime}</span>
+                    </div>
+                </div>
+            `;
+            
+            card.onclick = () => showEquipmentDetail(equipment);
+            
+            return card;
+        }
+
+        function showEquipmentDetail(equipment) {
+            selectedEquipment = equipment;
+            
+            document.querySelectorAll('.equipment-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            event.currentTarget.classList.add('selected');
+            
+            const panel = document.getElementById('detailPanel');
+            if (panel) panel.style.display = 'block';
+            
+            document.getElementById('detailEquipmentId').textContent = equipment.id;
+            document.getElementById('detailEquipmentType').textContent = equipment.type;
+            document.getElementById('detailVaga').textContent = equipment.vaga;
+            document.getElementById('detailUpdate').textContent = equipment.lastUpdate || '-';
+            
+            const statusEl = document.getElementById('detailStatus');
+            const statusClass = normalizeStatus(equipment.currentStatus);
+            statusEl.className = 'status-badge ' + statusClass;
+            statusEl.textContent = equipment.currentStatus;
+            
+            calculateTimeSummary(equipment);
+            renderTimeline(equipment);
+            renderEvents(equipment);
+        }
+
+        function calculateTimeSummary(equipment) {
+            const summary = {
+                trabalhando: 0,
+                parado: 0,
+                manutencao: 0,
+                'sem-apropriacao': 0
+            };
+            
+            equipment.events.forEach(event => {
+                const status = normalizeStatus(event.status || getStatusFromDescription(event.descricao));
+                const minutes = parseTimeToMinutes(event.tempoTotal);
+                summary[status] += minutes;
+            });
+            
+            const total = Object.values(summary).reduce((a, b) => a + b, 0);
+            
+            Object.keys(summary).forEach(status => {
+                const minutes = summary[status];
+                const hours = Math.floor(minutes / 60);
+                const mins = minutes % 60;
+                const percent = total > 0 ? Math.round((minutes / total) * 100) : 0;
+                
+                const statusKey = status.replace(/-/g, '');
+                const timeEl = document.getElementById(`detail${capitalizeFirst(statusKey)}`);
+                const percentEl = document.getElementById(`detail${capitalizeFirst(statusKey)}Percent`);
+                
+                if (timeEl) timeEl.textContent = `${hours}h ${mins}min`;
+                if (percentEl) percentEl.textContent = `${percent}%`;
+            });
+        }
+
+        function renderTimeline(equipment) {
+            const timeline = document.getElementById('timelineBar');
+            if (!timeline) return;
+            
+            timeline.innerHTML = '';
             
             const dayMinutes = 24 * 60;
             
-            return `
-                <div class="mb-6">
-                    <h3 class="font-bold text-gray-700 mb-4 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        Timeline do Dia
-                    </h3>
-                    
-                    <div class="flex justify-between text-xs text-gray-500 mb-2">
-                        <span>00:00</span>
-                        <span>06:00</span>
-                        <span>12:00</span>
-                        <span>18:00</span>
-                        <span>24:00</span>
-                    </div>
-                    
-                    <div class="flex rounded-lg overflow-hidden border border-gray-200 mb-4">
-                        ${vaga.eventos.map(evt => {
-                            const minutes = parseTimeToMinutes(evt.tempoTotal);
-                            const percentage = (minutes / dayMinutes) * 100;
-                            const statusClass = normalizeStatus(evt.status || evt.descricao);
-                            const color = getStatusColor(statusClass);
-                            
-                            return `<div class="timeline-segment" style="width: ${percentage}%; background: ${color}" title="${evt.descricao} - ${evt.tempoTotal}"></div>`;
-                        }).join('')}
-                    </div>
-                    
-                    <div class="flex gap-4 flex-wrap text-xs">
-                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-green-500"></div><span>Trabalhando</span></div>
-                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-red-500"></div><span>Parado</span></div>
-                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-yellow-500"></div><span>Manutenção</span></div>
-                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-gray-400"></div><span>Sem Apropriação</span></div>
-                    </div>
-                </div>
+            equipment.events.forEach(event => {
+                const minutes = parseTimeToMinutes(event.tempoTotal);
+                const percentage = (minutes / dayMinutes) * 100;
+                const status = normalizeStatus(event.status || getStatusFromDescription(event.descricao));
                 
-                <div>
-                    <h3 class="font-bold text-gray-700 mb-4 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                        </svg>
-                        Eventos Detalhados
-                    </h3>
-                    
-                    <div class="space-y-2">
-                        ${vaga.eventos.map(evt => {
-                            const statusClass = normalizeStatus(evt.status || evt.descricao);
-                            const statusLabel = getStatusLabel(statusClass);
-                            const statusColor = getStatusColor(statusClass);
-                            
-                            return `
-                                <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                    <div class="flex justify-between items-start mb-2">
-                                        <div>
-                                            <span class="font-mono text-sm text-gray-600">${evt.dataInicio.split(' ')[1]}</span>
-                                            <span class="text-gray-400 mx-2">→</span>
-                                            <span class="font-mono text-sm text-gray-600">${evt.dataFim.split(' ')[1]}</span>
-                                        </div>
-                                        <span class="status-badge" style="background: ${statusColor}15; color: ${statusColor}">${statusLabel}</span>
-                                    </div>
-                                    <p class="text-sm text-gray-700">${evt.descricao}</p>
-                                    <p class="text-xs text-gray-500 mt-1">Duração: ${evt.tempoTotal}</p>
-                                </div>
-                            `;
-                        }).join('')}
-                    </div>
-                </div>
-            `;
+                const segment = document.createElement('div');
+                segment.className = `timeline-segment ${status}`;
+                segment.style.width = percentage + '%';
+                segment.title = `${event.descricao} - ${event.tempoTotal}`;
+                timeline.appendChild(segment);
+            });
         }
-        
-        // ============================================
-        // HELPER FUNCTIONS
-        // ============================================
+
+        function renderEvents(equipment) {
+            const eventsList = document.getElementById('eventsList');
+            if (!eventsList) return;
+            
+            eventsList.innerHTML = '';
+            
+            equipment.events.forEach(event => {
+                const status = normalizeStatus(event.status || getStatusFromDescription(event.descricao));
+                const startTime = event.dataInicio.split(' ')[1] || '';
+                const endTime = event.dataFim.split(' ')[1] || '';
+                
+                const eventItem = document.createElement('div');
+                eventItem.className = 'event-item';
+                
+                eventItem.innerHTML = `
+                    <span class="event-time">${startTime}</span>
+                    <span class="event-arrow">→</span>
+                    <span class="event-time">${endTime}</span>
+                    <span class="status-badge ${status}">${event.status || getStatusFromDescription(event.descricao)}</span>
+                    <span class="event-duration">${event.tempoTotal}</span>
+                `;
+                
+                eventsList.appendChild(eventItem);
+            });
+        }
+
+        // =========================================
+        // GRÁFICOS
+        // =========================================
+        function initCharts() {
+            Chart.defaults.color = '#8892b0';
+            Chart.defaults.borderColor = '#1a2351';
+            Chart.defaults.font.family = "'Space Mono', monospace";
+        }
+
+        function updateCharts() {
+            // Implementação dos gráficos será adicionada conforme necessário
+        }
+
+        // =========================================
+        // CONTROLES
+        // =========================================
+        function setToday() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('dateFilter').value = today;
+            updateQuickButtons(event.target);
+            loadData();
+        }
+
+        function setYesterday() {
+            const yesterday = new Date();
+            yesterday.setDate(yesterday.getDate() - 1);
+            document.getElementById('dateFilter').value = yesterday.toISOString().split('T')[0];
+            updateQuickButtons(event.target);
+            loadData();
+        }
+
+        function setLastWeek() {
+            const lastWeek = new Date();
+            lastWeek.setDate(lastWeek.getDate() - 7);
+            document.getElementById('dateFilter').value = lastWeek.toISOString().split('T')[0];
+            updateQuickButtons(event.target);
+            loadData();
+        }
+
+        function updateQuickButtons(activeBtn) {
+            document.querySelectorAll('.quick-btn').forEach(btn => btn.classList.remove('active'));
+            activeBtn.classList.add('active');
+        }
+
+        function filterByStatus(status) {
+            if (currentFilter === status) {
+                currentFilter = '';
+                document.querySelectorAll('.kpi-card').forEach(card => card.classList.remove('active'));
+            } else {
+                currentFilter = status;
+                document.querySelectorAll('.kpi-card').forEach(card => {
+                    card.classList.remove('active');
+                    if (card.dataset.status === status) {
+                        card.classList.add('active');
+                    }
+                });
+            }
+            
+            renderEquipment();
+        }
+
+        function filterEquipment() {
+            renderEquipment();
+        }
+
+        function closeDetail() {
+            selectedEquipment = null;
+            document.getElementById('detailPanel').style.display = 'none';
+            document.querySelectorAll('.equipment-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+        }
+
+        // =========================================
+        // NAVEGAÇÃO
+        // =========================================
+        function showDashboard() {
+            document.getElementById('dashboardSection').style.display = 'block';
+            document.getElementById('analyticsSection').style.display = 'none';
+            document.getElementById('alertsSection').style.display = 'none';
+            updateActiveNav(0);
+        }
+
+        function showAnalytics() {
+            document.getElementById('dashboardSection').style.display = 'none';
+            document.getElementById('analyticsSection').style.display = 'block';
+            document.getElementById('alertsSection').style.display = 'none';
+            updateActiveNav(1);
+        }
+
+        function showAlerts() {
+            document.getElementById('dashboardSection').style.display = 'none';
+            document.getElementById('analyticsSection').style.display = 'none';
+            document.getElementById('alertsSection').style.display = 'block';
+            updateActiveNav(2);
+        }
+
+        function updateActiveNav(index) {
+            document.querySelectorAll('.nav-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+        }
+
+        // =========================================
+        // UTILIDADES
+        // =========================================
         function parseTimeToMinutes(timeStr) {
             if (!timeStr) return 0;
             const parts = timeStr.split(':');
+            if (parts.length < 2) return 0;
             return parseInt(parts[0]) * 60 + parseInt(parts[1]);
         }
-        
-        function normalizeStatus(text) {
-            if (!text) return 'sem-apropriacao';
-            const t = text.toLowerCase();
-            if (t.includes('ligado') || t.includes('trabalhando')) return 'trabalhando';
-            if (t.includes('desligado') || t.includes('parado')) return 'parado';
-            if (t.includes('manutenção') || t.includes('manutencao')) return 'manutencao';
-            return 'sem-apropriacao';
+
+        function capitalizeFirst(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
         }
-        
-        function getStatusLabel(status) {
-            const labels = {
-                'trabalhando': 'Trabalhando',
-                'parado': 'Parado',
-                'manutencao': 'Manutenção',
-                'sem-apropriacao': 'Sem Apropriação'
-            };
-            return labels[status] || 'Desconhecido';
-        }
-        
-        function getStatusColor(status) {
-            const colors = {
-                'trabalhando': '#10b981',
-                'parado': '#ef4444',
-                'manutencao': '#f59e0b',
-                'sem-apropriacao': '#9ca3af'
-            };
-            return colors[status] || '#6b7280';
-        }
-        
-        // ============================================
-        // CHARTS
-        // ============================================
-        function destroyAllCharts() {
-            Object.values(state.charts).forEach(c => c && c.destroy());
-            state.charts = {};
-        }
-        
-        function renderCharts() {
-            if (!state.dashboardData) return;
-            destroyAllCharts();
+
+        function showLoading(show) {
+            const loading = document.getElementById('loadingState');
+            const grid = document.getElementById('equipmentGrid');
             
-            renderStatusChart();
-            renderTrendChart();
-            renderEfficiencyChart();
+            if (loading) loading.style.display = show ? 'flex' : 'none';
+            if (grid) grid.style.display = show ? 'none' : 'grid';
         }
-        
-        function renderStatusChart() {
-            const ctx = document.getElementById('statusChart')?.getContext('2d');
-            if (!ctx) return;
-            
-            const data = state.dashboardData.statusDistribution;
-            
-            state.charts.status = new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: Object.keys(data).map(getStatusLabel),
-                    datasets: [{
-                        data: Object.values(data),
-                        backgroundColor: Object.keys(data).map(getStatusColor),
-                        borderWidth: 0
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { position: 'bottom' }
-                    }
-                }
-            });
+
+        function showEmptyState(show) {
+            const empty = document.getElementById('emptyState');
+            if (empty) empty.style.display = show ? 'flex' : 'none';
         }
-        
-        function renderTrendChart() {
-            const ctx = document.getElementById('trendChart')?.getContext('2d');
-            if (!ctx) return;
-            
-            const data = state.dashboardData.dailyTrend;
-            
-            state.charts.trend = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: data.map(d => formatDate(d.date)),
-                    datasets: [
-                        {
-                            label: 'Trabalhando',
-                            data: data.map(d => d.trabalhando),
-                            borderColor: '#10b981',
-                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
-                            fill: true,
-                            tension: 0.4
-                        },
-                        {
-                            label: 'Parado',
-                            data: data.map(d => d.parado),
-                            borderColor: '#ef4444',
-                            backgroundColor: 'rgba(239, 68, 68, 0.1)',
-                            fill: true,
-                            tension: 0.4
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { position: 'top' }
-                    }
-                }
-            });
+
+        function updateStatusIndicator(text, type) {
+            const statusText = document.getElementById('statusText');
+            if (statusText) statusText.textContent = text;
         }
-        
-        function renderEfficiencyChart() {
-            const ctx = document.getElementById('efficiencyChart')?.getContext('2d');
-            if (!ctx) return;
-            
-            const data = state.dashboardData.efficiency;
-            
-            state.charts.efficiency = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: data.map(d => d.vaga),
-                    datasets: [{
-                        label: 'Eficiência (%)',
-                        data: data.map(d => d.percentage),
-                        backgroundColor: data.map(d => d.percentage >= 80 ? '#10b981' : d.percentage >= 60 ? '#f59e0b' : '#ef4444'),
-                        borderRadius: 8
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: { max: 100 }
-                    }
-                }
-            });
-        }
-        
-        // ============================================
-        // RENDER FUNCTIONS
-        // ============================================
-        function render() {
-            const app = document.getElementById('app');
-            app.innerHTML = `
-                ${renderSidebar()}
-                <div class="main-content ${state.sidebarOpen ? '' : 'expanded'}">
-                    ${renderHeader()}
-                    ${renderContent()}
-                </div>
-            `;
-        }
-        
-        function renderSidebar() {
-            return `
-                <aside class="sidebar ${state.sidebarOpen ? '' : 'closed'}">
-                    <div class="p-6">
-                        <div class="flex items-center gap-3 mb-8">
-                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
-                                <span class="text-white font-bold text-2xl">M</span>
-                            </div>
-                            <div>
-                                <h1 class="text-white font-bold text-lg">MasterDrive</h1>
-                                <p class="text-blue-200 text-xs">Sistema de Telemetria</p>
-                            </div>
-                        </div>
-                        
-                        <nav class="space-y-2">
-                            ${renderNavItem('dashboard', 'Dashboard', `
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                                </svg>
-                            `)}
-                            ${renderNavItem('monitoring', 'Monitoramento', `
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                                </svg>
-                            `)}
-                            ${renderNavItem('alerts', 'Alertas', `
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
-                                </svg>
-                            `, state.alerts.length)}
-                            ${renderNavItem('settings', 'Configurações', `
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            `)}
-                        </nav>
-                    </div>
-                    
-                    <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-blue-900">
-                        <a href="https://docs.google.com/spreadsheets/d/SEU_ID_AQUI" target="_blank" class="flex items-center gap-3 text-blue-200 hover:text-white transition-colors">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
-                            </svg>
-                            <span class="text-sm font-medium">Ver Banco de Dados</span>
-                        </a>
-                    </div>
-                </aside>
-            `;
-        }
-        
-        function renderNavItem(view, label, icon, badge = null) {
-            const isActive = state.view === view;
-            return `
-                <button onclick="navigateTo('${view}')" class="w-full flex items-center justify-between gap-3 px-4 py-3 rounded-lg transition-all ${isActive ? 'bg-blue-600 text-white' : 'text-blue-100 hover:bg-blue-900'}">
-                    <div class="flex items-center gap-3">
-                        ${icon}
-                        <span class="font-medium">${label}</span>
-                    </div>
-                    ${badge ? `<span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">${badge}</span>` : ''}
-                </button>
-            `;
-        }
-        
-        function renderHeader() {
-            return `
-                <header class="bg-white border-b border-gray-200 sticky top-0 z-40">
-                    <div class="px-6 py-4 flex items-center justify-between">
-                        <div class="flex items-center gap-4">
-                            <button onclick="toggleSidebar()" class="p-2 hover:bg-gray-100 rounded-lg md:hidden">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                                </svg>
-                            </button>
-                            <div>
-                                <h2 class="text-xl font-bold text-gray-900">${getTitleForView()}</h2>
-                                <p class="text-sm text-gray-500">${new Date().toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center gap-3">
-                            <button onclick="loadVagas()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                                </svg>
-                                <span class="hidden sm:inline">Atualizar</span>
-                            </button>
-                        </div>
-                    </div>
-                </header>
-            `;
-        }
-        
-        function getTitleForView() {
-            const titles = {
-                'dashboard': 'Dashboard',
-                'monitoring': 'Monitoramento em Tempo Real',
-                'alerts': 'Central de Alertas',
-                'settings': 'Configurações do Sistema'
-            };
-            return titles[state.view] || 'MasterDrive';
-        }
-        
-        function renderContent() {
-            switch(state.view) {
-                case 'dashboard': return renderDashboardView();
-                case 'monitoring': return renderMonitoringView();
-                case 'alerts': return renderAlertsView();
-                case 'settings': return renderSettingsView();
-                default: return '<div></div>';
-            }
-        }
-        
-        function renderDashboardView() {
-            if (!state.dashboardData) {
-                return '<div class="p-8 text-center"><div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto"></div><p class="mt-4 text-gray-500">Carregando dashboard...</p></div>';
-            }
-            
-            return `
-                <main class="p-6 max-w-7xl mx-auto">
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
-                        ${renderStatCard('Total de Vagas', state.dashboardData.totalVagas, 'blue', `
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                            </svg>
-                        `)}
-                        ${renderStatCard('Trabalhando', state.dashboardData.statusDistribution.trabalhando || 0, 'green', `
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        `)}
-                        ${renderStatCard('Parado', state.dashboardData.statusDistribution.parado || 0, 'red', `
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        `)}
-                        ${renderStatCard('Alertas Ativos', state.alerts.length, 'yellow', `
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                            </svg>
-                        `)}
-                    </div>
-                    
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                            <h3 class="font-bold text-gray-700 mb-4">Distribuição de Status</h3>
-                            <div class="chart-container"><canvas id="statusChart"></canvas></div>
-                        </div>
-                        
-                        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                            <h3 class="font-bold text-gray-700 mb-4">Tendência Semanal</h3>
-                            <div class="chart-container"><canvas id="trendChart"></canvas></div>
-                        </div>
-                        
-                        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                            <h3 class="font-bold text-gray-700 mb-4">Eficiência por Vaga</h3>
-                            <div class="chart-container"><canvas id="efficiencyChart"></canvas></div>
-                        </div>
-                    </div>
-                </main>
-            `;
-        }
-        
-        function renderStatCard(label, value, color, icon) {
-            const colors = {
-                blue: 'bg-blue-100 text-blue-600',
-                green: 'bg-green-100 text-green-600',
-                red: 'bg-red-100 text-red-600',
-                yellow: 'bg-yellow-100 text-yellow-600'
-            };
-            
-            return `
-                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-sm font-medium text-gray-600 mb-1">${label}</p>
-                            <p class="text-3xl font-bold text-gray-900">${value}</p>
-                        </div>
-                        <div class="${colors[color]} p-4 rounded-xl">
-                            ${icon}
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-        
-        function renderMonitoringView() {
-            const filtered = state.vagas.filter(v => {
-                const matchSearch = !state.filters.search || v.nome.toLowerCase().includes(state.filters.search.toLowerCase());
-                const matchStatus = state.filters.status === 'all' || normalizeStatus(v.status) === state.filters.status;
-                return matchSearch && matchStatus;
-            });
-            
-            return `
-                <main class="p-6 max-w-7xl mx-auto">
-                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-4 mb-6">
-                        <div class="flex flex-wrap gap-4">
-                            <input type="text" placeholder="Buscar vaga..." oninput="state.filters.search = this.value; render()" class="flex-1 min-w-[200px] px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                            
-                            <select onchange="state.filters.status = this.value; render()" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                                <option value="all">Todos Status</option>
-                                <option value="trabalhando">Trabalhando</option>
-                                <option value="parado">Parado</option>
-                                <option value="manutencao">Manutenção</option>
-                                <option value="sem-apropriacao">Sem Apropriação</option>
-                            </select>
-                            
-                            <input type="date" value="${state.selectedDate}" onchange="state.selectedDate = this.value; loadVagas()" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                        </div>
-                    </div>
-                    
-                    ${filtered.length === 0 ? '<p class="text-center py-12 text-gray-500">Nenhuma vaga encontrada</p>' : `
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            ${filtered.map(renderVagaCard).join('')}
-                        </div>
-                    `}
-                </main>
-            `;
-        }
-        
-        function renderVagaCard(vaga) {
-            const status = normalizeStatus(vaga.status);
-            const statusLabel = getStatusLabel(status);
-            const statusColor = getStatusColor(status);
-            
-            return `
-                <div class="vaga-card p-6" onclick='showTimeline(${JSON.stringify(vaga)})'>
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="font-bold text-gray-900 text-lg">${vaga.nome}</h3>
-                            <p class="text-sm text-gray-500">${vaga.equipamento || 'Sem equipamento'}</p>
-                        </div>
-                        <span class="status-badge" style="background: ${statusColor}15; color: ${statusColor}">${statusLabel}</span>
-                    </div>
-                    
-                    <div class="space-y-2">
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-600">Horário:</span>
-                            <span class="font-semibold text-gray-900">${vaga.horario || '-'}</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-600">Última Atualização:</span>
-                            <span class="font-semibold text-gray-900">${vaga.ultimaAtualizacao ? formatDateTime(vaga.ultimaAtualizacao) : '-'}</span>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-4 pt-4 border-t border-gray-100">
-                        <button class="w-full py-2 text-blue-600 font-medium hover:bg-blue-50 rounded-lg transition-colors text-sm flex items-center justify-center gap-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            Ver Timeline
-                        </button>
-                    </div>
-                </div>
-            `;
-        }
-        
-        function renderAlertsView() {
-            return `
-                <main class="p-6 max-w-4xl mx-auto">
-                    ${state.alerts.length === 0 ? `
-                        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-12 text-center">
-                            <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">Nenhum alerta ativo</h3>
-                            <p class="text-gray-500">Tudo está funcionando normalmente</p>
-                        </div>
-                    ` : `
-                        <div class="space-y-4">
-                            ${state.alerts.map(renderAlertCard).join('')}
-                        </div>
-                    `}
-                </main>
-            `;
-        }
-        
-        function renderAlertCard(alert) {
-            const severityClass = alert.severity === 'critical' ? 'alert-critical' : alert.severity === 'warning' ? 'alert-warning' : 'alert-info';
-            const severityIcon = alert.severity === 'critical' ? '🔴' : alert.severity === 'warning' ? '⚠️' : 'ℹ️';
-            
-            return `
-                <div class="alert-card ${severityClass}">
-                    <div class="flex items-start gap-4">
-                        <span class="text-2xl">${severityIcon}</span>
-                        <div class="flex-1">
-                            <h3 class="font-bold text-gray-900 mb-1">${alert.title}</h3>
-                            <p class="text-sm text-gray-600 mb-2">${alert.message}</p>
-                            <div class="flex gap-4 text-xs text-gray-500">
-                                <span>Vaga: ${alert.vaga}</span>
-                                <span>•</span>
-                                <span>${formatDateTime(alert.timestamp)}</span>
-                            </div>
-                        </div>
-                        <button onclick="dismissAlert('${alert.id}')" class="text-gray-400 hover:text-gray-600">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            `;
-        }
-        
-        function renderSettingsView() {
-            return `
-                <main class="p-6 max-w-4xl mx-auto">
-                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
-                        <h3 class="font-bold text-gray-900 text-lg mb-4">Regras de Alerta</h3>
-                        <div class="space-y-4">
-                            ${renderRuleForm()}
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                        <h3 class="font-bold text-gray-900 text-lg mb-4">Regras Ativas</h3>
-                        <div class="space-y-3">
-                            ${state.rules.length === 0 ? '<p class="text-gray-500 text-center py-8">Nenhuma regra configurada</p>' : state.rules.map(renderRuleItem).join('')}
-                        </div>
-                    </div>
-                </main>
-            `;
-        }
-        
-        function renderRuleForm() {
-            return `
-                <form onsubmit="handleRuleSubmit(event)" class="space-y-4">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Nome da Regra</label>
-                            <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Condição</label>
-                            <select name="condition" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                                <option value="parado_mais_que">Parado há mais de</option>
-                                <option value="sem_apropriacao_mais_que">Sem apropriação há mais de</option>
-                                <option value="manutencao_mais_que">Em manutenção há mais de</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Tempo (horas)</label>
-                            <input type="number" name="time" min="1" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Severidade</label>
-                            <select name="severity" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                                <option value="info">Informação</option>
-                                <option value="warning">Atenção</option>
-                                <option value="critical">Crítico</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <button type="submit" class="w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
-                        Adicionar Regra
-                    </button>
-                </form>
-            `;
-        }
-        
-        function renderRuleItem(rule) {
-            return `
-                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
-                    <div>
-                        <h4 class="font-semibold text-gray-900">${rule.name}</h4>
-                        <p class="text-sm text-gray-600">${rule.condition} ${rule.time}h - Severidade: ${rule.severity}</p>
-                    </div>
-                    <button onclick="deleteRule('${rule.id}')" class="text-red-500 hover:text-red-700">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            `;
-        }
-        
-        // ============================================
-        // EVENT HANDLERS
-        // ============================================
-        async function handleRuleSubmit(e) {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const rule = {
-                id: 'RULE-' + Date.now(),
-                name: formData.get('name'),
-                condition: formData.get('condition'),
-                time: parseInt(formData.get('time')),
-                severity: formData.get('severity'),
-                active: true
-            };
-            
-            await saveRule(rule);
-            e.target.reset();
-        }
-        
-        async function deleteRule(id) {
-            if (confirm('Deseja realmente excluir esta regra?')) {
-                // Implement delete logic
-                Toast.success('Regra excluída');
-            }
-        }
-        
-        async function dismissAlert(id) {
-            // Implement dismiss logic
-            state.alerts = state.alerts.filter(a => a.id !== id);
-            render();
-            Toast.info('Alerta dismissado');
-        }
-        
-        // ============================================
-        // INITIALIZATION
-        // ============================================
-        window.addEventListener('DOMContentLoaded', () => {
-            if (!CONFIG.API_URL || CONFIG.API_URL.includes('COLE_AQUI')) {
-                Toast.warning('Configure a URL do Apps Script no código');
-                // Mock data for development
-                state.vagas = [
-                    { nome: 'ALTA PRESSÃO - GPS - 01', equipamento: 'EAM3262', status: 'Trabalhando', horario: '16:08:00', ultimaAtualizacao: new Date(), eventos: [] },
-                    { nome: 'ALTA PRESSÃO - GPS - 03', equipamento: 'EGC2989', status: 'Parado', horario: '16:08:00', ultimaAtualizacao: new Date(), eventos: [] },
-                ];
-                state.dashboardData = {
-                    totalVagas: 10,
-                    statusDistribution: { trabalhando: 5, parado: 3, manutencao: 1, 'sem-apropriacao': 1 },
-                    dailyTrend: [],
-                    efficiency: []
-                };
-                state.alerts = [
-                    { id: '1', title: 'Equipamento Parado', message: 'EAM3262 está parado há 2 horas', vaga: 'ALTA PRESSÃO - GPS - 01', severity: 'warning', timestamp: new Date() }
-                ];
-            } else {
-                navigateTo('monitoring');
-            }
-            
-            render();
-            
-            // Auto refresh
-            setInterval(() => {
-                if (state.view === 'monitoring') loadVagas();
-            }, CONFIG.REFRESH_INTERVAL);
-        });
     </script>
 </body>
 </html>
